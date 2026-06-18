@@ -18,7 +18,7 @@ const prevChapter = currentIndex > 0 ? chapters[currentIndex - 1] : null;
 const nextChapter = currentIndex >= 0 && currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : null;
 ---
 
-<aside class="sidebar">
+<aside class="sidebar" id="primary-sidebar">
   <div class="logo-container">
     <a href="/" class="logo">
       <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -148,6 +148,22 @@ const nextChapter = currentIndex >= 0 && currentIndex < chapters.length - 1 ? ch
     transition: background-color 0.3s ease, border-color 0.3s ease;
     scrollbar-width: thin;
     scrollbar-color: var(--theme-border) transparent;
+  }
+
+  /* Mobile: slide the sidebar off-screen; reveal it as a drawer when open. */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: min(85vw, 320px);
+      z-index: 1100;
+      transform: translateX(-100%);
+      box-shadow: 2px 0 16px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+      padding-top: 4.5rem; /* clear the fixed hamburger button */
+    }
+
+    :global([data-nav-open]) .sidebar {
+      transform: translateX(0);
+    }
   }
 
   .logo-container {
