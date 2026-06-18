@@ -42,7 +42,7 @@ const {
 ---
 
 <!doctype html>
-<html lang="en" dir={dir === 'RTL' ? 'rtl' : 'ltr'}>
+<html lang={currentLang || 'en'} dir={dir === 'RTL' ? 'rtl' : 'ltr'}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
