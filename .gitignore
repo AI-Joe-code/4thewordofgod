@@ -2,6 +2,8 @@
 dist/
 # generated types
 .astro/
+# wrangler local dev state (Miniflare R2/KV emulation)
+.wrangler/
 
 # dependencies
 node_modules/

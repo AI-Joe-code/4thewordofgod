@@ -1,130 +1,79 @@
 ---
+// Rendered on-demand by the Cloudflare adapter (Worker), reading chapter
+// content from R2 instead of the build-time filesystem. This is the route
+// that lets the site scale to hundreds of languages without hitting the
+// 20,000-files-per-deployment limit of Cloudflare Pages' free tier.
+export const prerender = false;
+
 import Layout from '../../../layouts/Layout.astro';
 import FloatingControls from '../../../components/FloatingControls.astro';
 import FAQ from '../../../components/FAQ.astro';
-import { getAllCommentary } from '../../../lib/content';
 import { getLanguageDirection, LANGUAGES } from '../../../lib/languages';
-import { books } from '../../../lib/books';
+import type { CommentaryData } from '../../../lib/content';
 
-export async function getStaticPaths() {
-  const allCommentary = await getAllCommentary();
-  
-  // Pre-calculate global data
-  const allLanguages = [...new Set(allCommentary.map(e => e.data.language))].sort().map(code => ({
-      language_code: code,
-      tier_level: 1 as 1 | 2,
-      direction: getLanguageDirection(code).toUpperCase() as 'LTR' | 'RTL',
-      region_name: LANGUAGES[code]?.name || code
+const { lang, book, chapter } = Astro.params;
+
+const env = Astro.locals.runtime?.env;
+if (!env?.R2) {
+  return new Response('R2 binding unavailable', { status: 500 });
+}
+
+// 1. Fetch this chapter's content.
+const key = `public-content/${lang}/json/${book}_${chapter}.json`;
+const obj = await env.R2.get(key);
+if (!obj) {
+  return new Response('Chapter not found', { status: 404 });
+}
+const data = (await obj.json()) as CommentaryData;
+
+// 2. Build navigation for this language by listing the JSON keys.
+//    (Phase 3 replaces this per-request list with a precomputed KV manifest.)
+const listed = await env.R2.list({ prefix: `public-content/${lang}/json/` });
+const chaptersByBook: Record<string, string[]> = {};
+for (const o of listed.objects) {
+  const m = o.key.match(/\/json\/(.+)_(\d+)\.json$/);
+  if (!m) continue;
+  const [, bk, ch] = m;
+  (chaptersByBook[bk] ??= []).push(ch);
+}
+for (const bk in chaptersByBook) {
+  chaptersByBook[bk].sort((a, b) => parseInt(a, 10) - parseInt(b, 10));
+}
+
+const bookChapters = (chaptersByBook[book!] ?? []).map((num) => ({
+  chapter_number: num,
+  original_title: null,
+}));
+
+const firstChaptersMap: Record<string, string> = {};
+for (const bk in chaptersByBook) {
+  firstChaptersMap[bk] = chaptersByBook[bk][0] ?? '01';
+}
+
+// 3. Prev/next derived from the ordered chapter list (robust to stale JSON).
+const idx = bookChapters.findIndex((c) => c.chapter_number === chapter);
+const prevChapterNum = idx > 0 ? bookChapters[idx - 1].chapter_number : null;
+const nextChapterNum =
+  idx >= 0 && idx < bookChapters.length - 1 ? bookChapters[idx + 1].chapter_number : null;
+
+// Languages list (sidebar / hreflang). Phase 3 will source this from the manifest.
+const allLanguages = Object.keys(LANGUAGES)
+  .sort()
+  .map((code) => ({
+    language_code: code,
+    tier_level: 1 as 1 | 2,
+    direction: getLanguageDirection(code).toUpperCase() as 'LTR' | 'RTL',
+    region_name: LANGUAGES[code]?.name || code,
   }));
 
-  return allCommentary.map(entry => {
-    const [lang, book, chapter] = entry.slug.split('/');
-    
-    // Calculate bookChapters for this entry
-    const bookChapters = allCommentary
-      .filter(e => e.data.language === lang && e.slug.split('/')[1] === book)
-      .sort((a, b) => {
-         const aNum = parseInt(a.data.chapter, 10);
-         const bNum = parseInt(b.data.chapter, 10);
-         return aNum - bNum;
-      })
-      .map(e => ({
-        chapter_number: e.data.chapter,
-        original_title: e.data.title
-      }));
+const { title, metaDescription, keywords, structuredData, faq, audioPath, content } = data;
 
-    // Calculate firstChaptersMap for this entry's language
-    const currentLangFirstChapters = {};
-    books.forEach(b => {
-        const bChapters = allCommentary
-            .filter(e => e.data.language === lang && e.data.book.toLowerCase().replace(/\s+/g, '-') === b.slug)
-            .map(e => e.data.chapter)
-            .sort((a, b) => parseInt(a) - parseInt(b));
-        
-        currentLangFirstChapters[b.slug] = bChapters.length > 0 ? bChapters[0] : '01';
-    });
-
-    return {
-      params: { lang, book, chapter },
-      props: { 
-        entry,
-        bookChapters,
-        allLanguages,
-        firstChaptersMap: currentLangFirstChapters
-      },
-    };
-  });
-}
-
-const { entry, bookChapters, allLanguages, firstChaptersMap } = Astro.props;
-
-const { 
-  title, 
-  metaDescription, 
-  keywords, 
-  structuredData, 
-  faq, 
-  previous_chapter, 
-  next_chapter, 
-  audioPath,
-  language: lang,
-  book: bookName,
-  chapter,
-  content
-} = entry.data;
-
-// entry.slug is like "en/daniel/00"
-const bookSlug = entry.slug.split('/')[1]; // "daniel"
-
-const direction = getLanguageDirection(lang);
-
-// Audio URL
+const direction = getLanguageDirection(lang!);
 const audioUrl = audioPath ? `https://audio.4thewordofgod.com/${audioPath}` : null;
-
-// Parse prev/next chapter numbers
-const getChapterNum = (str: string | null | undefined) => {
-  if (!str) return null;
-  const parts = str.split('_');
-  return parts.length > 1 ? parts[1] : str; // Fallback if no underscore
-};
-
-let prevChapterNum = getChapterNum(previous_chapter);
-let nextChapterNum = getChapterNum(next_chapter);
-
-let prevArticleUrl: string | undefined;
-let nextArticleUrl: string | undefined;
-
-// Article Navigation Logic
-if (entry.data.type === 'article') {
-    // Get all articles for this language
-    const articles = (await getAllCommentary())
-        .filter(e => e.data.language === lang && e.data.type === 'article')
-        .sort((a, b) => {
-            const dateA = new Date(a.data.date || "2024-01-01");
-            const dateB = new Date(b.data.date || "2024-01-01");
-            return dateB.getTime() - dateA.getTime(); // Descending (Newest first)
-        });
-
-    const currentIndex = articles.findIndex(e => e.slug === entry.slug);
-    
-    if (currentIndex !== -1) {
-        // Next (Newer) -> index - 1
-        if (currentIndex > 0) {
-            const nextArticle = articles[currentIndex - 1];
-            nextArticleUrl = `/${nextArticle.slug}`;
-        }
-        
-        // Previous (Older) -> index + 1
-        if (currentIndex < articles.length - 1) {
-            const prevArticle = articles[currentIndex + 1];
-            prevArticleUrl = `/${prevArticle.slug}`;
-        }
-    }
-}
 ---
 
-<Layout 
-  title={`${title} | Bible Commentary`} 
+<Layout
+  title={`${title} | Bible Commentary`}
   dir={direction.toUpperCase() as 'LTR' | 'RTL'}
   description={metaDescription}
   ogTitle={title}
@@ -134,24 +83,22 @@ if (entry.data.type === 'article') {
   languages={allLanguages}
   currentLang={lang}
   chapters={bookChapters}
-  currentBook={bookSlug}
+  currentBook={book}
   currentChapter={chapter}
   firstChapters={firstChaptersMap}
 >
   <main>
-    
+
     <h1>{title}</h1>
-    
-    <FloatingControls 
+
+    <FloatingControls
       prevChapter={prevChapterNum}
       nextChapter={nextChapterNum}
       audioSrc={audioUrl}
-      bookSlug={bookSlug}
+      bookSlug={book}
       lang={lang}
-      prevUrl={prevArticleUrl}
-      nextUrl={nextArticleUrl}
     />
-    
+
     <article class="commentary-text">
       <Fragment set:html={content} />
     </article>
@@ -178,7 +125,7 @@ if (entry.data.type === 'article') {
     margin-top: 2rem;
     font-family: 'Lato', sans-serif;
   }
-  
+
   /* Ensure images in markdown content are responsive */
   .commentary-text :global(img) {
     max-width: 100%;
