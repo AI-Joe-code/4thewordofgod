@@ -5,6 +5,7 @@
 // Cloudflare bindings available at runtime (see wrangler.toml).
 interface Env {
   R2: R2Bucket;
+  MANIFEST: KVNamespace;
 }
 
 type Runtime = import('@astrojs/cloudflare').Runtime<Env>;

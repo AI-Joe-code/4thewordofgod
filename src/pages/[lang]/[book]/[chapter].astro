@@ -26,28 +26,41 @@ if (!obj) {
 }
 const data = (await obj.json()) as CommentaryData;
 
-// 2. Build navigation for this language by listing the JSON keys.
-//    (Phase 3 replaces this per-request list with a precomputed KV manifest.)
-const listed = await env.R2.list({ prefix: `public-content/${lang}/json/` });
-const chaptersByBook: Record<string, string[]> = {};
-for (const o of listed.objects) {
-  const m = o.key.match(/\/json\/(.+)_(\d+)\.json$/);
-  if (!m) continue;
-  const [, bk, ch] = m;
-  (chaptersByBook[bk] ??= []).push(ch);
-}
-for (const bk in chaptersByBook) {
-  chaptersByBook[bk].sort((a, b) => parseInt(a, 10) - parseInt(b, 10));
-}
-
-const bookChapters = (chaptersByBook[book!] ?? []).map((num) => ({
-  chapter_number: num,
-  original_title: null,
-}));
-
+// 2. Navigation comes from the per-language manifest in KV (one small read,
+//    with real chapter titles). Falls back to an R2 listing if the manifest
+//    has not been generated yet.
+let bookChapters: { chapter_number: string; original_title: string | null }[] = [];
 const firstChaptersMap: Record<string, string> = {};
-for (const bk in chaptersByBook) {
-  firstChaptersMap[bk] = chaptersByBook[bk][0] ?? '01';
+
+const manifestRaw = await env.MANIFEST?.get(`manifest:${lang}`);
+if (manifestRaw) {
+  const manifest = JSON.parse(manifestRaw) as {
+    books: Record<string, { name?: string; chapters: { n: string; title: string }[] }>;
+  };
+  for (const bk in manifest.books) {
+    firstChaptersMap[bk] = manifest.books[bk].chapters[0]?.n ?? '01';
+  }
+  bookChapters = (manifest.books[book!]?.chapters ?? []).map((c) => ({
+    chapter_number: c.n,
+    original_title: c.title || null,
+  }));
+} else {
+  const listed = await env.R2.list({ prefix: `public-content/${lang}/json/` });
+  const chaptersByBook: Record<string, string[]> = {};
+  for (const o of listed.objects) {
+    const m = o.key.match(/\/json\/(.+)_(\d+)\.json$/);
+    if (!m) continue;
+    const [, bk, ch] = m;
+    (chaptersByBook[bk] ??= []).push(ch);
+  }
+  for (const bk in chaptersByBook) {
+    chaptersByBook[bk].sort((a, b) => parseInt(a, 10) - parseInt(b, 10));
+    firstChaptersMap[bk] = chaptersByBook[bk][0] ?? '01';
+  }
+  bookChapters = (chaptersByBook[book!] ?? []).map((num) => ({
+    chapter_number: num,
+    original_title: null,
+  }));
 }
 
 // 3. Prev/next derived from the ordered chapter list (robust to stale JSON).
