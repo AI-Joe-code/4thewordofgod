@@ -39,32 +39,27 @@
         {
           "@type": "Person",
           "name": "Amos",
-          "description": "A shepherd and orchard worker from Tekoa, chosen by God as a prophet to Israel.",
-          "sameAs": "https://en.wikipedia.org/wiki/Amos_(prophet)"
+          "description": "A shepherd and orchard worker from Tekoa, chosen by God as a prophet to Israel."
         },
         {
           "@type": "Place",
           "name": "Tekoa",
-          "description": "The hometown of Amos, located about ten miles south of Jerusalem.",
-          "sameAs": "https://en.wikipedia.org/wiki/Tekoa"
+          "description": "The hometown of Amos, located about ten miles south of Jerusalem."
         },
         {
           "@type": "Person",
           "name": "Uzziah",
-          "description": "King of Judah during whose reign Amos prophesied; associated with a great earthquake.",
-          "sameAs": "https://en.wikipedia.org/wiki/Uzziah"
+          "description": "King of Judah during whose reign Amos prophesied; associated with a great earthquake."
         },
         {
           "@type": "Place",
           "name": "Damascus",
-          "description": "The capital of Syria, judged for using threshing instruments of iron against Gilead.",
-          "sameAs": "https://en.wikipedia.org/wiki/Damascus"
+          "description": "The capital of Syria, judged for using threshing instruments of iron against Gilead."
         },
         {
           "@type": "Place",
           "name": "Edom",
-          "description": "The nation descended from Esau, judged for pursuing his brother Israel with the sword and perpetual anger.",
-          "sameAs": "https://en.wikipedia.org/wiki/Edom"
+          "description": "The nation descended from Esau, judged for pursuing his brother Israel with the sword and perpetual anger."
         },
         {
           "@type": "CreativeWork",

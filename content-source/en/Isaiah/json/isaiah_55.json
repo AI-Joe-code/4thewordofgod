@@ -35,26 +35,22 @@
         {
           "@type": "Concept",
           "name": "Davidic Covenant",
-          "description": "The everlasting covenant renewed by God, ensuring the sure mercies of David.",
-          "sameAs": "https://en.wikipedia.org/wiki/Davidic_covenant"
+          "description": "The everlasting covenant renewed by God, ensuring the sure mercies of David."
         },
         {
           "@type": "Thing",
           "name": "Word of God",
-          "description": "Compared to rain and snow, it provides spiritual nourishment and never returns void.",
-          "sameAs": "https://en.wikipedia.org/wiki/Word_of_God"
+          "description": "Compared to rain and snow, it provides spiritual nourishment and never returns void."
         },
         {
           "@type": "Place",
           "name": "Babylon",
-          "description": "The place of exile from which the people leave with joy and peace.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+          "description": "The place of exile from which the people leave with joy and peace."
         },
         {
           "@type": "Person",
           "name": "David",
-          "description": "Set up by God as a witness, leader, and commander to the people.",
-          "sameAs": "https://en.wikipedia.org/wiki/David"
+          "description": "Set up by God as a witness, leader, and commander to the people."
         },
         {
           "@type": "CreativeWork",

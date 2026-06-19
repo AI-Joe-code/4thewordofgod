@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Shebna",
-          "description": "The corrupt city treasurer who is judged by God and replaced.",
-          "sameAs": "https://en.wikipedia.org/wiki/Shebna"
+          "description": "The corrupt city treasurer who is judged by God and replaced."
         },
         {
           "@type": "Person",
           "name": "Eliakim",
-          "description": "The son of Hilkiah, called by God to replace Shebna and receive the key of David.",
-          "sameAs": null
+          "description": "The son of Hilkiah, called by God to replace Shebna and receive the key of David."
         },
         {
           "@type": "Place",
           "name": "Valley of Vision",
-          "description": "A prophetic name for Jerusalem, signifying the place of divine revelation and judgment.",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaiah_22"
+          "description": "A prophetic name for Jerusalem, signifying the place of divine revelation and judgment."
         },
         {
           "@type": "Thing",
           "name": "Key of the House of David",
-          "description": "A symbol of absolute authority and governance given to Eliakim.",
-          "sameAs": "https://en.wikipedia.org/wiki/Key_of_David"
+          "description": "A symbol of absolute authority and governance given to Eliakim."
         },
         {
           "@type": "CreativeWork",

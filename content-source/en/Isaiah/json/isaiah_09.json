@@ -39,26 +39,22 @@
         {
           "@type": "Person",
           "name": "Jesus",
-          "description": "The Child born, the Son given, identified as the Prince of Peace and Mighty God.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jesus"
+          "description": "The Child born, the Son given, identified as the Prince of Peace and Mighty God."
         },
         {
           "@type": "Place",
           "name": "Galilee",
-          "description": "The region of Zebulun and Naphtali, formerly afflicted but destined to see a great light.",
-          "sameAs": "https://en.wikipedia.org/wiki/Galilee"
+          "description": "The region of Zebulun and Naphtali, formerly afflicted but destined to see a great light."
         },
         {
           "@type": "Thing",
           "name": "Throne of David",
-          "description": "The seat of authority for the eternal government established by the coming Son.",
-          "sameAs": "https://en.wikipedia.org/wiki/Davidic_line"
+          "description": "The seat of authority for the eternal government established by the coming Son."
         },
         {
           "@type": "Person",
           "name": "Ephraim",
-          "description": "Representative of the Northern Kingdom, characterized by pride and internal conflict with Manasseh.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ephraim_(biblical_figure)"
+          "description": "Representative of the Northern Kingdom, characterized by pride and internal conflict with Manasseh."
         },
         {
           "@type": "CreativeWork",

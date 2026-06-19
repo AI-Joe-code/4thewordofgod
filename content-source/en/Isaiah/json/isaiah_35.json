@@ -35,26 +35,22 @@
         {
           "@type": "Place",
           "name": "Highway of Holiness",
-          "description": "A sacred road prepared for the redeemed and undefiled to return to Zion.",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaiah_35"
+          "description": "A sacred road prepared for the redeemed and undefiled to return to Zion."
         },
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "The destination of the ransomed, where they return with singing and everlasting joy.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "The destination of the ransomed, where they return with singing and everlasting joy."
         },
         {
           "@type": "Thing",
           "name": "Restoration of Nature",
-          "description": "The transformation of wilderness and deserts into blossoming, water-filled landscapes.",
-          "sameAs": null
+          "description": "The transformation of wilderness and deserts into blossoming, water-filled landscapes."
         },
         {
           "@type": "Person",
           "name": "The Redeemed",
-          "description": "Those who have been ransomed by the Lord and walk the holy way without fear.",
-          "sameAs": null
+          "description": "Those who have been ransomed by the Lord and walk the holy way without fear."
         },
         {
           "@type": "CreativeWork",

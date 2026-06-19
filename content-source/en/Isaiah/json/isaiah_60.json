@@ -35,20 +35,17 @@
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "The restored city of the Lord, described as a boom town receiving wealth and returning exiles.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "The restored city of the Lord, described as a boom town receiving wealth and returning exiles."
         },
         {
           "@type": "Person",
           "name": "Cyrus",
-          "description": "King of Persia who issued the decree for rebuilding Jerusalem and provisioned it.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+          "description": "King of Persia who issued the decree for rebuilding Jerusalem and provisioned it."
         },
         {
           "@type": "Thing",
           "name": "Light of the Lord",
-          "description": "The divine illumination replacing the sun and moon, symbolizing God's glory.",
-          "sameAs": "https://en.wikipedia.org/wiki/Divine_light"
+          "description": "The divine illumination replacing the sun and moon, symbolizing God's glory."
         },
         {
           "@type": "CreativeWork",

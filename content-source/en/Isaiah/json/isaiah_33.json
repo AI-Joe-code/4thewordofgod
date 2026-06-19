@@ -35,26 +35,22 @@
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "The city of Jerusalem, depicted as a quiet habitation and fortress for the righteous.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "The city of Jerusalem, depicted as a quiet habitation and fortress for the righteous."
         },
         {
           "@type": "Person",
           "name": "The Assyrians",
-          "description": "The fierce enemies and 'spoilers' who deal treacherously but face God's judgment.",
-          "sameAs": "https://en.wikipedia.org/wiki/Assyria"
+          "description": "The fierce enemies and 'spoilers' who deal treacherously but face God's judgment."
         },
         {
           "@type": "Person",
           "name": "The King",
-          "description": "A reference to God (or the Messianic King) seen in beauty by the righteous.",
-          "sameAs": "https://en.wikipedia.org/wiki/Kingship_of_God"
+          "description": "A reference to God (or the Messianic King) seen in beauty by the righteous."
         },
         {
           "@type": "Thing",
           "name": "National Covenant",
-          "description": "The agreement between God and Israel that exempted the nation from pestilential diseases upon obedience.",
-          "sameAs": "https://en.wikipedia.org/wiki/Mosaic_covenant"
+          "description": "The agreement between God and Israel that exempted the nation from pestilential diseases upon obedience."
         },
         {
           "@type": "CreativeWork",

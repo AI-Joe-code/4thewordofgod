@@ -35,32 +35,27 @@
         {
           "@type": "Person",
           "name": "Lucifer",
-          "description": "Identified as the King of Babylon, the 'son of the morning' who fell from heaven.",
-          "sameAs": "https://en.wikipedia.org/wiki/Lucifer"
+          "description": "Identified as the King of Babylon, the 'son of the morning' who fell from heaven."
         },
         {
           "@type": "Place",
           "name": "Babylon",
-          "description": "The golden city of the oppressor which is destroyed and swept with the besom of destruction.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+          "description": "The golden city of the oppressor which is destroyed and swept with the besom of destruction."
         },
         {
           "@type": "Place",
           "name": "Hell",
-          "description": "The place beneath that stirs to meet the fallen king, where dead leaders rise to mock him.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sheol"
+          "description": "The place beneath that stirs to meet the fallen king, where dead leaders rise to mock him."
         },
         {
           "@type": "Person",
           "name": "Jacob",
-          "description": "Refers to the chosen people of Israel who will be dealt with gently and restored to their land.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jacob"
+          "description": "Refers to the chosen people of Israel who will be dealt with gently and restored to their land."
         },
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "The city founded by the Lord where the poor of His people find trust and refuge.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "The city founded by the Lord where the poor of His people find trust and refuge."
         },
         {
           "@type": "CreativeWork",

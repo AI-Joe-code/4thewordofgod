@@ -35,26 +35,22 @@
         {
           "@type": "Thing",
           "name": "Tree of Life",
-          "description": "A symbol of eternal life and healing restored in the New Jerusalem, formerly lost in Eden.",
-          "sameAs": "https://en.wikipedia.org/wiki/Tree_of_life_(biblical)"
+          "description": "A symbol of eternal life and healing restored in the New Jerusalem, formerly lost in Eden."
         },
         {
           "@type": "Place",
           "name": "New Jerusalem",
-          "description": "The Holy City, the happy abode of the redeemed where God's throne resides.",
-          "sameAs": "https://en.wikipedia.org/wiki/New_Jerusalem"
+          "description": "The Holy City, the happy abode of the redeemed where God's throne resides."
         },
         {
           "@type": "Person",
           "name": "Jesus",
-          "description": "The Alpha and Omega, the Root and Offspring of David, and the Bright Morning Star.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jesus"
+          "description": "The Alpha and Omega, the Root and Offspring of David, and the Bright Morning Star."
         },
         {
           "@type": "Concept",
           "name": "Water of Life",
-          "description": "Living, running water flowing from the throne of God, symbolizing eternal life.",
-          "sameAs": "https://en.wikipedia.org/wiki/Water_of_Life_(Christianity)"
+          "description": "Living, running water flowing from the throne of God, symbolizing eternal life."
         },
         {
           "@type": "CreativeWork",

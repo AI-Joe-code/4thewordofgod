@@ -35,20 +35,17 @@
         {
           "@type": "Person",
           "name": "Cyrus",
-          "description": "King of Persia who issued the decree for the Jewish exiles to return and rebuild the temple.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+          "description": "King of Persia who issued the decree for the Jewish exiles to return and rebuild the temple."
         },
         {
           "@type": "Person",
           "name": "Sheshbazzar",
-          "description": "The prince of Judah and governor entrusted with the temple articles; identified in the commentary as Zerubbabel.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sheshbazzar"
+          "description": "The prince of Judah and governor entrusted with the temple articles; identified in the commentary as Zerubbabel."
         },
         {
           "@type": "Person",
           "name": "Jeremiah",
-          "description": "The prophet whose prophecy regarding the seventy-year captivity was fulfilled by Cyrus's proclamation.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jeremiah"
+          "description": "The prophet whose prophecy regarding the seventy-year captivity was fulfilled by Cyrus's proclamation."
         },
         {
           "@type": "CreativeWork",

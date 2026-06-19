@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Esther",
-          "description": "Also known as Hadassah; a Jewish orphan who wins the beauty contest to become Queen of Persia.",
-          "sameAs": "https://en.wikipedia.org/wiki/Esther"
+          "description": "Also known as Hadassah; a Jewish orphan who wins the beauty contest to become Queen of Persia."
         },
         {
           "@type": "Person",
           "name": "Mordecai",
-          "description": "A Benjamite Jew and Esther's cousin/guardian who uncovers an assassination plot.",
-          "sameAs": "https://en.wikipedia.org/wiki/Mordecai"
+          "description": "A Benjamite Jew and Esther's cousin/guardian who uncovers an assassination plot."
         },
         {
           "@type": "Person",
           "name": "Hegai",
-          "description": "The king's chamberlain and keeper of the women who favored Esther during her preparation.",
-          "sameAs": "https://en.wikipedia.org/wiki/Hegai"
+          "description": "The king's chamberlain and keeper of the women who favored Esther during her preparation."
         },
         {
           "@type": "Person",
           "name": "King Ahasuerus",
-          "description": "The King of Persia who divorced Vashti and selected Esther as his new queen.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ahasuerus"
+          "description": "The King of Persia who divorced Vashti and selected Esther as his new queen."
         },
         {
           "@type": "CreativeWork",

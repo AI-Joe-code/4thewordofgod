@@ -35,32 +35,27 @@
         {
           "@type": "Person",
           "name": "Cyrus",
-          "description": "The servant sent by God from Persia to destroy Babylon.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+          "description": "The servant sent by God from Persia to destroy Babylon."
         },
         {
           "@type": "Place",
           "name": "Babylon",
-          "description": "The glory of kingdoms destined for total destruction and desolation.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+          "description": "The glory of kingdoms destined for total destruction and desolation."
         },
         {
           "@type": "Concept",
           "name": "Day of the Lord",
-          "description": "A time of cruel wrath and fierce anger, bringing destruction from the Almighty.",
-          "sameAs": "https://en.wikipedia.org/wiki/Day_of_the_Lord"
+          "description": "A time of cruel wrath and fierce anger, bringing destruction from the Almighty."
         },
         {
           "@type": "Person",
           "name": "Nebuchadnezzar",
-          "description": "King of Babylon who attacked Jerusalem and built the city's splendor.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II"
+          "description": "King of Babylon who attacked Jerusalem and built the city's splendor."
         },
         {
           "@type": "Organization",
           "name": "The Medes",
-          "description": "The ruthless warriors stirred up by God who regard neither silver nor gold.",
-          "sameAs": "https://en.wikipedia.org/wiki/Medes"
+          "description": "The ruthless warriors stirred up by God who regard neither silver nor gold."
         },
         {
           "@type": "CreativeWork",

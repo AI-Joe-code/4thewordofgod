@@ -35,26 +35,22 @@
         {
           "@type": "Event",
           "name": "Protestant Reformation",
-          "description": "A major 16th-century movement aimed at reforming the beliefs and practices of the Roman Catholic Church.",
-          "sameAs": "https://en.wikipedia.org/wiki/Reformation"
+          "description": "A major 16th-century movement aimed at reforming the beliefs and practices of the Roman Catholic Church."
         },
         {
           "@type": "Person",
           "name": "Martin Luther",
-          "description": "A principal leader of the reformation who published the 95 Theses and translated the Bible.",
-          "sameAs": "https://en.wikipedia.org/wiki/Martin_Luther"
+          "description": "A principal leader of the reformation who published the 95 Theses and translated the Bible."
         },
         {
           "@type": "Thing",
           "name": "The Little Scroll",
-          "description": "Symbolizes the Open Bible restored to the people during the Reformation.",
-          "sameAs": "https://en.wikipedia.org/wiki/Revelation_10"
+          "description": "Symbolizes the Open Bible restored to the people during the Reformation."
         },
         {
           "@type": "Thing",
           "name": "Seven Thunders",
-          "description": "Interpreted as the blasphemous anathemas and bulls issued by the Pope.",
-          "sameAs": "https://en.wikipedia.org/wiki/Revelation_10#The_Seven_Thunders"
+          "description": "Interpreted as the blasphemous anathemas and bulls issued by the Pope."
         },
         {
           "@type": "CreativeWork",

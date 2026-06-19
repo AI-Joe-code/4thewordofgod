@@ -71,7 +71,7 @@ ${content}
 3.  **Enrich (SEO & Schema)**:
     *   Generate a compelling **Meta Description** (150-160 chars).
     *   Extract relevant **Keywords**.
-    *   Identify **Entities** (People, Places, Concepts) and find their Wikipedia URLs (sameAs).
+    *   Identify **Entities** (People, Places, Concepts).
     *   Create **FAQ** items if the text supports it.
 
 **Output Format (JSON)**:
@@ -84,7 +84,7 @@ Return ONLY a valid JSON object with this structure:
   "metaDescription": "...",
   "keywords": ["keyword1", "keyword2"],
   "entities": [
-    { "@type": "Person", "name": "Amos", "description": "...", "sameAs": "https://en.wikipedia.org/..." }
+    { "@type": "Person", "name": "Amos", "description": "..." }
   ],
   "faq": [
     { "question": "...", "answer": "..." }

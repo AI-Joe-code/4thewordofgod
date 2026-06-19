@@ -39,32 +39,27 @@
         {
           "@type": "Person",
           "name": "Antiochus Epiphanes",
-          "description": "The vile person and King of the North who desecrated the Temple.",
-          "sameAs": "https://en.wikipedia.org/wiki/Antiochus_IV_Epiphanes"
+          "description": "The vile person and King of the North who desecrated the Temple."
         },
         {
           "@type": "Person",
           "name": "Alexander the Great",
-          "description": "The mighty king whose kingdom was divided toward the four winds.",
-          "sameAs": "https://en.wikipedia.org/wiki/Alexander_the_Great"
+          "description": "The mighty king whose kingdom was divided toward the four winds."
         },
         {
           "@type": "Organization",
           "name": "Seleucidae",
-          "description": "The Kings of the North (Syria).",
-          "sameAs": "https://en.wikipedia.org/wiki/Seleucid_Empire"
+          "description": "The Kings of the North (Syria)."
         },
         {
           "@type": "Organization",
           "name": "Ptolemies",
-          "description": "The Kings of the South (Egypt).",
-          "sameAs": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom"
+          "description": "The Kings of the South (Egypt)."
         },
         {
           "@type": "Place",
           "name": "Jerusalem",
-          "description": "The glorious land and site of the Temple desecration.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jerusalem"
+          "description": "The glorious land and site of the Temple desecration."
         },
         {
           "@type": "CreativeWork",

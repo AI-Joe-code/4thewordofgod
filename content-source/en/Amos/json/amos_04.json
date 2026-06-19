@@ -39,26 +39,22 @@
         {
           "@type": "Thing",
           "name": "Cows of Bashan",
-          "description": "An epithet used by Amos to describe the opulent, idle, and drunken women of Samaria.",
-          "sameAs": "https://en.wikipedia.org/wiki/Bashan"
+          "description": "An epithet used by Amos to describe the opulent, idle, and drunken women of Samaria."
         },
         {
           "@type": "Place",
           "name": "Samaria",
-          "description": "The capital city where the wealthy court women oppressed the poor.",
-          "sameAs": "https://en.wikipedia.org/wiki/Samaria_(ancient_city)"
+          "description": "The capital city where the wealthy court women oppressed the poor."
         },
         {
           "@type": "Thing",
           "name": "Fishhooks",
-          "description": "An instrument of captivity depicted on ancient monuments, symbolizing how the people would be led away.",
-          "sameAs": null
+          "description": "An instrument of captivity depicted on ancient monuments, symbolizing how the people would be led away."
         },
         {
           "@type": "Place",
           "name": "Bethel",
-          "description": "A site of religious transgression where the people performed empty rituals.",
-          "sameAs": "https://en.wikipedia.org/wiki/Bethel"
+          "description": "A site of religious transgression where the people performed empty rituals."
         },
         {
           "@type": "CreativeWork",

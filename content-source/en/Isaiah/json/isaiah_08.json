@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Maher-shalal-hash-baz",
-          "description": "Isaiah's son, whose name means 'Speed-spoil-hurry-prey' and serves as a sign of the imminent fall of Damascus and Samaria.",
-          "sameAs": "https://en.wikipedia.org/wiki/Maher-shalal-hash-baz"
+          "description": "Isaiah's son, whose name means 'Speed-spoil-hurry-prey' and serves as a sign of the imminent fall of Damascus and Samaria."
         },
         {
           "@type": "Thing",
           "name": "Waters of Shiloah",
-          "description": "Symbolic representation of God's gentle care and provision, which the people rejected in favor of political alliances.",
-          "sameAs": "https://en.wikipedia.org/wiki/Pool_of_Siloam"
+          "description": "Symbolic representation of God's gentle care and provision, which the people rejected in favor of political alliances."
         },
         {
           "@type": "Person",
           "name": "King of Assyria",
-          "description": "The ruler whose army is depicted as an overflowing river that will flood the land of Israel and Judah.",
-          "sameAs": "https://en.wikipedia.org/wiki/Assyria"
+          "description": "The ruler whose army is depicted as an overflowing river that will flood the land of Israel and Judah."
         },
         {
           "@type": "Thing",
           "name": "Law and Testimony",
-          "description": "The Word of God, described as the only source of light and truth in contrast to the darkness of occult practices.",
-          "sameAs": "https://en.wikipedia.org/wiki/Hebrew_Bible"
+          "description": "The Word of God, described as the only source of light and truth in contrast to the darkness of occult practices."
         },
         {
           "@type": "CreativeWork",

@@ -35,26 +35,22 @@
         {
           "@type": "Thing",
           "name": "House of Prayer",
-          "description": "The title given to God's temple, indicating it is a place of worship for all people, including foreigners.",
-          "sameAs": "https://en.wikipedia.org/wiki/Temple_in_Jerusalem"
+          "description": "The title given to God's temple, indicating it is a place of worship for all people, including foreigners."
         },
         {
           "@type": "Person",
           "name": "Eunuchs",
-          "description": "Marginalized individuals who are promised a place and an everlasting name within God's walls if they keep the Sabbath.",
-          "sameAs": "https://en.wikipedia.org/wiki/Eunuch"
+          "description": "Marginalized individuals who are promised a place and an everlasting name within God's walls if they keep the Sabbath."
         },
         {
           "@type": "Person",
           "name": "Blind Watchmen",
-          "description": "Corrupt leaders described as 'dumb dogs' who fail to warn the people and are obsessed with greed and partying.",
-          "sameAs": null
+          "description": "Corrupt leaders described as 'dumb dogs' who fail to warn the people and are obsessed with greed and partying."
         },
         {
           "@type": "Thing",
           "name": "Sabbath",
-          "description": "A key religious observance mentioned as a requirement for blessing and inclusion in the covenant.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sabbath"
+          "description": "A key religious observance mentioned as a requirement for blessing and inclusion in the covenant."
         },
         {
           "@type": "CreativeWork",

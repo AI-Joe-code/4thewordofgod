@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Nehemiah",
-          "description": "Cupbearer to the king who led the rebuilding of Jerusalem's walls.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nehemiah"
+          "description": "Cupbearer to the king who led the rebuilding of Jerusalem's walls."
         },
         {
           "@type": "Person",
           "name": "King Artaxerxes",
-          "description": "King of Persia who granted Nehemiah permission and resources.",
-          "sameAs": "https://en.wikipedia.org/wiki/Artaxerxes_I_of_Persia"
+          "description": "King of Persia who granted Nehemiah permission and resources."
         },
         {
           "@type": "Person",
           "name": "Sanballat",
-          "description": "The Horonite governor who opposed the rebuilding of the walls.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sanballat_the_Horonite"
+          "description": "The Horonite governor who opposed the rebuilding of the walls."
         },
         {
           "@type": "Place",
           "name": "Jerusalem",
-          "description": "The city where the fathers were buried, lying in ruins.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jerusalem"
+          "description": "The city where the fathers were buried, lying in ruins."
         },
         {
           "@type": "CreativeWork",

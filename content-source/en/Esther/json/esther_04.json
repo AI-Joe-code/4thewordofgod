@@ -35,32 +35,27 @@
         {
           "@type": "Person",
           "name": "Mordecai",
-          "description": "Esther's uncle who urges her to intercede for the Jews.",
-          "sameAs": "https://en.wikipedia.org/wiki/Mordecai"
+          "description": "Esther's uncle who urges her to intercede for the Jews."
         },
         {
           "@type": "Person",
           "name": "Esther",
-          "description": "Queen of Persia who risks her life to save her people.",
-          "sameAs": "https://en.wikipedia.org/wiki/Esther"
+          "description": "Queen of Persia who risks her life to save her people."
         },
         {
           "@type": "Person",
           "name": "Hatach",
-          "description": "The chamberlain acting as a go-between for Esther and Mordecai.",
-          "sameAs": "https://en.wikipedia.org/wiki/Hatach"
+          "description": "The chamberlain acting as a go-between for Esther and Mordecai."
         },
         {
           "@type": "Person",
           "name": "King Xerxes",
-          "description": "The impulsive Persian king, also known as Ahasuerus.",
-          "sameAs": "https://en.wikipedia.org/wiki/Xerxes_I"
+          "description": "The impulsive Persian king, also known as Ahasuerus."
         },
         {
           "@type": "Thing",
           "name": "Golden Sceptre",
-          "description": "The symbol of royal authority that determined life or death for uninvited guests.",
-          "sameAs": null
+          "description": "The symbol of royal authority that determined life or death for uninvited guests."
         },
         {
           "@type": "CreativeWork",

@@ -35,32 +35,27 @@
         {
           "@type": "Place",
           "name": "Sardis",
-          "description": "A city described as having a reputation for life but being spiritually dead.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sardis"
+          "description": "A city described as having a reputation for life but being spiritually dead."
         },
         {
           "@type": "Place",
           "name": "Philadelphia",
-          "description": "A missionary city founded to spread Greek language, described as the church with an open door.",
-          "sameAs": "https://en.wikipedia.org/wiki/Alaşehir"
+          "description": "A missionary city founded to spread Greek language, described as the church with an open door."
         },
         {
           "@type": "Place",
           "name": "Laodicea",
-          "description": "A wealthy city known for its medical school and eye salve, representing the complacent, lukewarm church.",
-          "sameAs": "https://en.wikipedia.org/wiki/Laodicea_on_the_Lycus"
+          "description": "A wealthy city known for its medical school and eye salve, representing the complacent, lukewarm church."
         },
         {
           "@type": "Thing",
           "name": "Key of David",
-          "description": "A symbol of authority held by Jesus, meaning what He opens no one can shut.",
-          "sameAs": "https://en.wikipedia.org/wiki/Key_of_David"
+          "description": "A symbol of authority held by Jesus, meaning what He opens no one can shut."
         },
         {
           "@type": "Thing",
           "name": "Book of Life",
-          "description": "The record from which Jesus promises not to blot out the names of those who overcome.",
-          "sameAs": "https://en.wikipedia.org/wiki/Book_of_Life"
+          "description": "The record from which Jesus promises not to blot out the names of those who overcome."
         },
         {
           "@type": "CreativeWork",

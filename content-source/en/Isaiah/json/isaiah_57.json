@@ -35,26 +35,22 @@
         {
           "@type": "Thing",
           "name": "Molech",
-          "description": "Heathen god associated with child sacrifice.",
-          "sameAs": "https://en.wikipedia.org/wiki/Moloch"
+          "description": "Heathen god associated with child sacrifice."
         },
         {
           "@type": "Thing",
           "name": "Contrite Spirit",
-          "description": "A humble heart condition that God promises to revive.",
-          "sameAs": "https://en.wikipedia.org/wiki/Contrition"
+          "description": "A humble heart condition that God promises to revive."
         },
         {
           "@type": "Thing",
           "name": "The Wicked",
-          "description": "Compared to a troubled sea that churns up mire and cannot rest.",
-          "sameAs": null
+          "description": "Compared to a troubled sea that churns up mire and cannot rest."
         },
         {
           "@type": "Concept",
           "name": "Spiritual Adultery",
-          "description": "The act of departing from God to worship idols, described metaphorically as whoredom.",
-          "sameAs": "https://en.wikipedia.org/wiki/Idolatry"
+          "description": "The act of departing from God to worship idols, described metaphorically as whoredom."
         },
         {
           "@type": "CreativeWork",

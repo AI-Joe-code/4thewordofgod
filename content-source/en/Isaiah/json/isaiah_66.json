@@ -35,26 +35,22 @@
         {
           "@type": "Thing",
           "name": "Zion",
-          "description": "The nation of Israel, described as being born in a single day.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "The nation of Israel, described as being born in a single day."
         },
         {
           "@type": "Person",
           "name": "Cyrus",
-          "description": "King of Persia who was stirred by God to build a house in Jerusalem.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+          "description": "King of Persia who was stirred by God to build a house in Jerusalem."
         },
         {
           "@type": "Place",
           "name": "Babylon",
-          "description": "The location where Israel was nurtured before returning to their homeland.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+          "description": "The location where Israel was nurtured before returning to their homeland."
         },
         {
           "@type": "Thing",
           "name": "New Heavens and New Earth",
-          "description": "The creation God promises to make, where the seed and name of the faithful shall remain.",
-          "sameAs": "https://en.wikipedia.org/wiki/New_Earth_(Christianity)"
+          "description": "The creation God promises to make, where the seed and name of the faithful shall remain."
         },
         {
           "@type": "CreativeWork",

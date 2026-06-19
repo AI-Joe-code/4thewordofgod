@@ -35,32 +35,27 @@
         {
           "@type": "Person",
           "name": "Esther",
-          "description": "The courageous queen whose intercession saved her people.",
-          "sameAs": "https://en.wikipedia.org/wiki/Esther"
+          "description": "The courageous queen whose intercession saved her people."
         },
         {
           "@type": "Person",
           "name": "Mordecai",
-          "description": "The Queen's uncle who was promoted to the King's second-in-command.",
-          "sameAs": "https://en.wikipedia.org/wiki/Mordecai"
+          "description": "The Queen's uncle who was promoted to the King's second-in-command."
         },
         {
           "@type": "Person",
           "name": "King Ahasuerus",
-          "description": "The Persian ruler who granted the new decree.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ahasuerus"
+          "description": "The Persian ruler who granted the new decree."
         },
         {
           "@type": "Place",
           "name": "Shushan",
-          "description": "The capital city where the decree was issued and rejoiced over.",
-          "sameAs": "https://en.wikipedia.org/wiki/Susa"
+          "description": "The capital city where the decree was issued and rejoiced over."
         },
         {
           "@type": "Thing",
           "name": "Royal Apparel",
-          "description": "Symbol of Mordecai's new status, replacing his mourning clothes.",
-          "sameAs": null
+          "description": "Symbol of Mordecai's new status, replacing his mourning clothes."
         },
         {
           "@type": "CreativeWork",

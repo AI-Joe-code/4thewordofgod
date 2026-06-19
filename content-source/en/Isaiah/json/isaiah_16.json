@@ -39,26 +39,22 @@
         {
           "@type": "Place",
           "name": "Moab",
-          "description": "A nation east of the Jordan River facing divine judgment and refugee crisis.",
-          "sameAs": "https://en.wikipedia.org/wiki/Moab"
+          "description": "A nation east of the Jordan River facing divine judgment and refugee crisis."
         },
         {
           "@type": "Place",
           "name": "Arnon",
-          "description": "A river serving as a border crossing where refugees gathered.",
-          "sameAs": "https://en.wikipedia.org/wiki/Wadi_Mujib"
+          "description": "A river serving as a border crossing where refugees gathered."
         },
         {
           "@type": "Place",
           "name": "Kirhareseth",
-          "description": "A fortified city in Moab whose foundations are mourned.",
-          "sameAs": "https://en.wikipedia.org/wiki/Al-Karak"
+          "description": "A fortified city in Moab whose foundations are mourned."
         },
         {
           "@type": "Place",
           "name": "Sela",
-          "description": "A rock fortress city from which lambs were to be sent.",
-          "sameAs": null
+          "description": "A rock fortress city from which lambs were to be sent."
         },
         {
           "@type": "CreativeWork",

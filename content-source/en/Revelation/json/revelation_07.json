@@ -39,32 +39,27 @@
         {
           "@type": "Thing",
           "name": "Four Corners",
-          "description": "Biblical phrase representing the four cardinal directions (North, South, East, West).",
-          "sameAs": "https://en.wikipedia.org/wiki/Four_corners_of_the_world"
+          "description": "Biblical phrase representing the four cardinal directions (North, South, East, West)."
         },
         {
           "@type": "Event",
           "name": "Winds of War",
-          "description": "Symbolic representation of strife, turmoil, and destruction restrained by God's angels.",
-          "sameAs": "https://en.wikipedia.org/wiki/Four_corners_of_the_world"
+          "description": "Symbolic representation of strife, turmoil, and destruction restrained by God's angels."
         },
         {
           "@type": "Thing",
           "name": "Seal of God",
-          "description": "The Holy Spirit given to believers as a deposit guaranteeing redemption.",
-          "sameAs": "https://en.wikipedia.org/wiki/Seal_of_God"
+          "description": "The Holy Spirit given to believers as a deposit guaranteeing redemption."
         },
         {
           "@type": "Group",
           "name": "144,000",
-          "description": "A specific group of sealed servants identified strictly as Jews from the tribes of Israel.",
-          "sameAs": "https://en.wikipedia.org/wiki/144,000"
+          "description": "A specific group of sealed servants identified strictly as Jews from the tribes of Israel."
         },
         {
           "@type": "Group",
           "name": "Great Multitude",
-          "description": "An uncountable group of Gentile believers standing before the throne.",
-          "sameAs": null
+          "description": "An uncountable group of Gentile believers standing before the throne."
         },
         {
           "@type": "CreativeWork",

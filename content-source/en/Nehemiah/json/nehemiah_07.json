@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Hananiah",
-          "description": "Commander of the citadel and a man of integrity appointed by Nehemiah.",
-          "sameAs": null
+          "description": "Commander of the citadel and a man of integrity appointed by Nehemiah."
         },
         {
           "@type": "Person",
           "name": "Nehemiah",
-          "description": "The Governor responsible for organizing Jerusalem's security and registration.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nehemiah"
+          "description": "The Governor responsible for organizing Jerusalem's security and registration."
         },
         {
           "@type": "Thing",
           "name": "Genealogical Records",
-          "description": "Vital documents used to verify lineage, specifically for the priesthood.",
-          "sameAs": "https://en.wikipedia.org/wiki/Genealogies_in_the_Bible"
+          "description": "Vital documents used to verify lineage, specifically for the priesthood."
         },
         {
           "@type": "Place",
           "name": "Jerusalem",
-          "description": "The city being rebuilt, secured, and repopulated by the exiles.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jerusalem"
+          "description": "The city being rebuilt, secured, and repopulated by the exiles."
         },
         {
           "@type": "CreativeWork",

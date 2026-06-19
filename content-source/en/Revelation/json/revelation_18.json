@@ -35,26 +35,22 @@
         {
           "@type": "Thing",
           "name": "Babylon the Great",
-          "description": "Identified in the commentary as the Catholic church and state, and the Papal power.",
-          "sameAs": "https://en.wikipedia.org/wiki/Whore_of_Babylon"
+          "description": "Identified in the commentary as the Catholic church and state, and the Papal power."
         },
         {
           "@type": "Place",
           "name": "Vatican",
-          "description": "Described as the headquarters of corrupt acts and the habitation of demons.",
-          "sameAs": "https://en.wikipedia.org/wiki/Vatican_City"
+          "description": "Described as the headquarters of corrupt acts and the habitation of demons."
         },
         {
           "@type": "Organization",
           "name": "Papal Rome",
-          "description": "The political and religious power subject to God's judgment and destruction.",
-          "sameAs": "https://en.wikipedia.org/wiki/Papal_States"
+          "description": "The political and religious power subject to God's judgment and destruction."
         },
         {
           "@type": "Concept",
           "name": "Traffic in Souls",
-          "description": "The commentary defines this as the system of masses performed for the dead.",
-          "sameAs": null
+          "description": "The commentary defines this as the system of masses performed for the dead."
         },
         {
           "@type": "CreativeWork",

@@ -35,32 +35,27 @@
         {
           "@type": "Event",
           "name": "French Revolution",
-          "description": "Identified as the first bowl of wrath, representing a festering moral ulcer.",
-          "sameAs": "https://en.wikipedia.org/wiki/French_Revolution"
+          "description": "Identified as the first bowl of wrath, representing a festering moral ulcer."
         },
         {
           "@type": "Person",
           "name": "Napoleon Bonaparte",
-          "description": "Associated with the second bowl, inflicting misery upon Europe and destroying Catholic naval power.",
-          "sameAs": "https://en.wikipedia.org/wiki/Napoleon"
+          "description": "Associated with the second bowl, inflicting misery upon Europe and destroying Catholic naval power."
         },
         {
           "@type": "Event",
           "name": "World War I",
-          "description": "Linked to the third bowl poured on rivers and springs, referencing battles at the Marne and Verdun.",
-          "sameAs": "https://en.wikipedia.org/wiki/World_War_I"
+          "description": "Linked to the third bowl poured on rivers and springs, referencing battles at the Marne and Verdun."
         },
         {
           "@type": "Event",
           "name": "World War II",
-          "description": "Connected to the fourth bowl (scorching sun), specifically the use of atomic weapons.",
-          "sameAs": "https://en.wikipedia.org/wiki/World_War_II"
+          "description": "Connected to the fourth bowl (scorching sun), specifically the use of atomic weapons."
         },
         {
           "@type": "Place",
           "name": "Euphrates River",
-          "description": "The site of the sixth bowl, associated with conflicts in the Middle East.",
-          "sameAs": "https://en.wikipedia.org/wiki/Euphrates"
+          "description": "The site of the sixth bowl, associated with conflicts in the Middle East."
         },
         {
           "@type": "CreativeWork",

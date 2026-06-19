@@ -19,32 +19,27 @@
     {
       "@type": "Person",
       "name": "Esther",
-      "description": "The Jewish queen of the Persian king Ahasuerus who saves her people from genocide.",
-      "sameAs": "https://en.wikipedia.org/wiki/Esther"
+      "description": "The Jewish queen of the Persian king Ahasuerus who saves her people from genocide."
     },
     {
       "@type": "Person",
       "name": "Mordecai",
-      "description": "Esther's cousin and guardian, who plays a pivotal role in saving the King's life and the Jewish people.",
-      "sameAs": "https://en.wikipedia.org/wiki/Mordecai"
+      "description": "Esther's cousin and guardian, who plays a pivotal role in saving the King's life and the Jewish people."
     },
     {
       "@type": "Person",
       "name": "Xerxes I",
-      "description": "The King of Persia, identified in the Bible as Ahasuerus.",
-      "sameAs": "https://en.wikipedia.org/wiki/Xerxes_I"
+      "description": "The King of Persia, identified in the Bible as Ahasuerus."
     },
     {
       "@type": "Person",
       "name": "Haman",
-      "description": "The Agagite noble and vizier who plots to exterminate the Jews.",
-      "sameAs": "https://en.wikipedia.org/wiki/Haman"
+      "description": "The Agagite noble and vizier who plots to exterminate the Jews."
     },
     {
       "@type": "Place",
       "name": "Susa",
-      "description": "The winter capital of the Persian Empire and setting for the Book of Esther.",
-      "sameAs": "https://en.wikipedia.org/wiki/Susa"
+      "description": "The winter capital of the Persian Empire and setting for the Book of Esther."
     }
   ],
   "faq": [
@@ -75,32 +70,27 @@
         {
           "@type": "Person",
           "name": "Esther",
-          "description": "The Jewish queen of the Persian king Ahasuerus who saves her people from genocide.",
-          "sameAs": "https://en.wikipedia.org/wiki/Esther"
+          "description": "The Jewish queen of the Persian king Ahasuerus who saves her people from genocide."
         },
         {
           "@type": "Person",
           "name": "Mordecai",
-          "description": "Esther's cousin and guardian, who plays a pivotal role in saving the King's life and the Jewish people.",
-          "sameAs": "https://en.wikipedia.org/wiki/Mordecai"
+          "description": "Esther's cousin and guardian, who plays a pivotal role in saving the King's life and the Jewish people."
         },
         {
           "@type": "Person",
           "name": "Xerxes I",
-          "description": "The King of Persia, identified in the Bible as Ahasuerus.",
-          "sameAs": "https://en.wikipedia.org/wiki/Xerxes_I"
+          "description": "The King of Persia, identified in the Bible as Ahasuerus."
         },
         {
           "@type": "Person",
           "name": "Haman",
-          "description": "The Agagite noble and vizier who plots to exterminate the Jews.",
-          "sameAs": "https://en.wikipedia.org/wiki/Haman"
+          "description": "The Agagite noble and vizier who plots to exterminate the Jews."
         },
         {
           "@type": "Place",
           "name": "Susa",
-          "description": "The winter capital of the Persian Empire and setting for the Book of Esther.",
-          "sameAs": "https://en.wikipedia.org/wiki/Susa"
+          "description": "The winter capital of the Persian Empire and setting for the Book of Esther."
         }
       ],
       "keywords": "Book of Esther, Mordecai, King Xerxes, Haman, Providence of God, Persian Empire, Anti-Semitism, Queen Esther, Babylonian Captivity"

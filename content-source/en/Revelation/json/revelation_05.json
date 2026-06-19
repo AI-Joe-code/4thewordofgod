@@ -35,26 +35,22 @@
         {
           "@type": "Thing",
           "name": "The Scroll",
-          "description": "The scroll of future history containing the secrets of God.",
-          "sameAs": "https://en.wikipedia.org/wiki/Seven_seals"
+          "description": "The scroll of future history containing the secrets of God."
         },
         {
           "@type": "Person",
           "name": "Jesus",
-          "description": "The Lion of the tribe of Judah, the Root of David, and the Slain Lamb worthy to open the seals.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jesus"
+          "description": "The Lion of the tribe of Judah, the Root of David, and the Slain Lamb worthy to open the seals."
         },
         {
           "@type": "Thing",
           "name": "Seven Horns",
-          "description": "Symbol of complete authority possessed by the Lamb.",
-          "sameAs": "https://en.wikipedia.org/wiki/Lamb_of_God"
+          "description": "Symbol of complete authority possessed by the Lamb."
         },
         {
           "@type": "Thing",
           "name": "Seven Eyes",
-          "description": "Symbol of perfect wisdom possessed by the Lamb.",
-          "sameAs": "https://en.wikipedia.org/wiki/Seven_Spirits_of_God"
+          "description": "Symbol of perfect wisdom possessed by the Lamb."
         },
         {
           "@type": "CreativeWork",

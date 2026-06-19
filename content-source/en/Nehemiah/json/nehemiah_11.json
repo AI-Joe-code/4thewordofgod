@@ -35,26 +35,22 @@
         {
           "@type": "Place",
           "name": "Jerusalem",
-          "description": "The Holy City which leaders sought to repopulate via lottery.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jerusalem"
+          "description": "The Holy City which leaders sought to repopulate via lottery."
         },
         {
           "@type": "Person",
           "name": "Asaph",
-          "description": "Director of the singers/Levites whose descendants served in the temple.",
-          "sameAs": null
+          "description": "Director of the singers/Levites whose descendants served in the temple."
         },
         {
           "@type": "Thing",
           "name": "Inheritance Rights",
-          "description": "The legal and ancestral claim to property and land returned to families after captivity.",
-          "sameAs": "https://en.wikipedia.org/wiki/Inheritance"
+          "description": "The legal and ancestral claim to property and land returned to families after captivity."
         },
         {
           "@type": "Person",
           "name": "Nehemiah",
-          "description": "The leader delegated responsibility by the King.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nehemiah"
+          "description": "The leader delegated responsibility by the King."
         },
         {
           "@type": "CreativeWork",

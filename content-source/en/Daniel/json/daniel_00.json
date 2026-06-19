@@ -18,26 +18,22 @@
     {
       "@type": "Person",
       "name": "Daniel",
-      "description": "The protagonist and author of the Book of Daniel, a noble Jewish youth of Jerusalem taken into captivity by Nebuchadnezzar of Babylon.",
-      "sameAs": "https://en.wikipedia.org/wiki/Daniel_(biblical_figure)"
+      "description": "The protagonist and author of the Book of Daniel, a noble Jewish youth of Jerusalem taken into captivity by Nebuchadnezzar of Babylon."
     },
     {
       "@type": "Place",
       "name": "Babylon",
-      "description": "The capital city of the Neo-Babylonian Empire, where Daniel lived in captivity.",
-      "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+      "description": "The capital city of the Neo-Babylonian Empire, where Daniel lived in captivity."
     },
     {
       "@type": "Person",
       "name": "Michael",
-      "description": "An archangel mentioned in the Book of Daniel as a protector of Israel.",
-      "sameAs": "https://en.wikipedia.org/wiki/Michael_(archangel)"
+      "description": "An archangel mentioned in the Book of Daniel as a protector of Israel."
     },
     {
       "@type": "Place",
       "name": "Medo-Persian Empire",
-      "description": "The empire that succeeded Babylon, represented by the bear and the ram in Daniel's visions.",
-      "sameAs": "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+      "description": "The empire that succeeded Babylon, represented by the bear and the ram in Daniel's visions."
     }
   ],
   "faq": [
@@ -68,26 +64,22 @@
         {
           "@type": "Person",
           "name": "Daniel",
-          "description": "The protagonist and author of the Book of Daniel, a noble Jewish youth of Jerusalem taken into captivity by Nebuchadnezzar of Babylon.",
-          "sameAs": "https://en.wikipedia.org/wiki/Daniel_(biblical_figure)"
+          "description": "The protagonist and author of the Book of Daniel, a noble Jewish youth of Jerusalem taken into captivity by Nebuchadnezzar of Babylon."
         },
         {
           "@type": "Place",
           "name": "Babylon",
-          "description": "The capital city of the Neo-Babylonian Empire, where Daniel lived in captivity.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+          "description": "The capital city of the Neo-Babylonian Empire, where Daniel lived in captivity."
         },
         {
           "@type": "Person",
           "name": "Michael",
-          "description": "An archangel mentioned in the Book of Daniel as a protector of Israel.",
-          "sameAs": "https://en.wikipedia.org/wiki/Michael_(archangel)"
+          "description": "An archangel mentioned in the Book of Daniel as a protector of Israel."
         },
         {
           "@type": "Place",
           "name": "Medo-Persian Empire",
-          "description": "The empire that succeeded Babylon, represented by the bear and the ram in Daniel's visions.",
-          "sameAs": "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+          "description": "The empire that succeeded Babylon, represented by the bear and the ram in Daniel's visions."
         }
       ],
       "keywords": "Book of Daniel, Biblical Prophecy, Daniel 70 Weeks, Fiery Furnace, Babylon, End Times, Bible Commentary, Daniel Vision"

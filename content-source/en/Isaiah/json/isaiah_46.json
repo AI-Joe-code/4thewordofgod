@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Cyrus",
-          "description": "King of the Medo-Persian empire, referred to as the ravenous bird from the east and God's anointed shepherd.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+          "description": "King of the Medo-Persian empire, referred to as the ravenous bird from the east and God's anointed shepherd."
         },
         {
           "@type": "Thing",
           "name": "Bel and Nebo",
-          "description": "The two principal idols of Babylon (Baal and Mercury) which bow down and are carried into captivity.",
-          "sameAs": null
+          "description": "The two principal idols of Babylon (Baal and Mercury) which bow down and are carried into captivity."
         },
         {
           "@type": "Place",
           "name": "Babylon",
-          "description": "The kingdom conquered by Cyrus, known for its idolatry and captivity of the Jews.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+          "description": "The kingdom conquered by Cyrus, known for its idolatry and captivity of the Jews."
         },
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "The location where God places salvation for Israel, His glory.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "The location where God places salvation for Israel, His glory."
         },
         {
           "@type": "CreativeWork",

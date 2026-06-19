@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Cyrus",
-          "description": "The anointed King of Persia chosen by God to subdue nations and release captives.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+          "description": "The anointed King of Persia chosen by God to subdue nations and release captives."
         },
         {
           "@type": "Thing",
           "name": "Idolatry",
-          "description": "The practice of worshipping false gods, which the commentary proves as futile compared to Jehovah.",
-          "sameAs": "https://en.wikipedia.org/wiki/Idolatry"
+          "description": "The practice of worshipping false gods, which the commentary proves as futile compared to Jehovah."
         },
         {
           "@type": "Concept",
           "name": "Sovereignty of God",
-          "description": "The theological theme that God creates light and darkness, peace and evil, and controls history.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sovereignty_of_God_in_Christianity"
+          "description": "The theological theme that God creates light and darkness, peace and evil, and controls history."
         },
         {
           "@type": "Place",
           "name": "Babylon",
-          "description": "The city whose walls and gates were destroyed by Cyrus as predicted by God.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+          "description": "The city whose walls and gates were destroyed by Cyrus as predicted by God."
         },
         {
           "@type": "CreativeWork",

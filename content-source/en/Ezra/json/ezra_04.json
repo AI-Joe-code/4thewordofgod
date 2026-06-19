@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Zerubbabel",
-          "description": "Leader of the exiles who rejected the Samaritans' offer of help.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zerubbabel"
+          "description": "Leader of the exiles who rejected the Samaritans' offer of help."
         },
         {
           "@type": "Person",
           "name": "Artaxerxes",
-          "description": "King of Persia who issued the decree to stop the building project.",
-          "sameAs": "https://en.wikipedia.org/wiki/Artaxerxes_I_of_Persia"
+          "description": "King of Persia who issued the decree to stop the building project."
         },
         {
           "@type": "Place",
           "name": "Samaria",
-          "description": "Region whose inhabitants opposed the rebuilding of the Jerusalem temple.",
-          "sameAs": "https://en.wikipedia.org/wiki/Samaria"
+          "description": "Region whose inhabitants opposed the rebuilding of the Jerusalem temple."
         },
         {
           "@type": "Thing",
           "name": "Trans-Euphrates",
-          "description": "The Persian province west of the Euphrates river, from which the complaint originated.",
-          "sameAs": "https://en.wikipedia.org/wiki/Eber-Nari"
+          "description": "The Persian province west of the Euphrates river, from which the complaint originated."
         },
         {
           "@type": "CreativeWork",

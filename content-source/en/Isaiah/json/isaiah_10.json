@@ -39,26 +39,22 @@
         {
           "@type": "Thing",
           "name": "Assyria",
-          "description": "God's instrument of judgment (the rod/axe) against Israel, later punished for arrogance.",
-          "sameAs": "https://en.wikipedia.org/wiki/Assyria"
+          "description": "God's instrument of judgment (the rod/axe) against Israel, later punished for arrogance."
         },
         {
           "@type": "Concept",
           "name": "The Remnant",
-          "description": "The survivors of the House of Jacob who return to the Mighty God.",
-          "sameAs": "https://en.wikipedia.org/wiki/Remnant_(Bible)"
+          "description": "The survivors of the House of Jacob who return to the Mighty God."
         },
         {
           "@type": "Person",
           "name": "The Lord of Hosts",
-          "description": "The Mighty One who controls the nations and executes judgment.",
-          "sameAs": "https://en.wikipedia.org/wiki/Lord_of_hosts"
+          "description": "The Mighty One who controls the nations and executes judgment."
         },
         {
           "@type": "Concept",
           "name": "The Anointing",
-          "description": "The divine power described in verse 27 that destroys the yoke of burden.",
-          "sameAs": "https://en.wikipedia.org/wiki/Anointing"
+          "description": "The divine power described in verse 27 that destroys the yoke of burden."
         },
         {
           "@type": "CreativeWork",

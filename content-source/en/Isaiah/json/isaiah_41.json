@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Cyrus",
-          "description": "The champion of justice raised from the east (Persia) and north (Media) to rule 49 nations.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+          "description": "The champion of justice raised from the east (Persia) and north (Media) to rule 49 nations."
         },
         {
           "@type": "Nation",
           "name": "Israel",
-          "description": "God's chosen servant, also referred to as Jacob, whom God promises to strengthen and help.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jacob"
+          "description": "God's chosen servant, also referred to as Jacob, whom God promises to strengthen and help."
         },
         {
           "@type": "Thing",
           "name": "Idols",
-          "description": "Man-made objects of worship described as vanity, wind, and confusion, incapable of predicting the future.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cult_image"
+          "description": "Man-made objects of worship described as vanity, wind, and confusion, incapable of predicting the future."
         },
         {
           "@type": "Place",
           "name": "Media and Persia",
-          "description": "The regions from the north and east from which the conqueror Cyrus is raised.",
-          "sameAs": "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+          "description": "The regions from the north and east from which the conqueror Cyrus is raised."
         },
         {
           "@type": "CreativeWork",

@@ -35,20 +35,17 @@
         {
           "@type": "Person",
           "name": "The Servant",
-          "description": "The obedient figure who endures the whipping post and shame without rebellion.",
-          "sameAs": "https://en.wikipedia.org/wiki/Servant_songs"
+          "description": "The obedient figure who endures the whipping post and shame without rebellion."
         },
         {
           "@type": "Thing",
           "name": "Bill of Divorcement",
-          "description": "A legal metaphor used to explain that Israel's separation from God was due to her own sin, not God's decree.",
-          "sameAs": "https://en.wikipedia.org/wiki/Get_(divorce_document)"
+          "description": "A legal metaphor used to explain that Israel's separation from God was due to her own sin, not God's decree."
         },
         {
           "@type": "Thing",
           "name": "Face Like a Flint",
-          "description": "A metaphor for the Servant's unwavering determination and refusal to be ashamed despite insults.",
-          "sameAs": "https://en.wikipedia.org/wiki/Servant_songs"
+          "description": "A metaphor for the Servant's unwavering determination and refusal to be ashamed despite insults."
         },
         {
           "@type": "CreativeWork",

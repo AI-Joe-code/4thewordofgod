@@ -35,20 +35,17 @@
         {
           "@type": "Person",
           "name": "Michael",
-          "description": "The Archangel or Chief Prince who aided the heavenly messenger.",
-          "sameAs": "https://en.wikipedia.org/wiki/Michael_(archangel)"
+          "description": "The Archangel or Chief Prince who aided the heavenly messenger."
         },
         {
           "@type": "Thing",
           "name": "Prince of Persia",
-          "description": "A spiritual leader or power working in opposition to the plans of God.",
-          "sameAs": null
+          "description": "A spiritual leader or power working in opposition to the plans of God."
         },
         {
           "@type": "Person",
           "name": "Alexander the Great",
-          "description": "Identified in the commentary as the 'Prince of Greece' and the 'goat man'.",
-          "sameAs": "https://en.wikipedia.org/wiki/Alexander_the_Great"
+          "description": "Identified in the commentary as the 'Prince of Greece' and the 'goat man'."
         },
         {
           "@type": "CreativeWork",

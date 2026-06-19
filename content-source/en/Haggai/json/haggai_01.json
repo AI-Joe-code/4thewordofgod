@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Haggai",
-          "description": "Prophet raised up by God to challenge the people's apathy and inspire the rebuilding of the Temple.",
-          "sameAs": "https://en.wikipedia.org/wiki/Haggai"
+          "description": "Prophet raised up by God to challenge the people's apathy and inspire the rebuilding of the Temple."
         },
         {
           "@type": "Person",
           "name": "Zerubbabel",
-          "description": "Governor of Judah who, along with Joshua, led the people in the work of rebuilding the house of the Lord.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zerubbabel"
+          "description": "Governor of Judah who, along with Joshua, led the people in the work of rebuilding the house of the Lord."
         },
         {
           "@type": "Place",
           "name": "The Temple",
-          "description": "The house of the Lord in Jerusalem, which lay in ruins for sixteen years due to the people's neglect.",
-          "sameAs": "https://en.wikipedia.org/wiki/Second_Temple"
+          "description": "The house of the Lord in Jerusalem, which lay in ruins for sixteen years due to the people's neglect."
         },
         {
           "@type": "Person",
           "name": "Darius",
-          "description": "King of Persia during whose second year of reign Haggai delivered his message to the people.",
-          "sameAs": "https://en.wikipedia.org/wiki/Darius_I"
+          "description": "King of Persia during whose second year of reign Haggai delivered his message to the people."
         },
         {
           "@type": "CreativeWork",

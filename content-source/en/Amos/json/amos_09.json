@@ -31,32 +31,27 @@
         {
           "@type": "Person",
           "name": "Amos",
-          "description": "Amos was one of the Twelve Minor Prophets of the Old Testament, whose prophecies are the subject of the provided text.",
-          "sameAs": "https://en.wikipedia.org/wiki/Amos_(prophet)"
+          "description": "Amos was one of the Twelve Minor Prophets of the Old Testament, whose prophecies are the subject of the provided text."
         },
         {
           "@type": "Deity",
           "name": "The LORD (God)",
-          "description": "The central deity in the text, depicted as executing judgment on the 'sinful kingdom' but also promising to preserve a remnant and restore the 'house of David'.",
-          "sameAs": "https://en.wikipedia.org/wiki/God_in_Judaism"
+          "description": "The central deity in the text, depicted as executing judgment on the 'sinful kingdom' but also promising to preserve a remnant and restore the 'house of David'."
         },
         {
           "@type": "Person",
           "name": "Jeroboam",
-          "description": "King of the northern kingdom of Israel who, according to the text, set up the idolatrous altar and calf-worship that became the focus of God's judgment.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jeroboam_I"
+          "description": "King of the northern kingdom of Israel who, according to the text, set up the idolatrous altar and calf-worship that became the focus of God's judgment."
         },
         {
           "@type": "Concept",
           "name": "House of David",
-          "description": "The royal lineage of King David. The text describes a prophecy that this house, or tabernacle, will be restored, which is interpreted as being fulfilled by the Messiah.",
-          "sameAs": "https://en.wikipedia.org/wiki/Davidic_line"
+          "description": "The royal lineage of King David. The text describes a prophecy that this house, or tabernacle, will be restored, which is interpreted as being fulfilled by the Messiah."
         },
         {
           "@type": "Place",
           "name": "Mount Carmel",
-          "description": "A coastal mountain range in northern Israel, mentioned in the text as a place where people might try to hide, but could not escape God's judgment.",
-          "sameAs": "https://en.wikipedia.org/wiki/Mount_Carmel"
+          "description": "A coastal mountain range in northern Israel, mentioned in the text as a place where people might try to hide, but could not escape God's judgment."
         },
         {
           "@type": "CreativeWork",

@@ -31,26 +31,22 @@
         {
           "@type": "Person",
           "name": "Esther",
-          "description": "Queen of Persia who utilized a 'banquet plot' to reveal the enemy and save her people.",
-          "sameAs": "https://en.wikipedia.org/wiki/Esther"
+          "description": "Queen of Persia who utilized a 'banquet plot' to reveal the enemy and save her people."
         },
         {
           "@type": "Person",
           "name": "Haman",
-          "description": "The wicked adversary and chief of staff who was 'hood-winked' and eventually executed.",
-          "sameAs": "https://en.wikipedia.org/wiki/Haman"
+          "description": "The wicked adversary and chief of staff who was 'hood-winked' and eventually executed."
         },
         {
           "@type": "Person",
           "name": "Ahasuerus",
-          "description": "The autocratic King (Xerxes) who realized he had been bamboozled by his henchman.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ahasuerus"
+          "description": "The autocratic King (Xerxes) who realized he had been bamboozled by his henchman."
         },
         {
           "@type": "Thing",
           "name": "Gallows",
-          "description": "A 50-cubit (75 feet) structure originally built for Mordecai, used to hang Haman.",
-          "sameAs": null
+          "description": "A 50-cubit (75 feet) structure originally built for Mordecai, used to hang Haman."
         },
         {
           "@type": "CreativeWork",

@@ -31,26 +31,22 @@
         {
           "@type": "Event",
           "name": "Feast of Tabernacles",
-          "description": "A biblical feast celebrated by the exiles with booths and prescribed offerings.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sukkot"
+          "description": "A biblical feast celebrated by the exiles with booths and prescribed offerings."
         },
         {
           "@type": "Person",
           "name": "Jeshua",
-          "description": "Son of Jozadak, a priest and general foreman of the temple reconstruction.",
-          "sameAs": "https://en.wikipedia.org/wiki/Joshua_the_High_Priest"
+          "description": "Son of Jozadak, a priest and general foreman of the temple reconstruction."
         },
         {
           "@type": "Person",
           "name": "Zerubbabel",
-          "description": "Son of Shealtiel, a leader of the exiles who oversaw the rebuilding of the altar and temple.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zerubbabel"
+          "description": "Son of Shealtiel, a leader of the exiles who oversaw the rebuilding of the altar and temple."
         },
         {
           "@type": "Place",
           "name": "Tyre",
-          "description": "A city known for its builders, contracted to provide materials for the temple.",
-          "sameAs": "https://en.wikipedia.org/wiki/Tyre,_Lebanon"
+          "description": "A city known for its builders, contracted to provide materials for the temple."
         },
         {
           "@type": "CreativeWork",

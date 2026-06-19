@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Branch of Jesse",
-          "description": "A Messianic title referring to the descendant of David who will bring wisdom and judgment.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jesse#The_Branch_of_Jesse"
+          "description": "A Messianic title referring to the descendant of David who will bring wisdom and judgment."
         },
         {
           "@type": "Concept",
           "name": "Peaceable Kingdom",
-          "description": "A state of harmony symbolized by the wolf dwelling with the lamb.",
-          "sameAs": "https://en.wikipedia.org/wiki/Peaceable_Kingdom"
+          "description": "A state of harmony symbolized by the wolf dwelling with the lamb."
         },
         {
           "@type": "Person",
           "name": "Manasseh",
-          "description": "Identified in the commentary as the 'fiery flying serpent' due to his temper.",
-          "sameAs": "https://en.wikipedia.org/wiki/Manasseh_of_Judah"
+          "description": "Identified in the commentary as the 'fiery flying serpent' due to his temper."
         },
         {
           "@type": "Group",
           "name": "The Remnant",
-          "description": "The dispersed outcasts of Israel and Judah returning from exile.",
-          "sameAs": "https://en.wikipedia.org/wiki/Remnant_(Bible)"
+          "description": "The dispersed outcasts of Israel and Judah returning from exile."
         },
         {
           "@type": "CreativeWork",

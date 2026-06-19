@@ -39,26 +39,22 @@
         {
           "@type": "Person",
           "name": "Jesus",
-          "description": "The Suffering Servant, described as the 'root out of dry ground' and the victor over death.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jesus"
+          "description": "The Suffering Servant, described as the 'root out of dry ground' and the victor over death."
         },
         {
           "@type": "Person",
           "name": "Michelangelo",
-          "description": "Renaissance artist referenced regarding the physical depiction of Jesus versus His moral beauty.",
-          "sameAs": "https://en.wikipedia.org/wiki/Michelangelo"
+          "description": "Renaissance artist referenced regarding the physical depiction of Jesus versus His moral beauty."
         },
         {
           "@type": "Person",
           "name": "Joseph of Arimathaea",
-          "description": "The rich man in whose tomb Jesus was buried, fulfilling the prophecy of being with the rich in death.",
-          "sameAs": "https://en.wikipedia.org/wiki/Joseph_of_Arimathea"
+          "description": "The rich man in whose tomb Jesus was buried, fulfilling the prophecy of being with the rich in death."
         },
         {
           "@type": "Event",
           "name": "The Atonement",
-          "description": "The offering for sins where the Messiah bears the iniquities of the people.",
-          "sameAs": "https://en.wikipedia.org/wiki/Atonement_in_Christianity"
+          "description": "The offering for sins where the Messiah bears the iniquities of the people."
         },
         {
           "@type": "CreativeWork",

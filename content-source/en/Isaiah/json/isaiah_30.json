@@ -35,26 +35,22 @@
         {
           "@type": "Place",
           "name": "Egypt",
-          "description": "The nation Israel futilely sought for help.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ancient_Egypt"
+          "description": "The nation Israel futilely sought for help."
         },
         {
           "@type": "Person",
           "name": "Pharaoh",
-          "description": "Ruler of Egypt, described as a 'do nothing' helper.",
-          "sameAs": "https://en.wikipedia.org/wiki/Pharaoh"
+          "description": "Ruler of Egypt, described as a 'do nothing' helper."
         },
         {
           "@type": "Thing",
           "name": "Tophet",
-          "description": "A place of burning prepared for the king/Moloch.",
-          "sameAs": "https://en.wikipedia.org/wiki/Tophet"
+          "description": "A place of burning prepared for the king/Moloch."
         },
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "The place where the people shall dwell and weep no more.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "The place where the people shall dwell and weep no more."
         },
         {
           "@type": "CreativeWork",

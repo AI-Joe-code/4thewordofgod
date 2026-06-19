@@ -39,32 +39,27 @@
         {
           "@type": "Thing",
           "name": "The Little Horn",
-          "description": "A symbol in Daniel 7 identified in this commentary as the Papacy/Popery.",
-          "sameAs": null
+          "description": "A symbol in Daniel 7 identified in this commentary as the Papacy/Popery."
         },
         {
           "@type": "Thing",
           "name": "The Fourth Beast",
-          "description": "The symbolic representation of the Roman Empire.",
-          "sameAs": null
+          "description": "The symbolic representation of the Roman Empire."
         },
         {
           "@type": "Person",
           "name": "Ancient of Days",
-          "description": "A title for God as the ultimate judge in the heavenly court.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ancient_of_Days"
+          "description": "A title for God as the ultimate judge in the heavenly court."
         },
         {
           "@type": "Organization",
           "name": "Papacy",
-          "description": "The institution identified as the fulfillment of the Little Horn prophecy.",
-          "sameAs": "https://en.wikipedia.org/wiki/Papacy"
+          "description": "The institution identified as the fulfillment of the Little Horn prophecy."
         },
         {
           "@type": "Person",
           "name": "Sir Isaac Newton",
-          "description": "Historical figure cited for his interpretation of the ten horns/kingdoms.",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaac_Newton"
+          "description": "Historical figure cited for his interpretation of the ten horns/kingdoms."
         },
         {
           "@type": "CreativeWork",

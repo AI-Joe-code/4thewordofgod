@@ -35,20 +35,17 @@
         {
           "@type": "Person",
           "name": "Cyrus",
-          "description": "Called by God before birth, made sharp like a sword to restore the exile.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+          "description": "Called by God before birth, made sharp like a sword to restore the exile."
         },
         {
           "@type": "Thing",
           "name": "Zion",
-          "description": "Symbol of the people of God, often feeling forgotten but graven on God's hands.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "Symbol of the people of God, often feeling forgotten but graven on God's hands."
         },
         {
           "@type": "Concept",
           "name": "Light to the Gentiles",
-          "description": "The mission of the Servant to enlighten the nations beyond Israel.",
-          "sameAs": null
+          "description": "The mission of the Servant to enlighten the nations beyond Israel."
         },
         {
           "@type": "CreativeWork",

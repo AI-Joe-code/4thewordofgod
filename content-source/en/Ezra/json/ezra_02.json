@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Nebuchadnezzar",
-          "description": "King of Babylon who took the people captive.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II"
+          "description": "King of Babylon who took the people captive."
         },
         {
           "@type": "Person",
           "name": "Zerubbabel",
-          "description": "A leader in the expedition returning to Israel.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zerubbabel"
+          "description": "A leader in the expedition returning to Israel."
         },
         {
           "@type": "Place",
           "name": "Jerusalem",
-          "description": "The destination of the returning exiles and site of the temple.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jerusalem"
+          "description": "The destination of the returning exiles and site of the temple."
         },
         {
           "@type": "Thing",
           "name": "Urim and Thummim",
-          "description": "Sacred objects used to determine God's will regarding priestly lineage.",
-          "sameAs": "https://en.wikipedia.org/wiki/Urim_and_Thummim"
+          "description": "Sacred objects used to determine God's will regarding priestly lineage."
         },
         {
           "@type": "CreativeWork",

@@ -35,32 +35,27 @@
         {
           "@type": "Person",
           "name": "Nebuchadnezzar",
-          "description": "King of Babylon who receives the dream of the great image.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II"
+          "description": "King of Babylon who receives the dream of the great image."
         },
         {
           "@type": "Person",
           "name": "Daniel",
-          "description": "The prophet who interprets the dream and reveals the secrets of God.",
-          "sameAs": "https://en.wikipedia.org/wiki/Daniel_(biblical_figure)"
+          "description": "The prophet who interprets the dream and reveals the secrets of God."
         },
         {
           "@type": "Thing",
           "name": "The Great Image",
-          "description": "A statue representing four successive world empires: Babylonian, Medo-Persian, Grecian, and Roman.",
-          "sameAs": "https://en.wikipedia.org/wiki/Daniel_2"
+          "description": "A statue representing four successive world empires: Babylonian, Medo-Persian, Grecian, and Roman."
         },
         {
           "@type": "Thing",
           "name": "The Stone Cut Without Hands",
-          "description": "A symbol of Jesus Christ and His Kingdom that destroys earthly empires.",
-          "sameAs": "https://en.wikipedia.org/wiki/Daniel_2"
+          "description": "A symbol of Jesus Christ and His Kingdom that destroys earthly empires."
         },
         {
           "@type": "Thing",
           "name": "The Church",
-          "description": "Identified in the commentary as synonymous with the Kingdom of God established during the Roman empire.",
-          "sameAs": "https://en.wikipedia.org/wiki/Christian_Church"
+          "description": "Identified in the commentary as synonymous with the Kingdom of God established during the Roman empire."
         },
         {
           "@type": "CreativeWork",

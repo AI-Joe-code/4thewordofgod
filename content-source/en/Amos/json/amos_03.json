@@ -35,26 +35,22 @@
         {
           "@type": "Thing",
           "name": "The Lion's Roar",
-          "description": "A metaphor for God's denunciations of divine wrath and impending judgment.",
-          "sameAs": null
+          "description": "A metaphor for God's denunciations of divine wrath and impending judgment."
         },
         {
           "@type": "Person",
           "name": "Amos",
-          "description": "The prophet who warns Israel of the coming judgment.",
-          "sameAs": "https://en.wikipedia.org/wiki/Amos_(prophet)"
+          "description": "The prophet who warns Israel of the coming judgment."
         },
         {
           "@type": "Place",
           "name": "Samaria",
-          "description": "A central location of violence, oppression, and impending destruction mentioned in the prophecy.",
-          "sameAs": "https://en.wikipedia.org/wiki/Samaria"
+          "description": "A central location of violence, oppression, and impending destruction mentioned in the prophecy."
         },
         {
           "@type": "Place",
           "name": "Bethel",
-          "description": "The site of altars that God promises to visit and destroy.",
-          "sameAs": "https://en.wikipedia.org/wiki/Bethel"
+          "description": "The site of altars that God promises to visit and destroy."
         },
         {
           "@type": "CreativeWork",

@@ -35,26 +35,22 @@
         {
           "@type": "Place",
           "name": "Mount Zion",
-          "description": "The specific hill in Jerusalem which the Lord of hosts descends to fight for.",
-          "sameAs": "https://en.wikipedia.org/wiki/Mount_Zion"
+          "description": "The specific hill in Jerusalem which the Lord of hosts descends to fight for."
         },
         {
           "@type": "Person",
           "name": "Hezekiah",
-          "description": "The faithful leader under whose reign Assyria fell by the sword of the Lord.",
-          "sameAs": "https://en.wikipedia.org/wiki/Hezekiah"
+          "description": "The faithful leader under whose reign Assyria fell by the sword of the Lord."
         },
         {
           "@type": "Place",
           "name": "Egypt",
-          "description": "The nation Israel wrongly trusted for protection through horses and cavalry.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ancient_Egypt"
+          "description": "The nation Israel wrongly trusted for protection through horses and cavalry."
         },
         {
           "@type": "Thing",
           "name": "The Sword of the LORD",
-          "description": "The divine instrument used to destroy the Assyrian army, as opposed to a human sword.",
-          "sameAs": null
+          "description": "The divine instrument used to destroy the Assyrian army, as opposed to a human sword."
         },
         {
           "@type": "CreativeWork",

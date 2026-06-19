@@ -35,20 +35,17 @@
         {
           "@type": "Thing",
           "name": "Wells of Salvation",
-          "description": "A metaphorical source of triumphant joy and deliverance.",
-          "sameAs": null
+          "description": "A metaphorical source of triumphant joy and deliverance."
         },
         {
           "@type": "Person",
           "name": "The Holy One of Israel",
-          "description": "God, who dwells in the midst of Zion and is the source of strength and song.",
-          "sameAs": null
+          "description": "God, who dwells in the midst of Zion and is the source of strength and song."
         },
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "The holy city and dwelling place where the inhabitants shout for joy.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "The holy city and dwelling place where the inhabitants shout for joy."
         },
         {
           "@type": "CreativeWork",

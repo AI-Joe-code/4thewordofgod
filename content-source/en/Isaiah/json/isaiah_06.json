@@ -39,32 +39,27 @@
         {
           "@type": "Person",
           "name": "King Uzziah",
-          "description": "King of Judah who reigned 52 years and died of leprosy caused by pride in 740 B.C.",
-          "sameAs": "https://en.wikipedia.org/wiki/Uzziah"
+          "description": "King of Judah who reigned 52 years and died of leprosy caused by pride in 740 B.C."
         },
         {
           "@type": "Person",
           "name": "Isaiah",
-          "description": "The prophet who received the vision of the Lord and the commission to preach.",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaiah"
+          "description": "The prophet who received the vision of the Lord and the commission to preach."
         },
         {
           "@type": "Thing",
           "name": "The Holy Seed",
-          "description": "The 'tenth' or remnant that survives the destruction, likened to a tree stump that sprouts again.",
-          "sameAs": "https://en.wikipedia.org/wiki/Remnant_(Bible)"
+          "description": "The 'tenth' or remnant that survives the destruction, likened to a tree stump that sprouts again."
         },
         {
           "@type": "Thing",
           "name": "Live Coal",
-          "description": "A symbol of cleansing taken from the altar by a seraphim to purge Isaiah's sin.",
-          "sameAs": null
+          "description": "A symbol of cleansing taken from the altar by a seraphim to purge Isaiah's sin."
         },
         {
           "@type": "Thing",
           "name": "Seraphim",
-          "description": "Angelic beings with six wings hovering above the throne of God.",
-          "sameAs": "https://en.wikipedia.org/wiki/Seraph"
+          "description": "Angelic beings with six wings hovering above the throne of God."
         },
         {
           "@type": "CreativeWork",

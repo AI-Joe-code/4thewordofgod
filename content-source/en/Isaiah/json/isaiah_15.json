@@ -35,26 +35,22 @@
         {
           "@type": "Place",
           "name": "Moab",
-          "description": "A kingdom bordered by the Arnon river and the Dead Sea, historically in conflict with Israel.",
-          "sameAs": "https://en.wikipedia.org/wiki/Moab"
+          "description": "A kingdom bordered by the Arnon river and the Dead Sea, historically in conflict with Israel."
         },
         {
           "@type": "Place",
           "name": "Ar",
-          "description": "A principal city of Moab that was sacked in the night.",
-          "sameAs": null
+          "description": "A principal city of Moab that was sacked in the night."
         },
         {
           "@type": "Place",
           "name": "Kir",
-          "description": "A major city of Moab destroyed alongside Ar.",
-          "sameAs": "https://en.wikipedia.org/wiki/Kir_of_Moab"
+          "description": "A major city of Moab destroyed alongside Ar."
         },
         {
           "@type": "Place",
           "name": "Dimon",
-          "description": "A water source or stream that ran with blood from the slaughter.",
-          "sameAs": null
+          "description": "A water source or stream that ran with blood from the slaughter."
         },
         {
           "@type": "CreativeWork",

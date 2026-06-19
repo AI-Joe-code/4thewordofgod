@@ -35,26 +35,22 @@
         {
           "@type": "Country",
           "name": "Egypt",
-          "description": "The nation subject to God's judgment, chaos, and eventual healing in the prophecy.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ancient_Egypt"
+          "description": "The nation subject to God's judgment, chaos, and eventual healing in the prophecy."
         },
         {
           "@type": "Country",
           "name": "Assyria",
-          "description": "Historical empire prophesied to form a future alliance and highway with Egypt and Israel.",
-          "sameAs": "https://en.wikipedia.org/wiki/Assyria"
+          "description": "Historical empire prophesied to form a future alliance and highway with Egypt and Israel."
         },
         {
           "@type": "Person",
           "name": "The Lord of Hosts",
-          "description": "The divine figure riding on a swift cloud to execute judgment and facilitate healing.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sabaoth"
+          "description": "The divine figure riding on a swift cloud to execute judgment and facilitate healing."
         },
         {
           "@type": "Place",
           "name": "City of Destruction",
-          "description": "One of the five cities in Egypt prophesied to speak the language of Canaan, also known as Heliopolis.",
-          "sameAs": "https://en.wikipedia.org/wiki/Heliopolis_(ancient_Egypt)"
+          "description": "One of the five cities in Egypt prophesied to speak the language of Canaan, also known as Heliopolis."
         },
         {
           "@type": "CreativeWork",

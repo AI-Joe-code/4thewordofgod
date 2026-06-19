@@ -35,26 +35,22 @@
         {
           "@type": "Thing",
           "name": "Leviathan",
-          "description": "Symbol of arrogant world governments and tyrannies like Babylon",
-          "sameAs": "https://en.wikipedia.org/wiki/Leviathan"
+          "description": "Symbol of arrogant world governments and tyrannies like Babylon"
         },
         {
           "@type": "Place",
           "name": "Vineyard of Red Wine",
-          "description": "Metaphor for the restored Israel watered by God",
-          "sameAs": null
+          "description": "Metaphor for the restored Israel watered by God"
         },
         {
           "@type": "Thing",
           "name": "Great Trumpet",
-          "description": "Signal for the gathering of exiles and refugees",
-          "sameAs": null
+          "description": "Signal for the gathering of exiles and refugees"
         },
         {
           "@type": "Place",
           "name": "Jerusalem",
-          "description": "The Holy Mount where outcasts return to worship",
-          "sameAs": "https://en.wikipedia.org/wiki/Jerusalem"
+          "description": "The Holy Mount where outcasts return to worship"
         },
         {
           "@type": "CreativeWork",

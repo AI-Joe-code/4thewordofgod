@@ -35,26 +35,22 @@
         {
           "@type": "Thing",
           "name": "The Twenty-Four Elders",
-          "description": "The ruling aristocracy of heaven and councilors surrounding the throne.",
-          "sameAs": "https://en.wikipedia.org/wiki/Twenty-Four_Elders"
+          "description": "The ruling aristocracy of heaven and councilors surrounding the throne."
         },
         {
           "@type": "Thing",
           "name": "Four Living Creatures",
-          "description": "Seraphim or Cherubim acting as attendants of God and workers of His purposes.",
-          "sameAs": "https://en.wikipedia.org/wiki/Living_creatures_(Bible)"
+          "description": "Seraphim or Cherubim acting as attendants of God and workers of His purposes."
         },
         {
           "@type": "Thing",
           "name": "Jasper and Carnelian",
-          "description": "Precious stones symbolizing the crystalline brightness and fiery appearance of God.",
-          "sameAs": null
+          "description": "Precious stones symbolizing the crystalline brightness and fiery appearance of God."
         },
         {
           "@type": "Thing",
           "name": "Seven Spirits of God",
-          "description": "Symbolized by seven blazing lamps, representing the Holy Spirit.",
-          "sameAs": "https://en.wikipedia.org/wiki/Seven_Spirits_of_God"
+          "description": "Symbolized by seven blazing lamps, representing the Holy Spirit."
         },
         {
           "@type": "CreativeWork",

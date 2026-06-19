@@ -31,26 +31,22 @@
         {
           "@type": "Thing",
           "name": "New Heavens and New Earth",
-          "description": "A place of joy and restoration where former troubles are forgotten.",
-          "sameAs": "https://en.wikipedia.org/wiki/New_Earth_(Christianity)"
+          "description": "A place of joy and restoration where former troubles are forgotten."
         },
         {
           "@type": "Thing",
           "name": "The Remnant",
-          "description": "The elect seed of Jacob and Judah who inherit God's promises.",
-          "sameAs": "https://en.wikipedia.org/wiki/Remnant_(Bible)"
+          "description": "The elect seed of Jacob and Judah who inherit God's promises."
         },
         {
           "@type": "Place",
           "name": "Jerusalem",
-          "description": "Created by God to be a place of rejoicing and happiness.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jerusalem"
+          "description": "Created by God to be a place of rejoicing and happiness."
         },
         {
           "@type": "Person",
           "name": "Gentiles",
-          "description": "Those who had not sought God but now seek Him and are called by His name.",
-          "sameAs": "https://en.wikipedia.org/wiki/Gentile"
+          "description": "Those who had not sought God but now seek Him and are called by His name."
         },
         {
           "@type": "CreativeWork",

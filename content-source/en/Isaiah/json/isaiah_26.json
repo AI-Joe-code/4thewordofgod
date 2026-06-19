@@ -39,26 +39,22 @@
         {
           "@type": "Person",
           "name": "Jehovah",
-          "description": "The Lord and everlasting strength of the righteous nation.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jehovah"
+          "description": "The Lord and everlasting strength of the righteous nation."
         },
         {
           "@type": "Concept",
           "name": "Resurrection",
-          "description": "The promise that the dead shall arise and awake from the dust.",
-          "sameAs": "https://en.wikipedia.org/wiki/Resurrection_of_the_dead"
+          "description": "The promise that the dead shall arise and awake from the dust."
         },
         {
           "@type": "Concept",
           "name": "Righteous Nation",
-          "description": "The redeemed people indwelt by the spirit of God who keep the truth.",
-          "sameAs": null
+          "description": "The redeemed people indwelt by the spirit of God who keep the truth."
         },
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "The restored homeland surrounded by walls of salvation.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "The restored homeland surrounded by walls of salvation."
         },
         {
           "@type": "CreativeWork",

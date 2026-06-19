@@ -39,26 +39,22 @@
         {
           "@type": "Person",
           "name": "The Messiah",
-          "description": "The figure coming from Edom with blood-stained garments, treading the winepress alone.",
-          "sameAs": "https://en.wikipedia.org/wiki/Messiah"
+          "description": "The figure coming from Edom with blood-stained garments, treading the winepress alone."
         },
         {
           "@type": "Place",
           "name": "Edom",
-          "description": "The nation descended from Esau, symbolizing the enemies of God's people, now a desolate wasteland.",
-          "sameAs": "https://en.wikipedia.org/wiki/Edom"
+          "description": "The nation descended from Esau, symbolizing the enemies of God's people, now a desolate wasteland."
         },
         {
           "@type": "Place",
           "name": "Bozrah",
-          "description": "The ancient capital of Edom.",
-          "sameAs": "https://en.wikipedia.org/wiki/Bozrah"
+          "description": "The ancient capital of Edom."
         },
         {
           "@type": "Person",
           "name": "Moses",
-          "description": "Historical leader mentioned in the context of the Exodus and God's past lovingkindnesses.",
-          "sameAs": "https://en.wikipedia.org/wiki/Moses"
+          "description": "Historical leader mentioned in the context of the Exodus and God's past lovingkindnesses."
         },
         {
           "@type": "CreativeWork",

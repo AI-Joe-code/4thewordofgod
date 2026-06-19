@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Eliashib",
-          "description": "High Priest who led the work on the Sheep Gate",
-          "sameAs": "https://en.wikipedia.org/wiki/Eliashib_(High_Priest)"
+          "description": "High Priest who led the work on the Sheep Gate"
         },
         {
           "@type": "Place",
           "name": "Sheep Gate",
-          "description": "Gate used primarily for sacrifices",
-          "sameAs": "https://en.wikipedia.org/wiki/Sheep_Gate"
+          "description": "Gate used primarily for sacrifices"
         },
         {
           "@type": "Place",
           "name": "Fish Gate",
-          "description": "Marketplace entrance for selling dried fish and wares",
-          "sameAs": null
+          "description": "Marketplace entrance for selling dried fish and wares"
         },
         {
           "@type": "Place",
           "name": "Broad Wall",
-          "description": "A wider section of the wall, possibly a retaining wall",
-          "sameAs": "https://en.wikipedia.org/wiki/Broad_Wall_(Jerusalem)"
+          "description": "A wider section of the wall, possibly a retaining wall"
         },
         {
           "@type": "CreativeWork",

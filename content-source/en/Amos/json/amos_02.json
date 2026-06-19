@@ -39,26 +39,22 @@
         {
           "@type": "Place",
           "name": "Moab",
-          "description": "Ancient kingdom lying east of the Jordan and Dead Sea, subject to divine judgment.",
-          "sameAs": "https://en.wikipedia.org/wiki/Moab"
+          "description": "Ancient kingdom lying east of the Jordan and Dead Sea, subject to divine judgment."
         },
         {
           "@type": "Thing",
           "name": "Chemosh",
-          "description": "The national god of Moab, often associated with their specific idolatry.",
-          "sameAs": "https://en.wikipedia.org/wiki/Chemosh"
+          "description": "The national god of Moab, often associated with their specific idolatry."
         },
         {
           "@type": "Person",
           "name": "Amorites",
-          "description": "A powerful Canaanite tribe of great stature destroyed by God to make room for Israel.",
-          "sameAs": "https://en.wikipedia.org/wiki/Amorites"
+          "description": "A powerful Canaanite tribe of great stature destroyed by God to make room for Israel."
         },
         {
           "@type": "Thing",
           "name": "Nazarites",
-          "description": "Individuals consecrated to God who were tempted by Israel to break their vows by drinking wine.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nazarite"
+          "description": "Individuals consecrated to God who were tempted by Israel to break their vows by drinking wine."
         },
         {
           "@type": "CreativeWork",

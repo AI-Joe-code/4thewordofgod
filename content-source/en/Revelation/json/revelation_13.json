@@ -35,20 +35,17 @@
         {
           "@type": "Thing",
           "name": "The Beast",
-          "description": "A symbolic power rising from the sea and earth, identified in the commentary as Imperial and Papal Rome.",
-          "sameAs": "https://en.wikipedia.org/wiki/The_Beast_(Revelation)"
+          "description": "A symbolic power rising from the sea and earth, identified in the commentary as Imperial and Papal Rome."
         },
         {
           "@type": "Organization",
           "name": "Papacy",
-          "description": "The office and authority of the Pope, identified as the second beast and the 'Little Horn'.",
-          "sameAs": "https://en.wikipedia.org/wiki/Papacy"
+          "description": "The office and authority of the Pope, identified as the second beast and the 'Little Horn'."
         },
         {
           "@type": "Thing",
           "name": "666",
-          "description": "The number of the beast, calculated from the names 'Lateinos' and 'Vicarius Filii Dei'.",
-          "sameAs": "https://en.wikipedia.org/wiki/Number_of_the_Beast"
+          "description": "The number of the beast, calculated from the names 'Lateinos' and 'Vicarius Filii Dei'."
         },
         {
           "@type": "CreativeWork",

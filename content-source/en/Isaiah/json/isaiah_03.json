@@ -35,26 +35,22 @@
         {
           "@type": "Thing",
           "name": "Daughters of Zion",
-          "description": "The haughty women of Jerusalem who face divine judgment and stripping of their wealth.",
-          "sameAs": "https://en.wikipedia.org/wiki/Daughter_of_Zion"
+          "description": "The haughty women of Jerusalem who face divine judgment and stripping of their wealth."
         },
         {
           "@type": "Place",
           "name": "Jerusalem",
-          "description": "The city described as ruined, falling, and facing anarchy due to the sins of its people.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jerusalem"
+          "description": "The city described as ruined, falling, and facing anarchy due to the sins of its people."
         },
         {
           "@type": "Concept",
           "name": "Anarchy",
-          "description": "The state of the nation where children rule over elders and civil order has collapsed.",
-          "sameAs": null
+          "description": "The state of the nation where children rule over elders and civil order has collapsed."
         },
         {
           "@type": "Person",
           "name": "The Lord of Hosts",
-          "description": "The divine judge who enters the courtroom to plead against the elders and princes.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sabaoth"
+          "description": "The divine judge who enters the courtroom to plead against the elders and princes."
         },
         {
           "@type": "CreativeWork",

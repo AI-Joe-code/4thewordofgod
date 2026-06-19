@@ -35,32 +35,27 @@
         {
           "@type": "Thing",
           "name": "Burlap and Sackcloth",
-          "description": "Worn by the Israelites as a sign of religious duty, grief, and inner spiritual condition.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sackcloth"
+          "description": "Worn by the Israelites as a sign of religious duty, grief, and inner spiritual condition."
         },
         {
           "@type": "Person",
           "name": "Levites",
-          "description": "Assistants to the Priest who led the loud praise and worship from the stairs.",
-          "sameAs": "https://en.wikipedia.org/wiki/Levite"
+          "description": "Assistants to the Priest who led the loud praise and worship from the stairs."
         },
         {
           "@type": "Person",
           "name": "Abraham",
-          "description": "Chosen by God, brought out of Ur, and given a covenant and land promise.",
-          "sameAs": "https://en.wikipedia.org/wiki/Abraham"
+          "description": "Chosen by God, brought out of Ur, and given a covenant and land promise."
         },
         {
           "@type": "Thing",
           "name": "Book of the Law",
-          "description": "The scripture read for three hours during the assembly.",
-          "sameAs": "https://en.wikipedia.org/wiki/Torah"
+          "description": "The scripture read for three hours during the assembly."
         },
         {
           "@type": "Person",
           "name": "Ezra",
-          "description": "The leader on the platform during the assembly.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ezra"
+          "description": "The leader on the platform during the assembly."
         },
         {
           "@type": "CreativeWork",

@@ -35,26 +35,22 @@
         {
           "@type": "Thing",
           "name": "Spiritual Code",
-          "description": "Symbolism used in Revelation that requires Old Testament knowledge to decode.",
-          "sameAs": null
+          "description": "Symbolism used in Revelation that requires Old Testament knowledge to decode."
         },
         {
           "@type": "Place",
           "name": "Patmos",
-          "description": "A rocky island and Roman convict quarry where John was exiled by Domitian.",
-          "sameAs": "https://en.wikipedia.org/wiki/Patmos"
+          "description": "A rocky island and Roman convict quarry where John was exiled by Domitian."
         },
         {
           "@type": "Thing",
           "name": "Seven Lampstands",
-          "description": "Symbol representing the seven New Testament churches dependent on Christ for light.",
-          "sameAs": "https://en.wikipedia.org/wiki/Seven_churches_of_Asia"
+          "description": "Symbol representing the seven New Testament churches dependent on Christ for light."
         },
         {
           "@type": "Person",
           "name": "Alpha and Omega",
-          "description": "A title for Jesus Christ denoting his exalted nature, supreme authority, and ability to see the heart of man.",
-          "sameAs": "https://en.wikipedia.org/wiki/Alpha_and_Omega"
+          "description": "A title for Jesus Christ denoting his exalted nature, supreme authority, and ability to see the heart of man."
         },
         {
           "@type": "CreativeWork",

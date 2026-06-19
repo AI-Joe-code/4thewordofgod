@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Michael the Archangel",
-          "description": "The great prince standing for the children of Daniel's people.",
-          "sameAs": "https://en.wikipedia.org/wiki/Michael_(archangel)"
+          "description": "The great prince standing for the children of Daniel's people."
         },
         {
           "@type": "Person",
           "name": "Antiochus Epiphanes",
-          "description": "Historical figure whose transgression and profaning of the temple fulfilled the prophecy of the abomination of desolation.",
-          "sameAs": "https://en.wikipedia.org/wiki/Antiochus_IV_Epiphanes"
+          "description": "Historical figure whose transgression and profaning of the temple fulfilled the prophecy of the abomination of desolation."
         },
         {
           "@type": "Thing",
           "name": "Book of Life",
-          "description": "The record of those who shall be delivered and receive everlasting life.",
-          "sameAs": "https://en.wikipedia.org/wiki/Book_of_Life"
+          "description": "The record of those who shall be delivered and receive everlasting life."
         },
         {
           "@type": "Event",
           "name": "The Resurrection",
-          "description": "The event where those sleeping in the dust awake to either everlasting life or shame.",
-          "sameAs": "https://en.wikipedia.org/wiki/Resurrection_of_the_dead"
+          "description": "The event where those sleeping in the dust awake to either everlasting life or shame."
         },
         {
           "@type": "CreativeWork",

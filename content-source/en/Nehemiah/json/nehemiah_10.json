@@ -39,26 +39,22 @@
         {
           "@type": "Person",
           "name": "Nehemiah",
-          "description": "Governor of Judah who ratified the covenant.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nehemiah"
+          "description": "Governor of Judah who ratified the covenant."
         },
         {
           "@type": "Thing",
           "name": "Sabbath",
-          "description": "The seventh day of rest, which the covenant pledges to keep holy by refraining from buying and selling.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sabbath"
+          "description": "The seventh day of rest, which the covenant pledges to keep holy by refraining from buying and selling."
         },
         {
           "@type": "Thing",
           "name": "Levites",
-          "description": "Descendants of Levi who assisted the Priests and collected tithes.",
-          "sameAs": "https://en.wikipedia.org/wiki/Levite"
+          "description": "Descendants of Levi who assisted the Priests and collected tithes."
         },
         {
           "@type": "Thing",
           "name": "Tithes",
-          "description": "A tenth of crops and produce given to support the Levites and Priests.",
-          "sameAs": "https://en.wikipedia.org/wiki/Tithe"
+          "description": "A tenth of crops and produce given to support the Levites and Priests."
         },
         {
           "@type": "CreativeWork",

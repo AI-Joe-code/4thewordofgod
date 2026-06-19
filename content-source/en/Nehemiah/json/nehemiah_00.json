@@ -19,44 +19,37 @@
     {
       "@type": "Person",
       "name": "Nehemiah",
-      "description": "A Jewish cupbearer to Artaxerxes I who became governor of Judea and rebuilt the walls of Jerusalem.",
-      "sameAs": "https://en.wikipedia.org/wiki/Nehemiah"
+      "description": "A Jewish cupbearer to Artaxerxes I who became governor of Judea and rebuilt the walls of Jerusalem."
     },
     {
       "@type": "Person",
       "name": "Ezra",
-      "description": "A Jewish scribe and priest who reintroduced the Torah in Jerusalem.",
-      "sameAs": "https://en.wikipedia.org/wiki/Ezra"
+      "description": "A Jewish scribe and priest who reintroduced the Torah in Jerusalem."
     },
     {
       "@type": "Person",
       "name": "Artaxerxes I",
-      "description": "King of Kings of the Achaemenid Empire who authorized Nehemiah's return.",
-      "sameAs": "https://en.wikipedia.org/wiki/Artaxerxes_I"
+      "description": "King of Kings of the Achaemenid Empire who authorized Nehemiah's return."
     },
     {
       "@type": "Person",
       "name": "Esther",
-      "description": "A Jewish queen of the Persian king Ahasuerus.",
-      "sameAs": "https://en.wikipedia.org/wiki/Esther"
+      "description": "A Jewish queen of the Persian king Ahasuerus."
     },
     {
       "@type": "Person",
       "name": "Malachi",
-      "description": "A Jewish prophet who was active during the time of Nehemiah.",
-      "sameAs": "https://en.wikipedia.org/wiki/Malachi"
+      "description": "A Jewish prophet who was active during the time of Nehemiah."
     },
     {
       "@type": "Place",
       "name": "Jerusalem",
-      "description": "The city where Nehemiah rebuilt the walls and restored order.",
-      "sameAs": "https://en.wikipedia.org/wiki/Jerusalem"
+      "description": "The city where Nehemiah rebuilt the walls and restored order."
     },
     {
       "@type": "Concept",
       "name": "Prophecy of Seventy Weeks",
-      "description": "A prophecy in the Book of Daniel interpreted as a timeline for the coming Messiah.",
-      "sameAs": "https://en.wikipedia.org/wiki/Prophecy_of_Seventy_Weeks"
+      "description": "A prophecy in the Book of Daniel interpreted as a timeline for the coming Messiah."
     }
   ],
   "faq": [
@@ -91,44 +84,37 @@
         {
           "@type": "Person",
           "name": "Nehemiah",
-          "description": "A Jewish cupbearer to Artaxerxes I who became governor of Judea and rebuilt the walls of Jerusalem.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nehemiah"
+          "description": "A Jewish cupbearer to Artaxerxes I who became governor of Judea and rebuilt the walls of Jerusalem."
         },
         {
           "@type": "Person",
           "name": "Ezra",
-          "description": "A Jewish scribe and priest who reintroduced the Torah in Jerusalem.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ezra"
+          "description": "A Jewish scribe and priest who reintroduced the Torah in Jerusalem."
         },
         {
           "@type": "Person",
           "name": "Artaxerxes I",
-          "description": "King of Kings of the Achaemenid Empire who authorized Nehemiah's return.",
-          "sameAs": "https://en.wikipedia.org/wiki/Artaxerxes_I"
+          "description": "King of Kings of the Achaemenid Empire who authorized Nehemiah's return."
         },
         {
           "@type": "Person",
           "name": "Esther",
-          "description": "A Jewish queen of the Persian king Ahasuerus.",
-          "sameAs": "https://en.wikipedia.org/wiki/Esther"
+          "description": "A Jewish queen of the Persian king Ahasuerus."
         },
         {
           "@type": "Person",
           "name": "Malachi",
-          "description": "A Jewish prophet who was active during the time of Nehemiah.",
-          "sameAs": "https://en.wikipedia.org/wiki/Malachi"
+          "description": "A Jewish prophet who was active during the time of Nehemiah."
         },
         {
           "@type": "Place",
           "name": "Jerusalem",
-          "description": "The city where Nehemiah rebuilt the walls and restored order.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jerusalem"
+          "description": "The city where Nehemiah rebuilt the walls and restored order."
         },
         {
           "@type": "Concept",
           "name": "Prophecy of Seventy Weeks",
-          "description": "A prophecy in the Book of Daniel interpreted as a timeline for the coming Messiah.",
-          "sameAs": "https://en.wikipedia.org/wiki/Prophecy_of_Seventy_Weeks"
+          "description": "A prophecy in the Book of Daniel interpreted as a timeline for the coming Messiah."
         }
       ],
       "keywords": "Nehemiah, Book of Nehemiah, Jerusalem wall, Ezra, Artaxerxes I, Daniel 9 prophecy, 70 weeks prophecy, Biblical leadership, Old Testament History"

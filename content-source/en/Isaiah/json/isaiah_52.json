@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "The Servant",
-          "description": "Refers to Jesus the Messiah, described as exalted yet disfigured.",
-          "sameAs": "https://en.wikipedia.org/wiki/Servant_of_the_Lord"
+          "description": "Refers to Jesus the Messiah, described as exalted yet disfigured."
         },
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "The holy city, Jerusalem, called to awake and put on strength.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "The holy city, Jerusalem, called to awake and put on strength."
         },
         {
           "@type": "Place",
           "name": "Babylon",
-          "description": "The place of captivity from which the exiles are told to depart.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+          "description": "The place of captivity from which the exiles are told to depart."
         },
         {
           "@type": "Person",
           "name": "Cyrus",
-          "description": "The king whose victory over Babylon brings release to the prisoners.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+          "description": "The king whose victory over Babylon brings release to the prisoners."
         },
         {
           "@type": "CreativeWork",

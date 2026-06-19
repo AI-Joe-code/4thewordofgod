@@ -39,32 +39,27 @@
         {
           "@type": "Person",
           "name": "Daniel",
-          "description": "A Hebrew captive renamed Belteshazzar, known for his wisdom, refusal of the king's meat, and understanding of visions.",
-          "sameAs": "https://en.wikipedia.org/wiki/Daniel_(biblical_figure)"
+          "description": "A Hebrew captive renamed Belteshazzar, known for his wisdom, refusal of the king's meat, and understanding of visions."
         },
         {
           "@type": "Person",
           "name": "Nebuchadnezzar",
-          "description": "King of Babylon who besieged Jerusalem and captured the Hebrew children.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II"
+          "description": "King of Babylon who besieged Jerusalem and captured the Hebrew children."
         },
         {
           "@type": "Place",
           "name": "Babylon",
-          "description": "The capital of the Babylonian empire, associated with the Tower of Babel and the location of the Jewish captivity.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+          "description": "The capital of the Babylonian empire, associated with the Tower of Babel and the location of the Jewish captivity."
         },
         {
           "@type": "Person",
           "name": "Jehoiakim",
-          "description": "King of Judah who became a servant to Nebuchadnezzar before rebelling.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jehoiakim"
+          "description": "King of Judah who became a servant to Nebuchadnezzar before rebelling."
         },
         {
           "@type": "Person",
           "name": "Melzar",
-          "description": "The steward or prince set over Daniel and his friends who consented to the diet test.",
-          "sameAs": null
+          "description": "The steward or prince set over Daniel and his friends who consented to the diet test."
         },
         {
           "@type": "CreativeWork",

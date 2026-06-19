@@ -35,32 +35,27 @@
         {
           "@type": "Person",
           "name": "Jeremiah",
-          "description": "Prophet whose scroll Daniel read regarding the 70 years of captivity.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jeremiah"
+          "description": "Prophet whose scroll Daniel read regarding the 70 years of captivity."
         },
         {
           "@type": "Thing",
           "name": "Seventy Weeks",
-          "description": "A prophetic time period of 490 years determined for Israel.",
-          "sameAs": "https://en.wikipedia.org/wiki/Prophecy_of_Seventy_Weeks"
+          "description": "A prophetic time period of 490 years determined for Israel."
         },
         {
           "@type": "Person",
           "name": "Artaxerxes",
-          "description": "Persian King whose decree in 457 BC starts the prophetic countdown.",
-          "sameAs": "https://en.wikipedia.org/wiki/Artaxerxes_I_of_Persia"
+          "description": "Persian King whose decree in 457 BC starts the prophetic countdown."
         },
         {
           "@type": "Person",
           "name": "Messiah",
-          "description": "The Anointed One, identified as Jesus, who appears after 69 weeks.",
-          "sameAs": "https://en.wikipedia.org/wiki/Messiah"
+          "description": "The Anointed One, identified as Jesus, who appears after 69 weeks."
         },
         {
           "@type": "Thing",
           "name": "Covenant",
-          "description": "The agreement confirmed for one week, culminating in the inclusion of Gentiles.",
-          "sameAs": "https://en.wikipedia.org/wiki/Covenant_(biblical)"
+          "description": "The agreement confirmed for one week, culminating in the inclusion of Gentiles."
         },
         {
           "@type": "CreativeWork",

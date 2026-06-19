@@ -39,32 +39,27 @@
         {
           "@type": "Person",
           "name": "Ezra",
-          "description": "A priest and scribe who led the second wave of exiles from Babylon.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ezra"
+          "description": "A priest and scribe who led the second wave of exiles from Babylon."
         },
         {
           "@type": "Person",
           "name": "Artaxerxes",
-          "description": "King of Persia who granted the decree for Ezra's return.",
-          "sameAs": "https://en.wikipedia.org/wiki/Artaxerxes_I_of_Persia"
+          "description": "King of Persia who granted the decree for Ezra's return."
         },
         {
           "@type": "Thing",
           "name": "Law of Moses",
-          "description": "The biblical statutes and judgments that Ezra was skilled in and commissioned to teach.",
-          "sameAs": "https://en.wikipedia.org/wiki/Law_of_Moses"
+          "description": "The biblical statutes and judgments that Ezra was skilled in and commissioned to teach."
         },
         {
           "@type": "Place",
           "name": "Babylon",
-          "description": "The starting point of Ezra's journey, representing the land of exile.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+          "description": "The starting point of Ezra's journey, representing the land of exile."
         },
         {
           "@type": "Place",
           "name": "Jerusalem",
-          "description": "The destination of the exiles and the dwelling place of the God of Israel.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jerusalem"
+          "description": "The destination of the exiles and the dwelling place of the God of Israel."
         },
         {
           "@type": "CreativeWork",

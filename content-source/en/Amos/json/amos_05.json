@@ -39,26 +39,22 @@
         {
           "@type": "Concept",
           "name": "Day of the Lord",
-          "description": "A theological concept often expected to be salvation, but described by Amos as a time of darkness, judgment, and nightmare.",
-          "sameAs": "https://en.wikipedia.org/wiki/Day_of_the_Lord"
+          "description": "A theological concept often expected to be salvation, but described by Amos as a time of darkness, judgment, and nightmare."
         },
         {
           "@type": "Place",
           "name": "Bethel",
-          "description": "A center of idolatry and religious show with no substance, destined to come to nought.",
-          "sameAs": "https://en.wikipedia.org/wiki/Bethel"
+          "description": "A center of idolatry and religious show with no substance, destined to come to nought."
         },
         {
           "@type": "Concept",
           "name": "Remnant of Joseph",
-          "description": "The few righteous people remaining after judgment, likened to leftover fabric.",
-          "sameAs": "https://en.wikipedia.org/wiki/Remnant_(Bible)"
+          "description": "The few righteous people remaining after judgment, likened to leftover fabric."
         },
         {
           "@type": "Thing",
           "name": "Wormwood",
-          "description": "A metaphor for how justice had been turned bitter by bribery and corruption.",
-          "sameAs": "https://en.wikipedia.org/wiki/Wormwood_(Bible)"
+          "description": "A metaphor for how justice had been turned bitter by bribery and corruption."
         },
         {
           "@type": "CreativeWork",

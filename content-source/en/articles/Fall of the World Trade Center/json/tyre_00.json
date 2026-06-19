@@ -35,20 +35,17 @@
         {
           "@type": "Place",
           "name": "Tyre",
-          "description": "An ancient Phoenician port city and commercial center, the subject of Ezekiel's judgment.",
-          "sameAs": "https://en.wikipedia.org/wiki/Tyre,_Lebanon"
+          "description": "An ancient Phoenician port city and commercial center, the subject of Ezekiel's judgment."
         },
         {
           "@type": "Person",
           "name": "Alexander the Great",
-          "description": "The Macedonian king who fulfilled the prophecy by building a causeway to destroy the island city of Tyre.",
-          "sameAs": "https://en.wikipedia.org/wiki/Alexander_the_Great"
+          "description": "The Macedonian king who fulfilled the prophecy by building a causeway to destroy the island city of Tyre."
         },
         {
           "@type": "Person",
           "name": "Nebuchadnezzar II",
-          "description": "The Babylonian king who besieged and destroyed the mainland city of Tyre.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II"
+          "description": "The Babylonian king who besieged and destroyed the mainland city of Tyre."
         },
         {
           "@type": "CreativeWork",

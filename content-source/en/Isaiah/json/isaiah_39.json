@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Hezekiah",
-          "description": "King of Judah who foolishly displayed his wealth to Babylon.",
-          "sameAs": "https://en.wikipedia.org/wiki/Hezekiah"
+          "description": "King of Judah who foolishly displayed his wealth to Babylon."
         },
         {
           "@type": "Person",
           "name": "Isaiah",
-          "description": "The prophet who rebuked Hezekiah and prophesied the Babylonian captivity.",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaiah"
+          "description": "The prophet who rebuked Hezekiah and prophesied the Babylonian captivity."
         },
         {
           "@type": "Place",
           "name": "Babylon",
-          "description": "The foreign nation that received the tour of treasures and would later conquer Judah.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+          "description": "The foreign nation that received the tour of treasures and would later conquer Judah."
         },
         {
           "@type": "Person",
           "name": "Merodachbaladan",
-          "description": "The King of Babylon who sent the envoys.",
-          "sameAs": "https://en.wikipedia.org/wiki/Marduk-apla-iddina_II"
+          "description": "The King of Babylon who sent the envoys."
         },
         {
           "@type": "CreativeWork",

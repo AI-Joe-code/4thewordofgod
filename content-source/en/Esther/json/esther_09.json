@@ -35,32 +35,27 @@
         {
           "@type": "Person",
           "name": "Mordecai",
-          "description": "Jewish leader who became second in command and established the feast of Purim.",
-          "sameAs": "https://en.wikipedia.org/wiki/Mordecai"
+          "description": "Jewish leader who became second in command and established the feast of Purim."
         },
         {
           "@type": "Person",
           "name": "Esther",
-          "description": "Queen who issued the decree for the holiday of Purim.",
-          "sameAs": "https://en.wikipedia.org/wiki/Esther"
+          "description": "Queen who issued the decree for the holiday of Purim."
         },
         {
           "@type": "Event",
           "name": "Purim",
-          "description": "National holiday celebrating the Jews' victory over their enemies.",
-          "sameAs": "https://en.wikipedia.org/wiki/Purim"
+          "description": "National holiday celebrating the Jews' victory over their enemies."
         },
         {
           "@type": "Thing",
           "name": "Sons of Haman",
-          "description": "The ten sons of Haman who were slain and hanged to prevent future generations of enmity.",
-          "sameAs": "https://en.wikipedia.org/wiki/Haman#Haman's_ten_sons"
+          "description": "The ten sons of Haman who were slain and hanged to prevent future generations of enmity."
         },
         {
           "@type": "Place",
           "name": "Shushan",
-          "description": "The palace citadel where the Jews defended themselves.",
-          "sameAs": "https://en.wikipedia.org/wiki/Susa"
+          "description": "The palace citadel where the Jews defended themselves."
         },
         {
           "@type": "CreativeWork",
