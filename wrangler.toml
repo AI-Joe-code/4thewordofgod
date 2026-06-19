@@ -1,15 +1,23 @@
 name = "bible-commentaries"
+main = "@astrojs/cloudflare/entrypoints/server"
 compatibility_date = "2024-11-27"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = "./dist"
 
+# Cloudflare Workers Static Assets: the prerendered/static files in dist/client
+# are served directly from the edge; only on-demand routes hit the Worker.
+[assets]
+directory = "./dist/client"
+binding = "ASSETS"
 
+[observability]
+enabled = true
 
+# Content store: public-content/{lang}/json/{book}_{chapter}.json + homepage.json
 [[r2_buckets]]
 binding = "R2"
 bucket_name = "bible-commentary-assets"
 
-# Per-language navigation manifests (books -> chapters, articles, languages).
+# Per-language navigation manifests (manifest:{lang}, manifest:languages).
 # Local dev keys storage by binding name; the id below is a placeholder.
 # For production, create the namespace and paste its id:
 #   npx wrangler kv namespace create MANIFEST

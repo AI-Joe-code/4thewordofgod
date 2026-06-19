@@ -5,11 +5,11 @@ export const prerender = false;
 
 import Layout from '../../layouts/Layout.astro';
 import BookCard from '../../components/BookCard.astro';
+import { env } from 'cloudflare:workers';
 
 const { lang } = Astro.params;
 
-const env = Astro.locals.runtime?.env;
-if (!env?.R2) {
+if (!env.R2) {
   return new Response('R2 binding unavailable', { status: 500 });
 }
 
@@ -46,7 +46,7 @@ commentaries.forEach((book) => {
 ---
 
 <Layout
-  title={site_title}
+  title={site_title ?? 'Bible Commentary'}
   description={tagline}
   currentLang={lang}
   firstChapters={firstChapters}
@@ -67,7 +67,6 @@ commentaries.forEach((book) => {
             link={`/${lang}/${book.book_name.toLowerCase()}/${book.chapter_number}`}
             slug={book.book_name.toLowerCase()}
             lang={lang}
-            type="commentary"
             toc={book.toc}
           />
         ))}
@@ -84,7 +83,6 @@ commentaries.forEach((book) => {
               description={article.metaDescription}
               link={`/${lang}/articles/${article.book_name.toLowerCase().replace(/\s+/g, '-')}`}
               lang={lang}
-              type="article"
             />
           ))}
         </div>

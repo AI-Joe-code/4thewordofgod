@@ -4,13 +4,13 @@
 // Falls back to English. Canonical homepages live at /[lang]/.
 export const prerender = false;
 
-const DEFAULT_LANG = 'en';
+import { env } from 'cloudflare:workers';
 
-const env = Astro.locals.runtime?.env;
+const DEFAULT_LANG = 'en';
 
 let available: string[] = [DEFAULT_LANG];
 try {
-  const raw = await env?.MANIFEST?.get('manifest:languages');
+  const raw = await env.MANIFEST?.get('manifest:languages');
   if (raw) available = JSON.parse(raw);
 } catch {
   // fall back to default

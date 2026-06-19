@@ -1,8 +1,8 @@
 ---
 // Rendered on-demand by the Cloudflare adapter (Worker), reading chapter
 // content from R2 instead of the build-time filesystem. This is the route
-// that lets the site scale to hundreds of languages without hitting the
-// 20,000-files-per-deployment limit of Cloudflare Pages' free tier.
+// that lets the site scale to hundreds of languages without hitting
+// per-deployment static-file limits on Cloudflare's free tier.
 export const prerender = false;
 
 import Layout from '../../../layouts/Layout.astro';
@@ -10,11 +10,14 @@ import FloatingControls from '../../../components/FloatingControls.astro';
 import FAQ from '../../../components/FAQ.astro';
 import { getLanguageDirection, LANGUAGES } from '../../../lib/languages';
 import type { CommentaryData } from '../../../lib/content';
+import { env } from 'cloudflare:workers';
 
 const { lang, book, chapter } = Astro.params;
+if (!lang || !book || !chapter) {
+  return new Response('Not found', { status: 404 });
+}
 
-const env = Astro.locals.runtime?.env;
-if (!env?.R2) {
+if (!env.R2) {
   return new Response('R2 binding unavailable', { status: 500 });
 }
 
