@@ -1,5 +1,6 @@
 name = "bible-commentaries"
 compatibility_date = "2024-11-27"
+compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "./dist"
 
 
@@ -7,3 +8,11 @@ pages_build_output_dir = "./dist"
 [[r2_buckets]]
 binding = "R2"
 bucket_name = "bible-commentary-assets"
+
+# Per-language navigation manifests (books -> chapters, articles, languages).
+# Local dev keys storage by binding name; the id below is a placeholder.
+# For production, create the namespace and paste its id:
+#   npx wrangler kv namespace create MANIFEST
+[[kv_namespaces]]
+binding = "MANIFEST"
+id = "0000000000000000000000000000manf"

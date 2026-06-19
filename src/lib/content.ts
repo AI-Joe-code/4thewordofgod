@@ -1,7 +1,11 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-const CONTENT_DIR = path.join(process.cwd(), 'public', 'public-content');
+// Build-time content source (used to prerender the homepage, articles and
+// sitemap). The canonical runtime source is R2; this directory is also what
+// scripts/upload_content.js pushes to R2. It deliberately lives OUTSIDE
+// public/ so the JSON is never copied into dist/.
+const CONTENT_DIR = path.join(process.cwd(), 'content-source');
 
 export interface CommentaryData {
     book_name?: string;

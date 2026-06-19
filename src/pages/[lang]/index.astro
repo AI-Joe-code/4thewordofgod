@@ -1,0 +1,147 @@
+---
+// Per-language homepage, rendered on-demand from the curated homepage.json
+// stored in R2 (public-content/{lang}/homepage.json).
+export const prerender = false;
+
+import Layout from '../../layouts/Layout.astro';
+import BookCard from '../../components/BookCard.astro';
+
+const { lang } = Astro.params;
+
+const env = Astro.locals.runtime?.env;
+if (!env?.R2) {
+  return new Response('R2 binding unavailable', { status: 500 });
+}
+
+const obj = await env.R2.get(`public-content/${lang}/homepage.json`);
+if (!obj) {
+  return new Response('Homepage not found', { status: 404 });
+}
+
+const homepageData = (await obj.json()) as {
+  site_title?: string;
+  tagline?: string;
+  commentaries_section_title?: string;
+  articles_section_title?: string;
+  commentaries?: any[];
+  articles?: any[];
+};
+
+const {
+  site_title,
+  tagline,
+  commentaries_section_title,
+  articles_section_title,
+  commentaries = [],
+  articles = [],
+} = homepageData;
+
+const recentArticles = articles.slice(0, 6);
+
+// firstChapters map for the sidebar.
+const firstChapters: Record<string, string> = {};
+commentaries.forEach((book) => {
+  firstChapters[book.book_name.toLowerCase()] = book.chapter_number;
+});
+---
+
+<Layout
+  title={site_title}
+  description={tagline}
+  currentLang={lang}
+  firstChapters={firstChapters}
+>
+  <main>
+    <header class="hero">
+      <h1>{site_title}</h1>
+      <p class="tagline">{tagline}</p>
+    </header>
+
+    <section class="book-grid-section">
+      <h2 class="section-title">{commentaries_section_title}</h2>
+      <div class="books-grid">
+        {commentaries.map((book) => (
+          <BookCard
+            title={book.title}
+            description={book.metaDescription}
+            link={`/${lang}/${book.book_name.toLowerCase()}/${book.chapter_number}`}
+            slug={book.book_name.toLowerCase()}
+            lang={lang}
+            type="commentary"
+            toc={book.toc}
+          />
+        ))}
+      </div>
+    </section>
+
+    {recentArticles.length > 0 && (
+      <section class="book-grid-section">
+        <h2 class="section-title">{articles_section_title}</h2>
+        <div class="books-grid">
+          {recentArticles.map((article) => (
+            <BookCard
+              title={article.title}
+              description={article.metaDescription}
+              link={`/${lang}/articles/${article.book_name.toLowerCase().replace(/\s+/g, '-')}`}
+              lang={lang}
+              type="article"
+            />
+          ))}
+        </div>
+      </section>
+    )}
+  </main>
+</Layout>
+
+<style>
+	.hero {
+		text-align: center;
+		margin-bottom: 4rem;
+		padding: 4rem 0;
+	}
+
+	.hero-subtitle {
+		font-size: 1.1rem;
+		color: var(--theme-text);
+        opacity: 0.8;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.section-title {
+		font-family: 'Cinzel', serif;
+		font-size: 1.5rem;
+		color: var(--theme-text);
+		margin-bottom: 2rem;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		border-bottom: 1px solid var(--theme-border);
+		padding-bottom: 0.5rem;
+		display: inline-block;
+	}
+
+	.books-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+        padding: 0 1rem;
+	}
+
+    @media (min-width: 640px) {
+        .books-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .books-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .books-grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+</style>

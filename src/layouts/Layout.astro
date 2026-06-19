@@ -42,11 +42,11 @@ const {
 ---
 
 <!doctype html>
-<html lang="en" dir={dir === 'RTL' ? 'rtl' : 'ltr'}>
+<html lang={currentLang || 'en'} dir={dir === 'RTL' ? 'rtl' : 'ltr'}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
@@ -73,10 +73,18 @@ const {
 	</head>
 	<body>
         <div class="app-container">
-            <Sidebar 
-                chapters={chapters} 
-                currentBook={currentBook} 
-                currentChapter={currentChapter} 
+            <button class="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-sidebar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <div class="nav-overlay" aria-hidden="true"></div>
+            <Sidebar
+                chapters={chapters}
+                currentBook={currentBook}
+                currentChapter={currentChapter}
                 currentLang={currentLang}
                 firstChapters={firstChapters}
             />
@@ -89,6 +97,41 @@ const {
             </main>
         </div>
         <!-- <LanguageSuggestionBanner currentLang={currentLang} /> -->
+        <script>
+            // Mobile navigation drawer toggle.
+            // Document/window-level listeners are registered once; element-level
+            // listeners are re-bound on every astro:page-load (ViewTransitions swaps the DOM).
+            const root = document.documentElement;
+            const closeNav = () => {
+                root.removeAttribute('data-nav-open');
+                document.querySelector('.nav-hamburger')?.setAttribute('aria-expanded', 'false');
+            };
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closeNav();
+            });
+
+            function initMobileNav() {
+                const hamburger = document.querySelector('.nav-hamburger');
+                const overlay = document.querySelector('.nav-overlay');
+                const sidebar = document.querySelector('.sidebar');
+
+                hamburger?.addEventListener('click', () => {
+                    if (root.hasAttribute('data-nav-open')) {
+                        closeNav();
+                    } else {
+                        root.setAttribute('data-nav-open', '');
+                        hamburger.setAttribute('aria-expanded', 'true');
+                    }
+                });
+                overlay?.addEventListener('click', closeNav);
+                // Close the drawer when any link inside it is tapped.
+                sidebar?.addEventListener('click', (e) => {
+                    if ((e.target as HTMLElement).closest('a')) closeNav();
+                });
+                closeNav(); // ensure a known (closed) state on every page load
+            }
+            document.addEventListener('astro:page-load', initMobileNav);
+        </script>
 	</body>
 </html>
 <style is:global>
@@ -152,6 +195,63 @@ const {
         gap: 1rem;
         align-items: center;
     }
+
+    /* Mobile navigation: hamburger + overlay are desktop-hidden by default. */
+    .nav-hamburger {
+        display: none;
+    }
+    .nav-overlay {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .main-content {
+            margin-left: 0;
+            padding: 1.5rem 1rem;
+            padding-top: 4.5rem; /* clear the fixed hamburger button */
+        }
+
+        .nav-hamburger {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1200;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            border: 1px solid var(--theme-border);
+            border-radius: 8px;
+            background: var(--theme-surface);
+            color: var(--theme-text);
+            cursor: pointer;
+        }
+        .nav-hamburger svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .nav-overlay {
+            display: block;
+            position: fixed;
+            inset: 0;
+            z-index: 1050;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        [data-nav-open] .nav-overlay {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        /* Lock background scroll while the drawer is open. */
+        [data-nav-open] {
+            overflow: hidden;
+        }
+    }
 	code {
 		font-family:
 			Menlo,
@@ -172,5 +272,13 @@ const {
         margin-bottom: 1em;
         font-family: 'Cinzel', serif;
         color: var(--theme-text);
+    }
+
+    /* Placed after the base rule so it wins on mobile (equal specificity). */
+    @media (max-width: 768px) {
+        h1, .page-title {
+            font-size: 2rem;
+            overflow-wrap: break-word;
+        }
     }
 </style>

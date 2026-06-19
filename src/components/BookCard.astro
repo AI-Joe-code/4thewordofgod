@@ -4,15 +4,16 @@ interface Props {
   description: string;
   slug?: string;
   link?: string;
+  lang?: string;
   firstChapter?: string;
   toc?: { chapter_number: string; title: string }[];
 }
 
-const { title, description, slug, link, firstChapter = '01', toc = [] } = Astro.props;
+const { title, description, slug, link, lang = 'en', firstChapter = '01', toc = [] } = Astro.props;
 
-const cardLink = link || (slug === 'tyre' 
-  ? `/en/articles/fall-of-the-world-trade-center`
-  : (slug ? `/en/${slug}/${firstChapter}` : '#'));
+const cardLink = link || (slug === 'tyre'
+  ? `/${lang}/articles/fall-of-the-world-trade-center`
+  : (slug ? `/${lang}/${slug}/${firstChapter}` : '#'));
 ---
 
 <div class="book-card-container">
@@ -54,7 +55,7 @@ const cardLink = link || (slug === 'tyre'
         <ul class="toc-list">
           {toc.map((chapter) => (
             <li>
-              <a href={`/en/${slug}/${chapter.chapter_number}`} class="toc-link">
+              <a href={`/${lang}/${slug}/${chapter.chapter_number}`} class="toc-link">
                 <span class="chapter-num">{chapter.chapter_number === '00' ? 'Intro' : `Ch ${parseInt(chapter.chapter_number)}`}</span>
                 <span class="chapter-title">{chapter.title}</span>
               </a>
