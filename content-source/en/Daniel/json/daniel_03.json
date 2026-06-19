@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Nebuchadnezzar",
-          "description": "King of Babylon who erected the golden image.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II"
+          "description": "King of Babylon who erected the golden image."
         },
         {
           "@type": "Person",
           "name": "Shadrach, Meshach, and Abed-nego",
-          "description": "The three Hebrew children who refused to bow to the idol.",
-          "sameAs": "https://en.wikipedia.org/wiki/Shadrach,_Meshach,_and_Abednego"
+          "description": "The three Hebrew children who refused to bow to the idol."
         },
         {
           "@type": "Thing",
           "name": "Golden Image",
-          "description": "A 90-foot statue erected on the plains of Dura for worship.",
-          "sameAs": null
+          "description": "A 90-foot statue erected on the plains of Dura for worship."
         },
         {
           "@type": "Thing",
           "name": "Fiery Furnace",
-          "description": "The method of execution used by the King, heated seven times hotter than normal.",
-          "sameAs": null
+          "description": "The method of execution used by the King, heated seven times hotter than normal."
         },
         {
           "@type": "CreativeWork",

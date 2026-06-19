@@ -35,20 +35,17 @@
         {
           "@type": "Place",
           "name": "Ariel",
-          "description": "A poetic name for Jerusalem, signifying an altar covered with blood.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ariel_(name)"
+          "description": "A poetic name for Jerusalem, signifying an altar covered with blood."
         },
         {
           "@type": "Thing",
           "name": "Sealed Book",
-          "description": "A metaphor for the spiritual blindness and inability of the people to understand prophetic events.",
-          "sameAs": null
+          "description": "A metaphor for the spiritual blindness and inability of the people to understand prophetic events."
         },
         {
           "@type": "Person",
           "name": "Sennacherib",
-          "description": "The tyrant king of Assyria whose army besieged Jerusalem.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sennacherib"
+          "description": "The tyrant king of Assyria whose army besieged Jerusalem."
         },
         {
           "@type": "CreativeWork",

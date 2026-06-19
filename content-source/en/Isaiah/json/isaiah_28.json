@@ -35,20 +35,17 @@
         {
           "@type": "Thing",
           "name": "Stone in Zion",
-          "description": "The sure foundation and precious cornerstone laid by God, interpreted as Jesus.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cornerstone"
+          "description": "The sure foundation and precious cornerstone laid by God, interpreted as Jesus."
         },
         {
           "@type": "Thing",
           "name": "Covenant with Death",
-          "description": "A metaphorical agreement made by the rulers of Jerusalem to hide under falsehoods.",
-          "sameAs": null
+          "description": "A metaphorical agreement made by the rulers of Jerusalem to hide under falsehoods."
         },
         {
           "@type": "Place",
           "name": "Samaria",
-          "description": "Described as the crown of pride and a fading flower, situated on a hill surrounded by rich valleys.",
-          "sameAs": "https://en.wikipedia.org/wiki/Samaria_(ancient_city)"
+          "description": "Described as the crown of pride and a fading flower, situated on a hill surrounded by rich valleys."
         },
         {
           "@type": "CreativeWork",

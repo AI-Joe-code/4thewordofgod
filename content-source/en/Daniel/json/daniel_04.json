@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Nebuchadnezzar",
-          "description": "The King of Babylon who was humbled by God with madness.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II"
+          "description": "The King of Babylon who was humbled by God with madness."
         },
         {
           "@type": "Person",
           "name": "Daniel",
-          "description": "Also known as Belteshazzar, the prince of interpreters who explained the dream.",
-          "sameAs": "https://en.wikipedia.org/wiki/Daniel_(biblical_figure)"
+          "description": "Also known as Belteshazzar, the prince of interpreters who explained the dream."
         },
         {
           "@type": "Thing",
           "name": "The Watchers",
-          "description": "Heavenly security guards or sentinels who decreed the king's judgment.",
-          "sameAs": "https://en.wikipedia.org/wiki/Watcher_(angel)"
+          "description": "Heavenly security guards or sentinels who decreed the king's judgment."
         },
         {
           "@type": "Place",
           "name": "Babylon",
-          "description": "The great kingdom ruled by Nebuchadnezzar.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+          "description": "The great kingdom ruled by Nebuchadnezzar."
         },
         {
           "@type": "CreativeWork",

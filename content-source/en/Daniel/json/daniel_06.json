@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Daniel",
-          "description": "The highest-ranking cabinet member and prophet who remained faithful to God despite the decree.",
-          "sameAs": "https://en.wikipedia.org/wiki/Daniel_(biblical_figure)"
+          "description": "The highest-ranking cabinet member and prophet who remained faithful to God despite the decree."
         },
         {
           "@type": "Person",
           "name": "King Darius",
-          "description": "The Medo-Persian ruler who appointed Daniel and was tricked into signing the irrevocable decree.",
-          "sameAs": "https://en.wikipedia.org/wiki/Darius_the_Mede"
+          "description": "The Medo-Persian ruler who appointed Daniel and was tricked into signing the irrevocable decree."
         },
         {
           "@type": "Place",
           "name": "Lions' Den",
-          "description": "The place of execution where Daniel was thrown and miraculously preserved by God.",
-          "sameAs": "https://en.wikipedia.org/wiki/Daniel_in_the_lions%27_den"
+          "description": "The place of execution where Daniel was thrown and miraculously preserved by God."
         },
         {
           "@type": "Concept",
           "name": "Law of the Medes and Persians",
-          "description": "A legal principle stating that any law ratified by the king's signature could not be changed or revoked.",
-          "sameAs": null
+          "description": "A legal principle stating that any law ratified by the king's signature could not be changed or revoked."
         },
         {
           "@type": "CreativeWork",

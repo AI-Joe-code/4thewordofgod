@@ -39,20 +39,17 @@
         {
           "@type": "Person",
           "name": "John the Baptist",
-          "description": "Secondary fulfillment of the voice crying in the wilderness",
-          "sameAs": "https://en.wikipedia.org/wiki/John_the_Baptist"
+          "description": "Secondary fulfillment of the voice crying in the wilderness"
         },
         {
           "@type": "Thing",
           "name": "Circle of the Earth",
-          "description": "Biblical description of the earth's shape found in Isaiah 40:22",
-          "sameAs": "https://en.wikipedia.org/wiki/Biblical_cosmology"
+          "description": "Biblical description of the earth's shape found in Isaiah 40:22"
         },
         {
           "@type": "Thing",
           "name": "Eagle's Wings",
-          "description": "Symbol of supernatural strength and endurance for those who wait on the Lord",
-          "sameAs": null
+          "description": "Symbol of supernatural strength and endurance for those who wait on the Lord"
         },
         {
           "@type": "CreativeWork",

@@ -35,26 +35,22 @@
         {
           "@type": "Thing",
           "name": "Feast of Fat Things",
-          "description": "A metaphorical gourmet banquet in Zion representing God's provision and celebration.",
-          "sameAs": null
+          "description": "A metaphorical gourmet banquet in Zion representing God's provision and celebration."
         },
         {
           "@type": "Place",
           "name": "Moab",
-          "description": "Representative of the enemies of Israel and pride, destined to be trodden down.",
-          "sameAs": "https://en.wikipedia.org/wiki/Moab"
+          "description": "Representative of the enemies of Israel and pride, destined to be trodden down."
         },
         {
           "@type": "Concept",
           "name": "Victory over Death",
-          "description": "The promise that God will swallow up death and wipe away all tears.",
-          "sameAs": "https://en.wikipedia.org/wiki/Resurrection_of_the_dead"
+          "description": "The promise that God will swallow up death and wipe away all tears."
         },
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "The mountain where God's hand rests and the feast takes place.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "The mountain where God's hand rests and the feast takes place."
         },
         {
           "@type": "CreativeWork",

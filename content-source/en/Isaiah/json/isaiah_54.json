@@ -31,20 +31,17 @@
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "The restored habitation of justice and mountain of holiness, symbolizing Israel's future glory.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "The restored habitation of justice and mountain of holiness, symbolizing Israel's future glory."
         },
         {
           "@type": "Person",
           "name": "Sarah",
-          "description": "Biblical matriarch referenced by Paul in Galatians 3:27, contrasting her children with Hagar's.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sarah"
+          "description": "Biblical matriarch referenced by Paul in Galatians 3:27, contrasting her children with Hagar's."
         },
         {
           "@type": "Thing",
           "name": "Waters of Noah",
-          "description": "A symbol of God's covenant never to destroy or be wroth with His people again.",
-          "sameAs": "https://en.wikipedia.org/wiki/Noahic_Covenant"
+          "description": "A symbol of God's covenant never to destroy or be wroth with His people again."
         },
         {
           "@type": "CreativeWork",

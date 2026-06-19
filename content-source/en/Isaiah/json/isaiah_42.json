@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "The Messiah",
-          "description": "The chosen Servant who brings justice to the Gentiles and healing to the brokenhearted.",
-          "sameAs": "https://en.wikipedia.org/wiki/Messiah"
+          "description": "The chosen Servant who brings justice to the Gentiles and healing to the brokenhearted."
         },
         {
           "@type": "Person",
           "name": "Israel",
-          "description": "Referred to as the blind servant, Jacob, and the people robbed and spoiled due to disobedience.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jacob"
+          "description": "Referred to as the blind servant, Jacob, and the people robbed and spoiled due to disobedience."
         },
         {
           "@type": "Concept",
           "name": "Bruised Reed",
-          "description": "A metaphor for a person with a crushed spirit living in heaviness.",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaiah_42"
+          "description": "A metaphor for a person with a crushed spirit living in heaviness."
         },
         {
           "@type": "Concept",
           "name": "Smoking Flax",
-          "description": "A metaphor for a person with little or no hope left, whom the Messiah will not quench.",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaiah_42"
+          "description": "A metaphor for a person with little or no hope left, whom the Messiah will not quench."
         },
         {
           "@type": "CreativeWork",

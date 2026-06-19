@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "The Potter",
-          "description": "A metaphor for God's sovereign authority to reshape the lives of His people.",
-          "sameAs": null
+          "description": "A metaphor for God's sovereign authority to reshape the lives of His people."
         },
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "Described as a 'ghost town' and a wilderness overgrown with brush and weeds.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "Described as a 'ghost town' and a wilderness overgrown with brush and weeds."
         },
         {
           "@type": "Place",
           "name": "Mt. Sinai",
-          "description": "The location of God's past miracles where mountains shuddered, used as a comparison for the desired divine intervention.",
-          "sameAs": "https://en.wikipedia.org/wiki/Mount_Sinai"
+          "description": "The location of God's past miracles where mountains shuddered, used as a comparison for the desired divine intervention."
         },
         {
           "@type": "Concept",
           "name": "Filthy Rags",
-          "description": "A theological metaphor used to describe human righteousness that is infected with sin.",
-          "sameAs": null
+          "description": "A theological metaphor used to describe human righteousness that is infected with sin."
         },
         {
           "@type": "CreativeWork",

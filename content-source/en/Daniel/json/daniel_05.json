@@ -35,32 +35,27 @@
         {
           "@type": "Person",
           "name": "Belshazzar",
-          "description": "The regent king of Babylon whose arrogance and desecration of temple vessels led to the kingdom's fall.",
-          "sameAs": "https://en.wikipedia.org/wiki/Belshazzar"
+          "description": "The regent king of Babylon whose arrogance and desecration of temple vessels led to the kingdom's fall."
         },
         {
           "@type": "Person",
           "name": "Daniel",
-          "description": "The prophet possessing the 'spirit of the holy gods' who interpreted the handwriting on the wall.",
-          "sameAs": "https://en.wikipedia.org/wiki/Daniel_(biblical_figure)"
+          "description": "The prophet possessing the 'spirit of the holy gods' who interpreted the handwriting on the wall."
         },
         {
           "@type": "Thing",
           "name": "Handwriting on the Wall",
-          "description": "The mysterious message (Mene, Mene, Tekel, Upharsin) written by a finger sent from God.",
-          "sameAs": "https://en.wikipedia.org/wiki/The_writing_on_the_wall"
+          "description": "The mysterious message (Mene, Mene, Tekel, Upharsin) written by a finger sent from God."
         },
         {
           "@type": "Place",
           "name": "Babylon",
-          "description": "The empire that fell to the Medes and Persians as a result of God's judgment.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+          "description": "The empire that fell to the Medes and Persians as a result of God's judgment."
         },
         {
           "@type": "Thing",
           "name": "Sacred Vessels",
-          "description": "Gold and silver items looted from the Temple in Jerusalem and desecrated during Belshazzar's feast.",
-          "sameAs": null
+          "description": "Gold and silver items looted from the Temple in Jerusalem and desecrated during Belshazzar's feast."
         },
         {
           "@type": "CreativeWork",

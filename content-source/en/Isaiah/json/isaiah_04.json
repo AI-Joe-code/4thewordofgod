@@ -35,26 +35,22 @@
         {
           "@type": "Concept",
           "name": "The Branch of the LORD",
-          "description": "A theological title indicating beauty, glory, and restoration for the escapees of Israel.",
-          "sameAs": "https://en.wikipedia.org/wiki/Messiah_in_Judaism"
+          "description": "A theological title indicating beauty, glory, and restoration for the escapees of Israel."
         },
         {
           "@type": "Group",
           "name": "The Remnant",
-          "description": "The survivors of the war and purging in Jerusalem who are reclassified as holy.",
-          "sameAs": "https://en.wikipedia.org/wiki/Remnant_(Bible)"
+          "description": "The survivors of the war and purging in Jerusalem who are reclassified as holy."
         },
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "The dwelling place where God's protective glory, cloud, and fire are manifested.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "The dwelling place where God's protective glory, cloud, and fire are manifested."
         },
         {
           "@type": "Concept",
           "name": "Spirit of Burning",
-          "description": "The method by which God purges the blood guilt and washes away filth from Jerusalem.",
-          "sameAs": null
+          "description": "The method by which God purges the blood guilt and washes away filth from Jerusalem."
         },
         {
           "@type": "CreativeWork",

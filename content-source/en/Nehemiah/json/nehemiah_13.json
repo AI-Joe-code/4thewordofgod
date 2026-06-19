@@ -35,32 +35,27 @@
         {
           "@type": "Person",
           "name": "Nehemiah",
-          "description": "Governor of Judah who returned from Persia to purify the temple and enforce the law.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nehemiah"
+          "description": "Governor of Judah who returned from Persia to purify the temple and enforce the law."
         },
         {
           "@type": "Person",
           "name": "Eliashib",
-          "description": "The High Priest who compromised the temple by providing a room to Tobiah the Ammonite.",
-          "sameAs": "https://en.wikipedia.org/wiki/Eliashib"
+          "description": "The High Priest who compromised the temple by providing a room to Tobiah the Ammonite."
         },
         {
           "@type": "Person",
           "name": "Solomon",
-          "description": "King of Israel cited by Nehemiah as an example of a wise leader led into sin by foreign wives.",
-          "sameAs": "https://en.wikipedia.org/wiki/Solomon"
+          "description": "King of Israel cited by Nehemiah as an example of a wise leader led into sin by foreign wives."
         },
         {
           "@type": "Person",
           "name": "Tobiah",
-          "description": "An Ammonite and enemy of Israel who was improperly living in the temple courts.",
-          "sameAs": "https://en.wikipedia.org/wiki/Tobiah_(Ammonite)"
+          "description": "An Ammonite and enemy of Israel who was improperly living in the temple courts."
         },
         {
           "@type": "Thing",
           "name": "Sabbath",
-          "description": "The holy day which Nehemiah strictly enforced by closing city gates and stopping trade.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sabbath"
+          "description": "The holy day which Nehemiah strictly enforced by closing city gates and stopping trade."
         },
         {
           "@type": "CreativeWork",

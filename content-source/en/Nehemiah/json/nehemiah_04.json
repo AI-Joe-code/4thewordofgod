@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Nehemiah",
-          "description": "Jewish leader known for his impassioned speech, prayer, and resolve in rebuilding the wall.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nehemiah"
+          "description": "Jewish leader known for his impassioned speech, prayer, and resolve in rebuilding the wall."
         },
         {
           "@type": "Person",
           "name": "Sanballat",
-          "description": "An antagonist who ridiculed the Jews and plotted against the rebuilding efforts.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sanballat_the_Horonite"
+          "description": "An antagonist who ridiculed the Jews and plotted against the rebuilding efforts."
         },
         {
           "@type": "Person",
           "name": "Tobiah",
-          "description": "An Ammonite associate of Sanballat who mocked the construction efforts.",
-          "sameAs": "https://en.wikipedia.org/wiki/Tobiah_(Ammonite)"
+          "description": "An Ammonite associate of Sanballat who mocked the construction efforts."
         },
         {
           "@type": "Thing",
           "name": "The Wall",
-          "description": "The central object of construction, resistance, and defense in Jerusalem.",
-          "sameAs": "https://en.wikipedia.org/wiki/Walls_of_Jerusalem"
+          "description": "The central object of construction, resistance, and defense in Jerusalem."
         },
         {
           "@type": "CreativeWork",

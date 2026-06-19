@@ -39,32 +39,27 @@
         {
           "@type": "Thing",
           "name": "Everlasting Gospel",
-          "description": "The message of salvation preached openly during the Reformation after being obscured in the dark ages.",
-          "sameAs": null
+          "description": "The message of salvation preached openly during the Reformation after being obscured in the dark ages."
         },
         {
           "@type": "Place",
           "name": "Mount Zion",
-          "description": "A representation of the heavenly Jerusalem and the standing place of the 144,000 redeemed.",
-          "sameAs": "https://en.wikipedia.org/wiki/Mount_Zion"
+          "description": "A representation of the heavenly Jerusalem and the standing place of the 144,000 redeemed."
         },
         {
           "@type": "Thing",
           "name": "Spiritual Babylon",
-          "description": "Identified in the text as the union of Church and State, specifically the Papal hierarchy.",
-          "sameAs": "https://en.wikipedia.org/wiki/Whore_of_Babylon"
+          "description": "Identified in the text as the union of Church and State, specifically the Papal hierarchy."
         },
         {
           "@type": "Event",
           "name": "The Reformation",
-          "description": "The movement that broke the spell of Rome and restored the preaching of the gospel to humanity.",
-          "sameAs": "https://en.wikipedia.org/wiki/Reformation"
+          "description": "The movement that broke the spell of Rome and restored the preaching of the gospel to humanity."
         },
         {
           "@type": "Thing",
           "name": "Winepress of God's Wrath",
-          "description": "A symbol of divine judgment and vengeance upon the wicked, particularly applied to the Catholic Church's 1260 years of history.",
-          "sameAs": null
+          "description": "A symbol of divine judgment and vengeance upon the wicked, particularly applied to the Catholic Church's 1260 years of history."
         },
         {
           "@type": "CreativeWork",

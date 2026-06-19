@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Cyrus",
-          "description": "Anointed by God to destroy Babylon and act as a raging floodtide against the enemy.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+          "description": "Anointed by God to destroy Babylon and act as a raging floodtide against the enemy."
         },
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "The location where the Redeemer shall come to deliver those who turn from transgression.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "The location where the Redeemer shall come to deliver those who turn from transgression."
         },
         {
           "@type": "Concept",
           "name": "Intercessor",
-          "description": "The role God assumes when He sees that no man is available to correct injustice.",
-          "sameAs": "https://en.wikipedia.org/wiki/Intercession"
+          "description": "The role God assumes when He sees that no man is available to correct injustice."
         },
         {
           "@type": "Thing",
           "name": "Covenant",
-          "description": "God's promise that His spirit and word will remain with the people and their seed forever.",
-          "sameAs": "https://en.wikipedia.org/wiki/Covenant_(biblical)"
+          "description": "God's promise that His spirit and word will remain with the people and their seed forever."
         },
         {
           "@type": "CreativeWork",

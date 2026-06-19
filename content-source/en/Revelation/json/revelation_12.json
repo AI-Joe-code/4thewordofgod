@@ -35,26 +35,22 @@
         {
           "@type": "Thing",
           "name": "The Church",
-          "description": "Symbolized by the Woman clothed with the sun.",
-          "sameAs": "https://en.wikipedia.org/wiki/Woman_of_the_Apocalypse"
+          "description": "Symbolized by the Woman clothed with the sun."
         },
         {
           "@type": "Thing",
           "name": "Pagan Rome",
-          "description": "Symbolized by the red dragon with seven heads and ten horns.",
-          "sameAs": "https://en.wikipedia.org/wiki/Persecution_of_Christians_in_the_Roman_Empire"
+          "description": "Symbolized by the red dragon with seven heads and ten horns."
         },
         {
           "@type": "Thing",
           "name": "The 12 Apostles",
-          "description": "Symbolized by the crown of twelve stars on the Woman's head.",
-          "sameAs": "https://en.wikipedia.org/wiki/Apostles"
+          "description": "Symbolized by the crown of twelve stars on the Woman's head."
         },
         {
           "@type": "Concept",
           "name": "The Dark Ages",
-          "description": "The 1260-year period where the Church fled into the wilderness.",
-          "sameAs": "https://en.wikipedia.org/wiki/Day-year_principle"
+          "description": "The 1260-year period where the Church fled into the wilderness."
         },
         {
           "@type": "CreativeWork",

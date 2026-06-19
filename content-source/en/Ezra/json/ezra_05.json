@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Tattenai",
-          "description": "The regional Governor of Trans-Euphrates who opposed the rebuilding of the temple.",
-          "sameAs": "https://en.wikipedia.org/wiki/Tattenai"
+          "description": "The regional Governor of Trans-Euphrates who opposed the rebuilding of the temple."
         },
         {
           "@type": "Person",
           "name": "Darius",
-          "description": "The King of Persia to whom the letter was addressed regarding the temple construction.",
-          "sameAs": "https://en.wikipedia.org/wiki/Darius_I"
+          "description": "The King of Persia to whom the letter was addressed regarding the temple construction."
         },
         {
           "@type": "Person",
           "name": "Haggai",
-          "description": "A prophet who, along with Zechariah, encouraged the Jews to restart the building project.",
-          "sameAs": "https://en.wikipedia.org/wiki/Haggai"
+          "description": "A prophet who, along with Zechariah, encouraged the Jews to restart the building project."
         },
         {
           "@type": "Thing",
           "name": "Eye of God",
-          "description": "A theological concept representing God's favor and oversight on the work of the elders.",
-          "sameAs": "https://en.wikipedia.org/wiki/Eye_of_Providence"
+          "description": "A theological concept representing God's favor and oversight on the work of the elders."
         },
         {
           "@type": "CreativeWork",

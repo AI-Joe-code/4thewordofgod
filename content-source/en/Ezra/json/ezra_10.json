@@ -39,26 +39,22 @@
         {
           "@type": "Person",
           "name": "Ezra",
-          "description": "The priest and scribe who led the spiritual reformation and confrontation of sin.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ezra"
+          "description": "The priest and scribe who led the spiritual reformation and confrontation of sin."
         },
         {
           "@type": "Person",
           "name": "Shecaniah",
-          "description": "Son of Jehiel who proposed the covenant to divorce foreign wives, despite his own father's guilt.",
-          "sameAs": null
+          "description": "Son of Jehiel who proposed the covenant to divorce foreign wives, despite his own father's guilt."
         },
         {
           "@type": "Place",
           "name": "Jerusalem",
-          "description": "The central location where the exiles assembled in the square before the house of God.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jerusalem"
+          "description": "The central location where the exiles assembled in the square before the house of God."
         },
         {
           "@type": "Thing",
           "name": "Covenant",
-          "description": "The solemn agreement made by the people to separate themselves from pagan influence.",
-          "sameAs": "https://en.wikipedia.org/wiki/Covenant_(biblical)"
+          "description": "The solemn agreement made by the people to separate themselves from pagan influence."
         },
         {
           "@type": "CreativeWork",

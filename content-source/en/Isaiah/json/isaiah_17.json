@@ -35,26 +35,22 @@
         {
           "@type": "Place",
           "name": "Damascus",
-          "description": "The capital city of Syria, prophesied to become a ruinous heap.",
-          "sameAs": "https://en.wikipedia.org/wiki/Damascus"
+          "description": "The capital city of Syria, prophesied to become a ruinous heap."
         },
         {
           "@type": "Person",
           "name": "Tiglathpileser",
-          "description": "King of Assyria who fulfilled the prophecy by invading Syria and slaying King Rezin.",
-          "sameAs": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III"
+          "description": "King of Assyria who fulfilled the prophecy by invading Syria and slaying King Rezin."
         },
         {
           "@type": "Place",
           "name": "Valley of Rephaim",
-          "description": "A fertile valley used as a metaphor for the gathering of Israel and Syria for captivity.",
-          "sameAs": "https://en.wikipedia.org/wiki/Valley_of_Rephaim"
+          "description": "A fertile valley used as a metaphor for the gathering of Israel and Syria for captivity."
         },
         {
           "@type": "Thing",
           "name": "Rock of Strength",
-          "description": "A title for God, whom Israel had forgotten in favor of planting 'strange slips'.",
-          "sameAs": null
+          "description": "A title for God, whom Israel had forgotten in favor of planting 'strange slips'."
         },
         {
           "@type": "CreativeWork",

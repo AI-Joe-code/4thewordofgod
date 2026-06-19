@@ -39,26 +39,22 @@
         {
           "@type": "Person",
           "name": "Amos",
-          "description": "The prophet, originally a herdsman and gatherer of sycamore fruit.",
-          "sameAs": "https://en.wikipedia.org/wiki/Amos_(prophet)"
+          "description": "The prophet, originally a herdsman and gatherer of sycamore fruit."
         },
         {
           "@type": "Person",
           "name": "Amaziah",
-          "description": "The priest of Bethel who attempted to expel Amos from the land.",
-          "sameAs": null
+          "description": "The priest of Bethel who attempted to expel Amos from the land."
         },
         {
           "@type": "Thing",
           "name": "Plumb line",
-          "description": "A tool used in the vision to judge whether Israel was 'straight' by God's standards.",
-          "sameAs": "https://en.wikipedia.org/wiki/Plumb_bob"
+          "description": "A tool used in the vision to judge whether Israel was 'straight' by God's standards."
         },
         {
           "@type": "Person",
           "name": "Jeroboam",
-          "description": "The King of Israel, against whose house God prophesied destruction.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jeroboam_II"
+          "description": "The King of Israel, against whose house God prophesied destruction."
         },
         {
           "@type": "CreativeWork",

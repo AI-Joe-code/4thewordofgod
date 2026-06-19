@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Nehemiah",
-          "description": "Cupbearer to the king, pragmatic leader, and organizer who interceded for Jerusalem.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nehemiah"
+          "description": "Cupbearer to the king, pragmatic leader, and organizer who interceded for Jerusalem."
         },
         {
           "@type": "Person",
           "name": "Artaxerxes I Longimanus",
-          "description": "King of Persia during the 20th year of his reign; stepson of Queen Esther.",
-          "sameAs": "https://en.wikipedia.org/wiki/Artaxerxes_I_of_Persia"
+          "description": "King of Persia during the 20th year of his reign; stepson of Queen Esther."
         },
         {
           "@type": "Place",
           "name": "Susa",
-          "description": "The major city of Elam (Shushan) and the summer palace/capital of the Persians.",
-          "sameAs": "https://en.wikipedia.org/wiki/Susa"
+          "description": "The major city of Elam (Shushan) and the summer palace/capital of the Persians."
         },
         {
           "@type": "Role",
           "name": "Cupbearer",
-          "description": "A high-trust government position responsible for tasting the king's food and drink to prevent poisoning.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cup-bearer"
+          "description": "A high-trust government position responsible for tasting the king's food and drink to prevent poisoning."
         },
         {
           "@type": "CreativeWork",

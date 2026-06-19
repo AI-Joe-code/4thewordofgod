@@ -35,32 +35,27 @@
         {
           "@type": "Person",
           "name": "Esther",
-          "description": "The queen who approached the king uninvited.",
-          "sameAs": "https://en.wikipedia.org/wiki/Esther"
+          "description": "The queen who approached the king uninvited."
         },
         {
           "@type": "Person",
           "name": "Haman",
-          "description": "The antagonist who plotted against Mordecai.",
-          "sameAs": "https://en.wikipedia.org/wiki/Haman"
+          "description": "The antagonist who plotted against Mordecai."
         },
         {
           "@type": "Thing",
           "name": "Golden Scepter",
-          "description": "The symbol of the King's favor and mercy.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sceptre"
+          "description": "The symbol of the King's favor and mercy."
         },
         {
           "@type": "Person",
           "name": "Mordecai",
-          "description": "The Jewish man who refused to bow to Haman.",
-          "sameAs": "https://en.wikipedia.org/wiki/Mordecai"
+          "description": "The Jewish man who refused to bow to Haman."
         },
         {
           "@type": "Person",
           "name": "Zeresh",
-          "description": "Haman's wife who suggested the gallows.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zeresh"
+          "description": "Haman's wife who suggested the gallows."
         },
         {
           "@type": "CreativeWork",

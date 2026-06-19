@@ -39,26 +39,22 @@
         {
           "@type": "Thing",
           "name": "Sea of Glass",
-          "description": "A symbolic sea mixed with fire appearing in Heaven, representing a glorious scene before the throne.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sea_of_Glass"
+          "description": "A symbolic sea mixed with fire appearing in Heaven, representing a glorious scene before the throne."
         },
         {
           "@type": "Thing",
           "name": "Seven Last Plagues",
-          "description": "The final bowls of wrath which bring about the completion of God's judgment.",
-          "sameAs": "https://en.wikipedia.org/wiki/Seven_bowls"
+          "description": "The final bowls of wrath which bring about the completion of God's judgment."
         },
         {
           "@type": "Thing",
           "name": "The Beast",
-          "description": "Interpreted in this commentary as Catholicism, the apostate church, and the 'man of sin'.",
-          "sameAs": "https://en.wikipedia.org/wiki/The_Beast_(Revelation)"
+          "description": "Interpreted in this commentary as Catholicism, the apostate church, and the 'man of sin'."
         },
         {
           "@type": "Thing",
           "name": "Tabernacle of Testimony",
-          "description": "The temple in heaven which is opened to give evidence (testimony) of the events about to occur.",
-          "sameAs": "https://en.wikipedia.org/wiki/Tabernacle"
+          "description": "The temple in heaven which is opened to give evidence (testimony) of the events about to occur."
         },
         {
           "@type": "CreativeWork",

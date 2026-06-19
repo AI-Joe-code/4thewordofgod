@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Nehemiah",
-          "description": "Governor of Judah who led the rebuilding of the wall and organized the dedication.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nehemiah"
+          "description": "Governor of Judah who led the rebuilding of the wall and organized the dedication."
         },
         {
           "@type": "Person",
           "name": "Ezra",
-          "description": "Priest and scribe who led the procession of the first choir.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ezra"
+          "description": "Priest and scribe who led the procession of the first choir."
         },
         {
           "@type": "Place",
           "name": "Wall of Jerusalem",
-          "description": "The newly fortified structure upon which the choirs marched to dedicate the city.",
-          "sameAs": "https://en.wikipedia.org/wiki/Walls_of_Jerusalem"
+          "description": "The newly fortified structure upon which the choirs marched to dedicate the city."
         },
         {
           "@type": "Person",
           "name": "Jezrahiah",
-          "description": "The director of the choirs who led the singing in the Temple.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jezrahiah"
+          "description": "The director of the choirs who led the singing in the Temple."
         },
         {
           "@type": "CreativeWork",

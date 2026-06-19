@@ -39,26 +39,22 @@
         {
           "@type": "Person",
           "name": "Cyrus",
-          "description": "The ruler sent by God to Babylon to bring down its nobles and gods.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+          "description": "The ruler sent by God to Babylon to bring down its nobles and gods."
         },
         {
           "@type": "Place",
           "name": "Babylon",
-          "description": "The nation whose rulers and gods God promises to bring down.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+          "description": "The nation whose rulers and gods God promises to bring down."
         },
         {
           "@type": "Concept",
           "name": "Redemption",
-          "description": "The act of God buying back His people, claiming them as precious and honorable.",
-          "sameAs": "https://en.wikipedia.org/wiki/Redemption_(theology)"
+          "description": "The act of God buying back His people, claiming them as precious and honorable."
         },
         {
           "@type": "Concept",
           "name": "The New Thing",
-          "description": "God's promise to create a new way in the wilderness and rivers in the desert.",
-          "sameAs": null
+          "description": "God's promise to create a new way in the wilderness and rivers in the desert."
         },
         {
           "@type": "CreativeWork",

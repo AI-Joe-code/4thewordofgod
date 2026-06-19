@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Ahasuerus",
-          "description": "The Hebrew name for King Xerxes, ruler of the Persian Empire.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ahasuerus"
+          "description": "The Hebrew name for King Xerxes, ruler of the Persian Empire."
         },
         {
           "@type": "Person",
           "name": "Vashti",
-          "description": "The Queen who refused the King's command to appear before his guests.",
-          "sameAs": "https://en.wikipedia.org/wiki/Vashti"
+          "description": "The Queen who refused the King's command to appear before his guests."
         },
         {
           "@type": "Place",
           "name": "Shushan",
-          "description": "Susa, the capital of the Persian empire and site of the royal palace.",
-          "sameAs": "https://en.wikipedia.org/wiki/Susa"
+          "description": "Susa, the capital of the Persian empire and site of the royal palace."
         },
         {
           "@type": "Person",
           "name": "Memucan",
-          "description": "One of the seven princes/counselors who advised the King to divorce Vashti.",
-          "sameAs": "https://en.wikipedia.org/wiki/Memucan"
+          "description": "One of the seven princes/counselors who advised the King to divorce Vashti."
         },
         {
           "@type": "CreativeWork",

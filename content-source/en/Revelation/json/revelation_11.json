@@ -39,26 +39,22 @@
         {
           "@type": "Thing",
           "name": "Restoration Movement",
-          "description": "A 19th-century effort to return to the 'Old Paths' and New Testament Christianity, rejecting denominational creeds.",
-          "sameAs": "https://en.wikipedia.org/wiki/Restoration_Movement"
+          "description": "A 19th-century effort to return to the 'Old Paths' and New Testament Christianity, rejecting denominational creeds."
         },
         {
           "@type": "Thing",
           "name": "The Two Witnesses",
-          "description": "Symbolizing the Old and New Testaments of the Bible, which were 'clothed in sackcloth' (dead languages) during the Dark Ages.",
-          "sameAs": "https://en.wikipedia.org/wiki/Two_witnesses"
+          "description": "Symbolizing the Old and New Testaments of the Bible, which were 'clothed in sackcloth' (dead languages) during the Dark Ages."
         },
         {
           "@type": "Thing",
           "name": "Measuring Rod",
-          "description": "A symbol for the Word of God (The Bible), used as the inflexible standard to measure the church, worship, and worshippers.",
-          "sameAs": null
+          "description": "A symbol for the Word of God (The Bible), used as the inflexible standard to measure the church, worship, and worshippers."
         },
         {
           "@type": "Event",
           "name": "French Revolution",
-          "description": "Interpreted as the moment the 'beast' killed the witnesses, when France declared itself atheistic in 1793.",
-          "sameAs": "https://en.wikipedia.org/wiki/French_Revolution"
+          "description": "Interpreted as the moment the 'beast' killed the witnesses, when France declared itself atheistic in 1793."
         },
         {
           "@type": "CreativeWork",

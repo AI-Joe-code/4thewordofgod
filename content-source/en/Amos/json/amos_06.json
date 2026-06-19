@@ -39,26 +39,22 @@
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "Symbolic representation of the leadership and people at ease.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "Symbolic representation of the leadership and people at ease."
         },
         {
           "@type": "Thing",
           "name": "Luxury",
-          "description": "The state of excessive comfort and indifference described as 'living on easy street'.",
-          "sameAs": null
+          "description": "The state of excessive comfort and indifference described as 'living on easy street'."
         },
         {
           "@type": "Place",
           "name": "Samaria",
-          "description": "The capital city referenced as the mountain in which the people trust.",
-          "sameAs": "https://en.wikipedia.org/wiki/Samaria_(ancient_city)"
+          "description": "The capital city referenced as the mountain in which the people trust."
         },
         {
           "@type": "Person",
           "name": "Amos",
-          "description": "The prophet delivering the sarcastic message of warning to Israel.",
-          "sameAs": "https://en.wikipedia.org/wiki/Amos_(prophet)"
+          "description": "The prophet delivering the sarcastic message of warning to Israel."
         },
         {
           "@type": "CreativeWork",

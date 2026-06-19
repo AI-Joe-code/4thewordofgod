@@ -35,20 +35,17 @@
         {
           "@type": "Person",
           "name": "Nehemiah",
-          "description": "Governor of Judah and cupbearer to the King, known for his leadership and rebuilding the walls of Jerusalem.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nehemiah"
+          "description": "Governor of Judah and cupbearer to the King, known for his leadership and rebuilding the walls of Jerusalem."
         },
         {
           "@type": "Thing",
           "name": "Usury",
-          "description": "The illegal or unethical practice of lending money at unreasonably high rates of interest, which Nehemiah abolished among the Jews.",
-          "sameAs": "https://en.wikipedia.org/wiki/Usury"
+          "description": "The illegal or unethical practice of lending money at unreasonably high rates of interest, which Nehemiah abolished among the Jews."
         },
         {
           "@type": "Person",
           "name": "Artaxerxes",
-          "description": "The King of Persia who appointed Nehemiah as governor.",
-          "sameAs": "https://en.wikipedia.org/wiki/Artaxerxes_I_of_Persia"
+          "description": "The King of Persia who appointed Nehemiah as governor."
         },
         {
           "@type": "CreativeWork",

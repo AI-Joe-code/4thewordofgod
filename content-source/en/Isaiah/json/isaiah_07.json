@@ -39,26 +39,22 @@
         {
           "@type": "Person",
           "name": "Ahaz",
-          "description": "King of Judah who feared the alliance of Syria and Israel.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ahaz"
+          "description": "King of Judah who feared the alliance of Syria and Israel."
         },
         {
           "@type": "Person",
           "name": "Immanuel",
-          "description": "The prophesied son born of a virgin, meaning 'God-With-Us'.",
-          "sameAs": "https://en.wikipedia.org/wiki/Immanuel"
+          "description": "The prophesied son born of a virgin, meaning 'God-With-Us'."
         },
         {
           "@type": "Person",
           "name": "Isaiah",
-          "description": "The prophet instructed to deliver God's message and sign to Ahaz.",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaiah"
+          "description": "The prophet instructed to deliver God's message and sign to Ahaz."
         },
         {
           "@type": "Place",
           "name": "Assyria",
-          "description": "The nation used by God as a tool of judgment (the hired razor) against Judah.",
-          "sameAs": "https://en.wikipedia.org/wiki/Assyria"
+          "description": "The nation used by God as a tool of judgment (the hired razor) against Judah."
         },
         {
           "@type": "CreativeWork",

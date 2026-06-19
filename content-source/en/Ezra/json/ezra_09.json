@@ -49,20 +49,17 @@
         {
           "@type": "Person",
           "name": "Ezra",
-          "description": "Scribe and priest who confronts the Israelites about intermarriage.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ezra"
+          "description": "Scribe and priest who confronts the Israelites about intermarriage."
         },
         {
           "@type": "Concept",
           "name": "Intermarriage",
-          "description": "The act of Israelites marrying pagan women, identified as a source of spiritual pollution.",
-          "sameAs": "https://en.wikipedia.org/wiki/Interfaith_marriage_in_Judaism"
+          "description": "The act of Israelites marrying pagan women, identified as a source of spiritual pollution."
         },
         {
           "@type": "Concept",
           "name": "Remnant",
-          "description": "The surviving group of Israelites who escaped bondage and returned to rebuild.",
-          "sameAs": "https://en.wikipedia.org/wiki/Remnant_(Bible)"
+          "description": "The surviving group of Israelites who escaped bondage and returned to rebuild."
         },
         {
           "@type": "CreativeWork",

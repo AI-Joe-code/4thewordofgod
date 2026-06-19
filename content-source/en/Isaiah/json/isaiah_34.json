@@ -35,26 +35,22 @@
         {
           "@type": "Place",
           "name": "Edom",
-          "description": "Also known as Idumea or Mount Seir, a wild and rugged region that fell under God's perpetual judgment.",
-          "sameAs": "https://en.wikipedia.org/wiki/Edom"
+          "description": "Also known as Idumea or Mount Seir, a wild and rugged region that fell under God's perpetual judgment."
         },
         {
           "@type": "Place",
           "name": "Bozrah",
-          "description": "The capital city of Edom, cited as the location for a great slaughter and sacrifice by the Lord.",
-          "sameAs": null
+          "description": "The capital city of Edom, cited as the location for a great slaughter and sacrifice by the Lord."
         },
         {
           "@type": "Concept",
           "name": "Day of Vengeance",
-          "description": "The scheduled time of God's recompense to settle the controversy of Zion.",
-          "sameAs": "https://en.wikipedia.org/wiki/Day_of_the_Lord"
+          "description": "The scheduled time of God's recompense to settle the controversy of Zion."
         },
         {
           "@type": "Thing",
           "name": "Sword of the Lord",
-          "description": "A symbolic instrument of judgment that is bathed in heaven and filled with blood.",
-          "sameAs": null
+          "description": "A symbolic instrument of judgment that is bathed in heaven and filled with blood."
         },
         {
           "@type": "CreativeWork",

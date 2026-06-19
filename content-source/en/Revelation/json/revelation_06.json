@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Trajan",
-          "description": "Roman Emperor associated with the White Horse and conquest.",
-          "sameAs": "https://en.wikipedia.org/wiki/Trajan"
+          "description": "Roman Emperor associated with the White Horse and conquest."
         },
         {
           "@type": "Thing",
           "name": "Praetorian Guard",
-          "description": "The secret service of Roman emperors, associated with the Red Horse and civil war.",
-          "sameAs": "https://en.wikipedia.org/wiki/Praetorian_Guard"
+          "description": "The secret service of Roman emperors, associated with the Red Horse and civil war."
         },
         {
           "@type": "Thing",
           "name": "The Four Horsemen",
-          "description": "Prophetic symbols representing different eras of Roman history and tribulation.",
-          "sameAs": "https://en.wikipedia.org/wiki/Four_Horsemen_of_the_Apocalypse"
+          "description": "Prophetic symbols representing different eras of Roman history and tribulation."
         },
         {
           "@type": "Event",
           "name": "Fall of Paganism",
-          "description": "The political and religious revolution symbolized by the Sixth Seal.",
-          "sameAs": "https://en.wikipedia.org/wiki/Decline_of_Greco-Roman_polytheism"
+          "description": "The political and religious revolution symbolized by the Sixth Seal."
         },
         {
           "@type": "CreativeWork",

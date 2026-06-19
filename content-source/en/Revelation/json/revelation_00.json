@@ -20,38 +20,32 @@
     {
       "@type": "Person",
       "name": "John of Patmos",
-      "description": "The author of the Book of Revelation, exiled to the Isle of Patmos.",
-      "sameAs": "https://en.wikipedia.org/wiki/John_of_Patmos"
+      "description": "The author of the Book of Revelation, exiled to the Isle of Patmos."
     },
     {
       "@type": "Place",
       "name": "Patmos",
-      "description": "A small Greek island in the Aegean Sea where John received the visions of Revelation.",
-      "sameAs": "https://en.wikipedia.org/wiki/Patmos"
+      "description": "A small Greek island in the Aegean Sea where John received the visions of Revelation."
     },
     {
       "@type": "Concept",
       "name": "Four Horsemen of the Apocalypse",
-      "description": "Figures in the Book of Revelation appearing in chapter 6, symbolizing conquest, war, famine, and death.",
-      "sameAs": "https://en.wikipedia.org/wiki/Four_Horsemen_of_the_Apocalypse"
+      "description": "Figures in the Book of Revelation appearing in chapter 6, symbolizing conquest, war, famine, and death."
     },
     {
       "@type": "Concept",
       "name": "Number of the Beast",
-      "description": "The number 666, associated with the Beast in the Book of Revelation.",
-      "sameAs": "https://en.wikipedia.org/wiki/Number_of_the_beast"
+      "description": "The number 666, associated with the Beast in the Book of Revelation."
     },
     {
       "@type": "Person",
       "name": "Whore of Babylon",
-      "description": "A symbolic female figure and place of evil mentioned in the Book of Revelation, also known as the Scarlet Woman.",
-      "sameAs": "https://en.wikipedia.org/wiki/Whore_of_Babylon"
+      "description": "A symbolic female figure and place of evil mentioned in the Book of Revelation, also known as the Scarlet Woman."
     },
     {
       "@type": "Place",
       "name": "New Jerusalem",
-      "description": "The holy city that descends from heaven at the end of the Book of Revelation.",
-      "sameAs": "https://en.wikipedia.org/wiki/New_Jerusalem"
+      "description": "The holy city that descends from heaven at the end of the Book of Revelation."
     }
   ],
   "faq": [
@@ -82,38 +76,32 @@
         {
           "@type": "Person",
           "name": "John of Patmos",
-          "description": "The author of the Book of Revelation, exiled to the Isle of Patmos.",
-          "sameAs": "https://en.wikipedia.org/wiki/John_of_Patmos"
+          "description": "The author of the Book of Revelation, exiled to the Isle of Patmos."
         },
         {
           "@type": "Place",
           "name": "Patmos",
-          "description": "A small Greek island in the Aegean Sea where John received the visions of Revelation.",
-          "sameAs": "https://en.wikipedia.org/wiki/Patmos"
+          "description": "A small Greek island in the Aegean Sea where John received the visions of Revelation."
         },
         {
           "@type": "Concept",
           "name": "Four Horsemen of the Apocalypse",
-          "description": "Figures in the Book of Revelation appearing in chapter 6, symbolizing conquest, war, famine, and death.",
-          "sameAs": "https://en.wikipedia.org/wiki/Four_Horsemen_of_the_Apocalypse"
+          "description": "Figures in the Book of Revelation appearing in chapter 6, symbolizing conquest, war, famine, and death."
         },
         {
           "@type": "Concept",
           "name": "Number of the Beast",
-          "description": "The number 666, associated with the Beast in the Book of Revelation.",
-          "sameAs": "https://en.wikipedia.org/wiki/Number_of_the_beast"
+          "description": "The number 666, associated with the Beast in the Book of Revelation."
         },
         {
           "@type": "Person",
           "name": "Whore of Babylon",
-          "description": "A symbolic female figure and place of evil mentioned in the Book of Revelation, also known as the Scarlet Woman.",
-          "sameAs": "https://en.wikipedia.org/wiki/Whore_of_Babylon"
+          "description": "A symbolic female figure and place of evil mentioned in the Book of Revelation, also known as the Scarlet Woman."
         },
         {
           "@type": "Place",
           "name": "New Jerusalem",
-          "description": "The holy city that descends from heaven at the end of the Book of Revelation.",
-          "sameAs": "https://en.wikipedia.org/wiki/New_Jerusalem"
+          "description": "The holy city that descends from heaven at the end of the Book of Revelation."
         }
       ],
       "keywords": "Revelation, End Times Prophecy, Four Horsemen, Apocalypse, New Jerusalem, Mark of the Beast, 666, Isle of Patmos, King of Kings, Biblical Eschatology"

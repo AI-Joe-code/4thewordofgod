@@ -39,26 +39,22 @@
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "The established location of the Lord's house and source of the Law in the last days.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "The established location of the Lord's house and source of the Law in the last days."
         },
         {
           "@type": "Concept",
           "name": "The Last Days",
-          "description": "The time period associated with the establishment of the Church and the outpouring of the Spirit.",
-          "sameAs": "https://en.wikipedia.org/wiki/End_time"
+          "description": "The time period associated with the establishment of the Church and the outpouring of the Spirit."
         },
         {
           "@type": "Thing",
           "name": "Idols",
-          "description": "Man-made objects of worship made of silver and gold that will be abolished and cast away.",
-          "sameAs": "https://en.wikipedia.org/wiki/Idolatry"
+          "description": "Man-made objects of worship made of silver and gold that will be abolished and cast away."
         },
         {
           "@type": "Concept",
           "name": "Day of the Lord",
-          "description": "A time of judgment where the proud are humbled and the Lord alone is exalted.",
-          "sameAs": "https://en.wikipedia.org/wiki/Day_of_the_Lord"
+          "description": "A time of judgment where the proud are humbled and the Lord alone is exalted."
         },
         {
           "@type": "CreativeWork",

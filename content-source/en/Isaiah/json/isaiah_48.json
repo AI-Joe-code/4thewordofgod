@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Cyrus",
-          "description": "Referred to as God's battle axe who will destroy the Chaldeans and release the captives.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+          "description": "Referred to as God's battle axe who will destroy the Chaldeans and release the captives."
         },
         {
           "@type": "Place",
           "name": "Babylon",
-          "description": "The nation from which God's people are commanded to flee with singing and shouting.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+          "description": "The nation from which God's people are commanded to flee with singing and shouting."
         },
         {
           "@type": "Thing",
           "name": "Furnace of Affliction",
-          "description": "The metaphorical place where God tested and refined His people rather than cutting them off.",
-          "sameAs": null
+          "description": "The metaphorical place where God tested and refined His people rather than cutting them off."
         },
         {
           "@type": "Organization",
           "name": "House of Jacob",
-          "description": "The people of Israel, described as obstinate and stiff-necked.",
-          "sameAs": "https://en.wikipedia.org/wiki/Israelites"
+          "description": "The people of Israel, described as obstinate and stiff-necked."
         },
         {
           "@type": "CreativeWork",

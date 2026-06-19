@@ -35,26 +35,22 @@
         {
           "@type": "Place",
           "name": "Ahava Canal",
-          "description": "The gathering point where the exiles camped for three days before their journey.",
-          "sameAs": null
+          "description": "The gathering point where the exiles camped for three days before their journey."
         },
         {
           "@type": "Person",
           "name": "Ezra",
-          "description": "The organizer and guide of the caravan who acted with great faith and organizational skill.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ezra"
+          "description": "The organizer and guide of the caravan who acted with great faith and organizational skill."
         },
         {
           "@type": "Thing",
           "name": "Levites",
-          "description": "The group essential for worship that was initially missing from the roster.",
-          "sameAs": "https://en.wikipedia.org/wiki/Levite"
+          "description": "The group essential for worship that was initially missing from the roster."
         },
         {
           "@type": "Place",
           "name": "Casiphia",
-          "description": "The location where messengers were sent to recruit Levites.",
-          "sameAs": "https://en.wikipedia.org/wiki/Casiphia"
+          "description": "The location where messengers were sent to recruit Levites."
         },
         {
           "@type": "CreativeWork",

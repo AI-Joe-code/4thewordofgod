@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Nehemiah",
-          "description": "The cupbearer to the king who led the rebuilding of the wall of Jerusalem.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nehemiah"
+          "description": "The cupbearer to the king who led the rebuilding of the wall of Jerusalem."
         },
         {
           "@type": "Person",
           "name": "Sanballat",
-          "description": "A chief enemy of Nehemiah who used schemes and intimidation to try and stop the work.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sanballat_the_Horonite"
+          "description": "A chief enemy of Nehemiah who used schemes and intimidation to try and stop the work."
         },
         {
           "@type": "Person",
           "name": "Shemaiah",
-          "description": "A hired false prophet who attempted to trap Nehemiah into sin by hiding in the temple.",
-          "sameAs": "https://en.wikipedia.org/wiki/Shemaiah#Shemaiah,_son_of_Delaiah"
+          "description": "A hired false prophet who attempted to trap Nehemiah into sin by hiding in the temple."
         },
         {
           "@type": "Place",
           "name": "Jerusalem",
-          "description": "The city where the wall was successfully rebuilt in 52 days.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jerusalem"
+          "description": "The city where the wall was successfully rebuilt in 52 days."
         },
         {
           "@type": "CreativeWork",

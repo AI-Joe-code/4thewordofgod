@@ -39,32 +39,27 @@
         {
           "@type": "Person",
           "name": "Satan",
-          "description": "Also known as the Dragon, imprisoned for 1000 years and later cast into the lake of fire.",
-          "sameAs": "https://en.wikipedia.org/wiki/Satan"
+          "description": "Also known as the Dragon, imprisoned for 1000 years and later cast into the lake of fire."
         },
         {
           "@type": "Event",
           "name": "First Resurrection",
-          "description": "The reign of martyrs with Christ for a thousand years.",
-          "sameAs": "https://en.wikipedia.org/wiki/Resurrection_of_the_dead"
+          "description": "The reign of martyrs with Christ for a thousand years."
         },
         {
           "@type": "Thing",
           "name": "Great White Throne",
-          "description": "The setting for the final judgment of all the dead.",
-          "sameAs": "https://en.wikipedia.org/wiki/Great_White_Throne"
+          "description": "The setting for the final judgment of all the dead."
         },
         {
           "@type": "Thing",
           "name": "Gog and Magog",
-          "description": "Symbolic nations gathered from the four corners of the earth for battle against God's people.",
-          "sameAs": "https://en.wikipedia.org/wiki/Gog_and_Magog"
+          "description": "Symbolic nations gathered from the four corners of the earth for battle against God's people."
         },
         {
           "@type": "Place",
           "name": "Lake of Fire",
-          "description": "The place of eternal punishment and the second death.",
-          "sameAs": "https://en.wikipedia.org/wiki/Lake_of_fire"
+          "description": "The place of eternal punishment and the second death."
         },
         {
           "@type": "CreativeWork",

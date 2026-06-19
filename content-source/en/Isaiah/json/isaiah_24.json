@@ -35,20 +35,17 @@
         {
           "@type": "Thing",
           "name": "The Curse",
-          "description": "The divine judgment that devours the earth due to transgression of laws.",
-          "sameAs": null
+          "description": "The divine judgment that devours the earth due to transgression of laws."
         },
         {
           "@type": "Person",
           "name": "The Remnant",
-          "description": "The few survivors likened to gleaning grapes or olives after the harvest.",
-          "sameAs": "https://en.wikipedia.org/wiki/Remnant_(Bible)"
+          "description": "The few survivors likened to gleaning grapes or olives after the harvest."
         },
         {
           "@type": "Thing",
           "name": "Everlasting Covenant",
-          "description": "The sacred agreement broken by the inhabitants of the earth.",
-          "sameAs": "https://en.wikipedia.org/wiki/Covenant_(biblical)"
+          "description": "The sacred agreement broken by the inhabitants of the earth."
         },
         {
           "@type": "CreativeWork",

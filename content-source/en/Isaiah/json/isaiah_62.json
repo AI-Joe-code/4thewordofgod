@@ -35,26 +35,22 @@
         {
           "@type": "Thing",
           "name": "Hephzibah",
-          "description": "A new name for Zion meaning 'God's delight'.",
-          "sameAs": null
+          "description": "A new name for Zion meaning 'God's delight'."
         },
         {
           "@type": "Thing",
           "name": "Beulah",
-          "description": "A new name for the land meaning 'The Bride' or 'Married'.",
-          "sameAs": "https://en.wikipedia.org/wiki/Beulah_(given_name)"
+          "description": "A new name for the land meaning 'The Bride' or 'Married'."
         },
         {
           "@type": "Person",
           "name": "Watchmen",
-          "description": "Sentinels and intercessors on the walls crying out for God's promises.",
-          "sameAs": null
+          "description": "Sentinels and intercessors on the walls crying out for God's promises."
         },
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "The restored city, described as a crown of splendor and a royal diadem.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "The restored city, described as a crown of splendor and a royal diadem."
         },
         {
           "@type": "CreativeWork",

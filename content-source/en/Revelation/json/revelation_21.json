@@ -35,20 +35,17 @@
         {
           "@type": "Place",
           "name": "New Jerusalem",
-          "description": "The Holy City descending from heaven, prepared as a bride for the Lamb.",
-          "sameAs": "https://en.wikipedia.org/wiki/New_Jerusalem"
+          "description": "The Holy City descending from heaven, prepared as a bride for the Lamb."
         },
         {
           "@type": "Thing",
           "name": "The Second Death",
-          "description": "The Lake of Fire, defined as the final punishment for the wicked after judgment.",
-          "sameAs": "https://en.wikipedia.org/wiki/Second_death"
+          "description": "The Lake of Fire, defined as the final punishment for the wicked after judgment."
         },
         {
           "@type": "Person",
           "name": "Foy E. Wallace",
-          "description": "A commentator cited by the author as holding the view that the new earth refers to the church age.",
-          "sameAs": "https://en.wikipedia.org/wiki/Foy_E._Wallace_Jr."
+          "description": "A commentator cited by the author as holding the view that the new earth refers to the church age."
         },
         {
           "@type": "CreativeWork",

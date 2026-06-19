@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Isaiah",
-          "description": "The prophet and son of Amoz who saw the vision concerning Judah and Jerusalem.",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaiah"
+          "description": "The prophet and son of Amoz who saw the vision concerning Judah and Jerusalem."
         },
         {
           "@type": "Place",
           "name": "Sodom and Gomorrah",
-          "description": "Cities used as a comparative standard for total destruction and moral corruption.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sodom_and_Gomorrah"
+          "description": "Cities used as a comparative standard for total destruction and moral corruption."
         },
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "The faithful city that turned into a harlot but is promised restoration.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "The faithful city that turned into a harlot but is promised restoration."
         },
         {
           "@type": "Concept",
           "name": "Sham Worship",
-          "description": "The rejection of meaningless sacrifices and festivals offered without justice.",
-          "sameAs": null
+          "description": "The rejection of meaningless sacrifices and festivals offered without justice."
         },
         {
           "@type": "CreativeWork",

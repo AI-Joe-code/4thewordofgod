@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Hezekiah",
-          "description": "Identified by the commentary as the righteous king who governs in equity.",
-          "sameAs": "https://en.wikipedia.org/wiki/Hezekiah"
+          "description": "Identified by the commentary as the righteous king who governs in equity."
         },
         {
           "@type": "Thing",
           "name": "Righteousness",
-          "description": "The central theme of the governance of the king and the instruction of God's laws.",
-          "sameAs": "https://en.wikipedia.org/wiki/Righteousness"
+          "description": "The central theme of the governance of the king and the instruction of God's laws."
         },
         {
           "@type": "Person",
           "name": "The Liberal Man",
-          "description": "A noble person who devises noble plans and stands by their word, contrasted with the churl.",
-          "sameAs": null
+          "description": "A noble person who devises noble plans and stands by their word, contrasted with the churl."
         },
         {
           "@type": "Person",
           "name": "Complacent Women",
-          "description": "Daughters of Zion who are at ease and careless, warned of impending harvest failure and grief.",
-          "sameAs": null
+          "description": "Daughters of Zion who are at ease and careless, warned of impending harvest failure and grief."
         },
         {
           "@type": "CreativeWork",

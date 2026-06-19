@@ -31,26 +31,22 @@
         {
           "@type": "Person",
           "name": "Mordecai",
-          "description": "Second in command to the King, sought the wealth of his people.",
-          "sameAs": "https://en.wikipedia.org/wiki/Mordecai"
+          "description": "Second in command to the King, sought the wealth of his people."
         },
         {
           "@type": "Person",
           "name": "King Ahasuerus",
-          "description": "Ruler of Persia who levied tribute upon the land and isles.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ahasuerus"
+          "description": "Ruler of Persia who levied tribute upon the land and isles."
         },
         {
           "@type": "Place",
           "name": "Media and Persia",
-          "description": "The empire whose chronicles recorded the acts of power and Mordecai's greatness.",
-          "sameAs": "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+          "description": "The empire whose chronicles recorded the acts of power and Mordecai's greatness."
         },
         {
           "@type": "Thing",
           "name": "Providence",
-          "description": "The unseen fingerprints of God acting throughout the history of Esther.",
-          "sameAs": "https://en.wikipedia.org/wiki/Divine_providence"
+          "description": "The unseen fingerprints of God acting throughout the history of Esther."
         },
         {
           "@type": "CreativeWork",

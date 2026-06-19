@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Alaric",
-          "description": "King of the Goths who led the first invasion of Rome.",
-          "sameAs": "https://en.wikipedia.org/wiki/Alaric_I"
+          "description": "King of the Goths who led the first invasion of Rome."
         },
         {
           "@type": "Person",
           "name": "Genseric",
-          "description": "King of the Vandals who attacked Rome from the sea.",
-          "sameAs": "https://en.wikipedia.org/wiki/Genseric"
+          "description": "King of the Vandals who attacked Rome from the sea."
         },
         {
           "@type": "Person",
           "name": "Attila",
-          "description": "King of the Huns, styled as 'The Scourge of God'.",
-          "sameAs": "https://en.wikipedia.org/wiki/Attila"
+          "description": "King of the Huns, styled as 'The Scourge of God'."
         },
         {
           "@type": "Person",
           "name": "Odoacer",
-          "description": "King of the Heruli who abolished the Roman Senate.",
-          "sameAs": "https://en.wikipedia.org/wiki/Odoacer"
+          "description": "King of the Heruli who abolished the Roman Senate."
         },
         {
           "@type": "CreativeWork",

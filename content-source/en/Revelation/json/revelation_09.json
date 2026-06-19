@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Mohammed",
-          "description": "The 'fallen star' and prophet of Islam who founded the religion in Arabia.",
-          "sameAs": "https://en.wikipedia.org/wiki/Muhammad"
+          "description": "The 'fallen star' and prophet of Islam who founded the religion in Arabia."
         },
         {
           "@type": "Thing",
           "name": "The Koran",
-          "description": "Described as the 'Key of the shaft of the Abyss' used to justify the movement's actions.",
-          "sameAs": "https://en.wikipedia.org/wiki/Quran"
+          "description": "Described as the 'Key of the shaft of the Abyss' used to justify the movement's actions."
         },
         {
           "@type": "Thing",
           "name": "Abaddon",
-          "description": "The 'Destroyer' and king of the locusts, identified in the text as Mohammed.",
-          "sameAs": "https://en.wikipedia.org/wiki/Abaddon"
+          "description": "The 'Destroyer' and king of the locusts, identified in the text as Mohammed."
         },
         {
           "@type": "Place",
           "name": "Ottoman Empire",
-          "description": "The power identified with the sixth trumpet and the river Euphrates.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+          "description": "The power identified with the sixth trumpet and the river Euphrates."
         },
         {
           "@type": "CreativeWork",

@@ -39,32 +39,27 @@
         {
           "@type": "Person",
           "name": "Polycarp",
-          "description": "A disciple of John and Bishop of Smyrna who was martyred at age 86.",
-          "sameAs": "https://en.wikipedia.org/wiki/Polycarp"
+          "description": "A disciple of John and Bishop of Smyrna who was martyred at age 86."
         },
         {
           "@type": "Person",
           "name": "Jezebel",
-          "description": "A symbolic or literal figure in Thyatira representing idolatry, compromise, and immorality.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jezebel"
+          "description": "A symbolic or literal figure in Thyatira representing idolatry, compromise, and immorality."
         },
         {
           "@type": "Thing",
           "name": "Nicolaitans",
-          "description": "A heretical sect whose deeds were hated by Christ, associated with the teaching of Balaam.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nicolaism"
+          "description": "A heretical sect whose deeds were hated by Christ, associated with the teaching of Balaam."
         },
         {
           "@type": "Thing",
           "name": "Asclepius",
-          "description": "The god of healing worshipped in Pergamum under the symbol of a serpent.",
-          "sameAs": "https://en.wikipedia.org/wiki/Asclepius"
+          "description": "The god of healing worshipped in Pergamum under the symbol of a serpent."
         },
         {
           "@type": "Thing",
           "name": "Tree of Life",
-          "description": "A symbol of eternal life located in the paradise of God, promised to those who overcome.",
-          "sameAs": "https://en.wikipedia.org/wiki/Tree_of_life_(biblical)"
+          "description": "A symbol of eternal life located in the paradise of God, promised to those who overcome."
         },
         {
           "@type": "CreativeWork",

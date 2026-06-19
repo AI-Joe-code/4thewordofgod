@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Hezekiah",
-          "description": "King of Judah who prayed for deliverance from Assyria",
-          "sameAs": "https://en.wikipedia.org/wiki/Hezekiah"
+          "description": "King of Judah who prayed for deliverance from Assyria"
         },
         {
           "@type": "Person",
           "name": "Sennacherib",
-          "description": "King of Assyria who defied God and was subsequently assassinated",
-          "sameAs": "https://en.wikipedia.org/wiki/Sennacherib"
+          "description": "King of Assyria who defied God and was subsequently assassinated"
         },
         {
           "@type": "Thing",
           "name": "The Remnant",
-          "description": "The surviving group of Judah that would take root and repopulate the land",
-          "sameAs": "https://en.wikipedia.org/wiki/Remnant_(Bible)"
+          "description": "The surviving group of Judah that would take root and repopulate the land"
         },
         {
           "@type": "Person",
           "name": "Isaiah",
-          "description": "The prophet who delivered God's message of reassurance to Hezekiah",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaiah"
+          "description": "The prophet who delivered God's message of reassurance to Hezekiah"
         },
         {
           "@type": "CreativeWork",

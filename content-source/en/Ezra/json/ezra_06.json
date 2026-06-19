@@ -39,32 +39,27 @@
         {
           "@type": "Person",
           "name": "Darius",
-          "description": "King of Persia who issued the decree to enforce the rebuilding of the temple.",
-          "sameAs": "https://en.wikipedia.org/wiki/Darius_the_Great"
+          "description": "King of Persia who issued the decree to enforce the rebuilding of the temple."
         },
         {
           "@type": "Place",
           "name": "Ecbatana",
-          "description": "The summer palace in the province of Media where Cyrus's original decree was found.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ecbatana"
+          "description": "The summer palace in the province of Media where Cyrus's original decree was found."
         },
         {
           "@type": "Person",
           "name": "Tattenai",
-          "description": "Governor of Trans-Euphrates who opposed the Jewish rebuilding efforts but was ordered to fund them.",
-          "sameAs": "https://en.wikipedia.org/wiki/Tattenai"
+          "description": "Governor of Trans-Euphrates who opposed the Jewish rebuilding efforts but was ordered to fund them."
         },
         {
           "@type": "Place",
           "name": "Temple of God",
-          "description": "The structure in Jerusalem rebuilt by the Jewish exiles under Persian decree.",
-          "sameAs": "https://en.wikipedia.org/wiki/Second_Temple"
+          "description": "The structure in Jerusalem rebuilt by the Jewish exiles under Persian decree."
         },
         {
           "@type": "Person",
           "name": "Cyrus",
-          "description": "The predecessor to Darius whose original decree authorized the temple construction.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+          "description": "The predecessor to Darius whose original decree authorized the temple construction."
         },
         {
           "@type": "CreativeWork",

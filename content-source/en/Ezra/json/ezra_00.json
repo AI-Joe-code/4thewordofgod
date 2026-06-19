@@ -20,50 +20,42 @@
     {
       "@type": "Person",
       "name": "Ezra",
-      "description": "A Jewish scribe and priest who led the second group of Jews from Babylon to Jerusalem.",
-      "sameAs": "https://en.wikipedia.org/wiki/Ezra"
+      "description": "A Jewish scribe and priest who led the second group of Jews from Babylon to Jerusalem."
     },
     {
       "@type": "Person",
       "name": "Zerubbabel",
-      "description": "A governor of the Persian Province of Yehud Medinata and the grandson of Jehoiachin, penultimate king of Judah.",
-      "sameAs": "https://en.wikipedia.org/wiki/Zerubbabel"
+      "description": "A governor of the Persian Province of Yehud Medinata and the grandson of Jehoiachin, penultimate king of Judah."
     },
     {
       "@type": "Person",
       "name": "Nehemiah",
-      "description": "A central figure in the post-exilic history of the Jews who supervised the rebuilding of Jerusalem.",
-      "sameAs": "https://en.wikipedia.org/wiki/Nehemiah"
+      "description": "A central figure in the post-exilic history of the Jews who supervised the rebuilding of Jerusalem."
     },
     {
       "@type": "Person",
       "name": "Cyrus the Great",
-      "description": "Founder of the Achaemenid Empire who issued the decree for the Jews to return to their homeland.",
-      "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+      "description": "Founder of the Achaemenid Empire who issued the decree for the Jews to return to their homeland."
     },
     {
       "@type": "Person",
       "name": "Darius I",
-      "description": "The third King of Kings of the Achaemenid Empire.",
-      "sameAs": "https://en.wikipedia.org/wiki/Darius_I"
+      "description": "The third King of Kings of the Achaemenid Empire."
     },
     {
       "@type": "Place",
       "name": "Babylon",
-      "description": "The capital city of the Babylonian Empire, where the Jews were held captive.",
-      "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+      "description": "The capital city of the Babylonian Empire, where the Jews were held captive."
     },
     {
       "@type": "Person",
       "name": "Haggai",
-      "description": "A Hebrew prophet during the building of the Second Temple in Jerusalem.",
-      "sameAs": "https://en.wikipedia.org/wiki/Haggai"
+      "description": "A Hebrew prophet during the building of the Second Temple in Jerusalem."
     },
     {
       "@type": "Person",
       "name": "Zechariah",
-      "description": "A prophet of the Kingdom of Judah and a contemporary of Haggai.",
-      "sameAs": "https://en.wikipedia.org/wiki/Zechariah_(Hebrew_prophet)"
+      "description": "A prophet of the Kingdom of Judah and a contemporary of Haggai."
     }
   ],
   "faq": [
@@ -94,50 +86,42 @@
         {
           "@type": "Person",
           "name": "Ezra",
-          "description": "A Jewish scribe and priest who led the second group of Jews from Babylon to Jerusalem.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ezra"
+          "description": "A Jewish scribe and priest who led the second group of Jews from Babylon to Jerusalem."
         },
         {
           "@type": "Person",
           "name": "Zerubbabel",
-          "description": "A governor of the Persian Province of Yehud Medinata and the grandson of Jehoiachin, penultimate king of Judah.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zerubbabel"
+          "description": "A governor of the Persian Province of Yehud Medinata and the grandson of Jehoiachin, penultimate king of Judah."
         },
         {
           "@type": "Person",
           "name": "Nehemiah",
-          "description": "A central figure in the post-exilic history of the Jews who supervised the rebuilding of Jerusalem.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nehemiah"
+          "description": "A central figure in the post-exilic history of the Jews who supervised the rebuilding of Jerusalem."
         },
         {
           "@type": "Person",
           "name": "Cyrus the Great",
-          "description": "Founder of the Achaemenid Empire who issued the decree for the Jews to return to their homeland.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+          "description": "Founder of the Achaemenid Empire who issued the decree for the Jews to return to their homeland."
         },
         {
           "@type": "Person",
           "name": "Darius I",
-          "description": "The third King of Kings of the Achaemenid Empire.",
-          "sameAs": "https://en.wikipedia.org/wiki/Darius_I"
+          "description": "The third King of Kings of the Achaemenid Empire."
         },
         {
           "@type": "Place",
           "name": "Babylon",
-          "description": "The capital city of the Babylonian Empire, where the Jews were held captive.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+          "description": "The capital city of the Babylonian Empire, where the Jews were held captive."
         },
         {
           "@type": "Person",
           "name": "Haggai",
-          "description": "A Hebrew prophet during the building of the Second Temple in Jerusalem.",
-          "sameAs": "https://en.wikipedia.org/wiki/Haggai"
+          "description": "A Hebrew prophet during the building of the Second Temple in Jerusalem."
         },
         {
           "@type": "Person",
           "name": "Zechariah",
-          "description": "A prophet of the Kingdom of Judah and a contemporary of Haggai.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zechariah_(Hebrew_prophet)"
+          "description": "A prophet of the Kingdom of Judah and a contemporary of Haggai."
         }
       ],
       "keywords": "Book of Ezra, Zerubbabel, Nehemiah, Cyrus the Great, Babylonian Exile, Temple Rebuilding, Persian Empire, Bible Commentary, Old Testament History, Prophet Haggai"

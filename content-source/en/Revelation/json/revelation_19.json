@@ -35,26 +35,22 @@
         {
           "@type": "Thing",
           "name": "Babylon The Great",
-          "description": "Symbolic representation of the union of Church and State, specifically identified as Papal Powers.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon_the_Great"
+          "description": "Symbolic representation of the union of Church and State, specifically identified as Papal Powers."
         },
         {
           "@type": "Person",
           "name": "The Rider on the White Horse",
-          "description": "Identified as Jesus, Faithful and True, and the Word of God, waging war in defense of truth.",
-          "sameAs": "https://en.wikipedia.org/wiki/Four_Horsemen_of_the_Apocalypse"
+          "description": "Identified as Jesus, Faithful and True, and the Word of God, waging war in defense of truth."
         },
         {
           "@type": "Thing",
           "name": "False Prophet",
-          "description": "Identified in the commentary as Mohammedan Powers (Islam).",
-          "sameAs": "https://en.wikipedia.org/wiki/False_prophet"
+          "description": "Identified in the commentary as Mohammedan Powers (Islam)."
         },
         {
           "@type": "Thing",
           "name": "Beast",
-          "description": "Identified in the commentary as Papal Powers (Catholicism).",
-          "sameAs": "https://en.wikipedia.org/wiki/The_Beast_(Revelation)"
+          "description": "Identified in the commentary as Papal Powers (Catholicism)."
         },
         {
           "@type": "CreativeWork",

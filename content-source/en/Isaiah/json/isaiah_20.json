@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Isaiah",
-          "description": "Prophet who walked naked and barefoot as a sign.",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaiah"
+          "description": "Prophet who walked naked and barefoot as a sign."
         },
         {
           "@type": "Person",
           "name": "Sargon",
-          "description": "King of Assyria who sent Tartan to Ashdod.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sargon_II"
+          "description": "King of Assyria who sent Tartan to Ashdod."
         },
         {
           "@type": "Place",
           "name": "Ashdod",
-          "description": "One of the 5 principal cities of the Philistines, captured by Tartan.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ashdod"
+          "description": "One of the 5 principal cities of the Philistines, captured by Tartan."
         },
         {
           "@type": "Place",
           "name": "Egypt",
-          "description": "Nation symbolizing the false hope of Israel.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ancient_Egypt"
+          "description": "Nation symbolizing the false hope of Israel."
         },
         {
           "@type": "CreativeWork",

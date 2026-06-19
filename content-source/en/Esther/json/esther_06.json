@@ -35,32 +35,27 @@
         {
           "@type": "Person",
           "name": "Haman",
-          "description": "The king's official who planned to execute Mordecai but was forced to honor him instead.",
-          "sameAs": "https://en.wikipedia.org/wiki/Haman"
+          "description": "The king's official who planned to execute Mordecai but was forced to honor him instead."
         },
         {
           "@type": "Person",
           "name": "Mordecai",
-          "description": "A Jewish gatekeeper who saved the king's life and was providentially honored.",
-          "sameAs": "https://en.wikipedia.org/wiki/Mordecai"
+          "description": "A Jewish gatekeeper who saved the king's life and was providentially honored."
         },
         {
           "@type": "Concept",
           "name": "Providence",
-          "description": "The divine intervention of God ensuring the king's insomnia led to the protection of the Jews.",
-          "sameAs": "https://en.wikipedia.org/wiki/Divine_providence"
+          "description": "The divine intervention of God ensuring the king's insomnia led to the protection of the Jews."
         },
         {
           "@type": "Person",
           "name": "King Ahasuerus",
-          "description": "The king who ordered the records read during a sleepless night.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ahasuerus"
+          "description": "The king who ordered the records read during a sleepless night."
         },
         {
           "@type": "Person",
           "name": "Zeresh",
-          "description": "Haman's wife who predicted his inevitable fall before the Jews.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zeresh"
+          "description": "Haman's wife who predicted his inevitable fall before the Jews."
         },
         {
           "@type": "CreativeWork",

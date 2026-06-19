@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Cyrus",
-          "description": "The historical figure identified as the one God instructed to release the prisoners.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+          "description": "The historical figure identified as the one God instructed to release the prisoners."
         },
         {
           "@type": "Concept",
           "name": "Beauty for Ashes",
-          "description": "A theological metaphor signifying the replacement of mourning (ashes) with a garland of joy.",
-          "sameAs": null
+          "description": "A theological metaphor signifying the replacement of mourning (ashes) with a garland of joy."
         },
         {
           "@type": "Concept",
           "name": "Year of the LORD's Pardon",
-          "description": "Refers to the end of the Babylonian captivity and the release of exiles.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jubilee_(biblical)"
+          "description": "Refers to the end of the Babylonian captivity and the release of exiles."
         },
         {
           "@type": "Concept",
           "name": "Trees of Righteousness",
-          "description": "A title given to the restored people of Israel, signifying their planting by the LORD.",
-          "sameAs": null
+          "description": "A title given to the restored people of Israel, signifying their planting by the LORD."
         },
         {
           "@type": "CreativeWork",

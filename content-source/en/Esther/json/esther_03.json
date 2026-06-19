@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Haman",
-          "description": "The son of Hammedatha the Agagite, promoted to second in command and enemy of the Jews.",
-          "sameAs": "https://en.wikipedia.org/wiki/Haman"
+          "description": "The son of Hammedatha the Agagite, promoted to second in command and enemy of the Jews."
         },
         {
           "@type": "Person",
           "name": "Mordecai",
-          "description": "A Jew who refused to bow to Haman on religious grounds.",
-          "sameAs": "https://en.wikipedia.org/wiki/Mordecai"
+          "description": "A Jew who refused to bow to Haman on religious grounds."
         },
         {
           "@type": "Thing",
           "name": "Pur",
-          "description": "The lot cast to determine the lucky day for the destruction of the Jews.",
-          "sameAs": "https://en.wikipedia.org/wiki/Purim"
+          "description": "The lot cast to determine the lucky day for the destruction of the Jews."
         },
         {
           "@type": "Place",
           "name": "Shushan",
-          "description": "The capital city where the decree was issued and the people were perplexed.",
-          "sameAs": "https://en.wikipedia.org/wiki/Susa"
+          "description": "The capital city where the decree was issued and the people were perplexed."
         },
         {
           "@type": "CreativeWork",

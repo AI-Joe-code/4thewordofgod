@@ -19,38 +19,32 @@
     {
       "@type": "Person",
       "name": "Isaiah",
-      "description": "The 8th-century BC Israelite prophet after whom the Book of Isaiah is named.",
-      "sameAs": "https://en.wikipedia.org/wiki/Isaiah"
+      "description": "The 8th-century BC Israelite prophet after whom the Book of Isaiah is named."
     },
     {
       "@type": "Person",
       "name": "Hezekiah",
-      "description": "The 13th king of Judah who witnessed the destruction of the Northern Kingdom of Israel by Assyria.",
-      "sameAs": "https://en.wikipedia.org/wiki/Hezekiah"
+      "description": "The 13th king of Judah who witnessed the destruction of the Northern Kingdom of Israel by Assyria."
     },
     {
       "@type": "Person",
       "name": "Cyrus the Great",
-      "description": "Founder of the Achaemenid Empire, prophesied by Isaiah to release the Jews from Babylonian captivity.",
-      "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+      "description": "Founder of the Achaemenid Empire, prophesied by Isaiah to release the Jews from Babylonian captivity."
     },
     {
       "@type": "Person",
       "name": "Tiglath-Pileser III",
-      "description": "A prominent king of Assyria who expanded the empire westward.",
-      "sameAs": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III"
+      "description": "A prominent king of Assyria who expanded the empire westward."
     },
     {
       "@type": "Person",
       "name": "Sennacherib",
-      "description": "King of Assyria who besieged Jerusalem in 701 BC.",
-      "sameAs": "https://en.wikipedia.org/wiki/Sennacherib"
+      "description": "King of Assyria who besieged Jerusalem in 701 BC."
     },
     {
       "@type": "Person",
       "name": "Amos",
-      "description": "One of the Twelve Minor Prophets, a contemporary of Isaiah.",
-      "sameAs": "https://en.wikipedia.org/wiki/Amos_(prophet)"
+      "description": "One of the Twelve Minor Prophets, a contemporary of Isaiah."
     }
   ],
   "faq": [
@@ -85,38 +79,32 @@
         {
           "@type": "Person",
           "name": "Isaiah",
-          "description": "The 8th-century BC Israelite prophet after whom the Book of Isaiah is named.",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaiah"
+          "description": "The 8th-century BC Israelite prophet after whom the Book of Isaiah is named."
         },
         {
           "@type": "Person",
           "name": "Hezekiah",
-          "description": "The 13th king of Judah who witnessed the destruction of the Northern Kingdom of Israel by Assyria.",
-          "sameAs": "https://en.wikipedia.org/wiki/Hezekiah"
+          "description": "The 13th king of Judah who witnessed the destruction of the Northern Kingdom of Israel by Assyria."
         },
         {
           "@type": "Person",
           "name": "Cyrus the Great",
-          "description": "Founder of the Achaemenid Empire, prophesied by Isaiah to release the Jews from Babylonian captivity.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+          "description": "Founder of the Achaemenid Empire, prophesied by Isaiah to release the Jews from Babylonian captivity."
         },
         {
           "@type": "Person",
           "name": "Tiglath-Pileser III",
-          "description": "A prominent king of Assyria who expanded the empire westward.",
-          "sameAs": "https://en.wikipedia.org/wiki/Tiglath-Pileser_III"
+          "description": "A prominent king of Assyria who expanded the empire westward."
         },
         {
           "@type": "Person",
           "name": "Sennacherib",
-          "description": "King of Assyria who besieged Jerusalem in 701 BC.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sennacherib"
+          "description": "King of Assyria who besieged Jerusalem in 701 BC."
         },
         {
           "@type": "Person",
           "name": "Amos",
-          "description": "One of the Twelve Minor Prophets, a contemporary of Isaiah.",
-          "sameAs": "https://en.wikipedia.org/wiki/Amos_(prophet)"
+          "description": "One of the Twelve Minor Prophets, a contemporary of Isaiah."
         }
       ],
       "keywords": "Book of Isaiah, Prophet Isaiah, Messianic Prophecies, Assyrian Empire, Babylonian Captivity, King Hezekiah, Suffering Servant, Cyrus the Persian, Old Testament Poetry"

@@ -35,26 +35,22 @@
         {
           "@type": "Place",
           "name": "Ethiopia",
-          "description": "A land crisscrossed with rivers, inhabited by the descendants of Cush.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cush_(Bible)"
+          "description": "A land crisscrossed with rivers, inhabited by the descendants of Cush."
         },
         {
           "@type": "Place",
           "name": "Mount Zion",
-          "description": "The dwelling place of the Lord of hosts where tribute is brought.",
-          "sameAs": "https://en.wikipedia.org/wiki/Mount_Zion"
+          "description": "The dwelling place of the Lord of hosts where tribute is brought."
         },
         {
           "@type": "Thing",
           "name": "Vessels of Bulrushes",
-          "description": "Ships or skiffs built out of papyrus used to sail the Nile.",
-          "sameAs": "https://en.wikipedia.org/wiki/Reed_boat"
+          "description": "Ships or skiffs built out of papyrus used to sail the Nile."
         },
         {
           "@type": "Concept",
           "name": "Divine Pruning",
-          "description": "The metaphor of God cutting off tendrils and branches to thwart national plans.",
-          "sameAs": null
+          "description": "The metaphor of God cutting off tendrils and branches to thwart national plans."
         },
         {
           "@type": "CreativeWork",

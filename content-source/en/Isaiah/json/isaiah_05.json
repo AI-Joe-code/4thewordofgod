@@ -35,26 +35,22 @@
         {
           "@type": "Place",
           "name": "Vineyard",
-          "description": "A metaphor for the House of Israel and the men of Judah.",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaiah_5"
+          "description": "A metaphor for the House of Israel and the men of Judah."
         },
         {
           "@type": "Thing",
           "name": "Wild Grapes",
-          "description": "Symbolizes the oppression, distress, and lack of justice found in Judah.",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaiah_5"
+          "description": "Symbolizes the oppression, distress, and lack of justice found in Judah."
         },
         {
           "@type": "Concept",
           "name": "Six Woes",
-          "description": "A series of judgments pronounced against greed, drunkenness, arrogance, and perversion.",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaiah_5"
+          "description": "A series of judgments pronounced against greed, drunkenness, arrogance, and perversion."
         },
         {
           "@type": "Thing",
           "name": "Nation from the North",
-          "description": "A vast army signaled by God to execute judgment upon the land.",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaiah_5"
+          "description": "A vast army signaled by God to execute judgment upon the land."
         },
         {
           "@type": "CreativeWork",

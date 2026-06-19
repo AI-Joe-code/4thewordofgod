@@ -39,26 +39,22 @@
         {
           "@type": "Person",
           "name": "Rabshakeh",
-          "description": "The Assyrian field commander sent to intimidate Jerusalem.",
-          "sameAs": "https://en.wikipedia.org/wiki/Rabshakeh"
+          "description": "The Assyrian field commander sent to intimidate Jerusalem."
         },
         {
           "@type": "Person",
           "name": "Hezekiah",
-          "description": "King of Judah who faced the Assyrian threat.",
-          "sameAs": "https://en.wikipedia.org/wiki/Hezekiah"
+          "description": "King of Judah who faced the Assyrian threat."
         },
         {
           "@type": "Person",
           "name": "Sennacherib",
-          "description": "King of Assyria who occupied the fortified cities of Judah.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sennacherib"
+          "description": "King of Assyria who occupied the fortified cities of Judah."
         },
         {
           "@type": "Place",
           "name": "Public Laundry Mat",
-          "description": "The commentary's specific term for the conduit of the upper pool where negotiations occurred.",
-          "sameAs": null
+          "description": "The commentary's specific term for the conduit of the upper pool where negotiations occurred."
         },
         {
           "@type": "CreativeWork",

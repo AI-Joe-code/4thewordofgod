@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Zerubbabel",
-          "description": "Governor of Judah and son of Shealtiel, referred to as God's chosen 'signet ring'.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zerubbabel"
+          "description": "Governor of Judah and son of Shealtiel, referred to as God's chosen 'signet ring'."
         },
         {
           "@type": "Person",
           "name": "Haggai",
-          "description": "The prophet who delivered the word of the LORD regarding the rebuilding of the Temple.",
-          "sameAs": "https://en.wikipedia.org/wiki/Haggai"
+          "description": "The prophet who delivered the word of the LORD regarding the rebuilding of the Temple."
         },
         {
           "@type": "Place",
           "name": "The Temple",
-          "description": "The house of the Lord in Jerusalem, which was to be rebuilt with a glory greater than the former.",
-          "sameAs": "https://en.wikipedia.org/wiki/Second_Temple"
+          "description": "The house of the Lord in Jerusalem, which was to be rebuilt with a glory greater than the former."
         },
         {
           "@type": "Concept",
           "name": "Holiness",
-          "description": "The spiritual state discussed by Haggai, illustrating that holiness is not infectious, but defilement is.",
-          "sameAs": "https://en.wikipedia.org/wiki/Kedushah"
+          "description": "The spiritual state discussed by Haggai, illustrating that holiness is not infectious, but defilement is."
         },
         {
           "@type": "CreativeWork",

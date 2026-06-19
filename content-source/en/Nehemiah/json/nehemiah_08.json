@@ -39,32 +39,27 @@
         {
           "@type": "Person",
           "name": "Ezra",
-          "description": "Priest and scribe who read and explained the Law to the people.",
-          "sameAs": "https://en.wikipedia.org/wiki/Ezra"
+          "description": "Priest and scribe who read and explained the Law to the people."
         },
         {
           "@type": "Person",
           "name": "Nehemiah",
-          "description": "Governor and activist who worked with Ezra to lead the people.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nehemiah"
+          "description": "Governor and activist who worked with Ezra to lead the people."
         },
         {
           "@type": "Thing",
           "name": "Book of the Law",
-          "description": "The Scroll of the Law of Moses, read to the assembly.",
-          "sameAs": "https://en.wikipedia.org/wiki/Torah"
+          "description": "The Scroll of the Law of Moses, read to the assembly."
         },
         {
           "@type": "Event",
           "name": "Feast of Tabernacles",
-          "description": "A seven-day festival where Israelites lived in booths to remember the wilderness wanderings.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sukkot"
+          "description": "A seven-day festival where Israelites lived in booths to remember the wilderness wanderings."
         },
         {
           "@type": "Place",
           "name": "Water Gate",
-          "description": "The location in Jerusalem where the people assembled to hear the Law.",
-          "sameAs": null
+          "description": "The location in Jerusalem where the people assembled to hear the Law."
         },
         {
           "@type": "CreativeWork",

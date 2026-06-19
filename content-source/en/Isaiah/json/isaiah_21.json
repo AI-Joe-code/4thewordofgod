@@ -35,32 +35,27 @@
         {
           "@type": "Place",
           "name": "Babylon",
-          "description": "The principal city described as the 'desert of the sea' destined for destruction.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+          "description": "The principal city described as the 'desert of the sea' destined for destruction."
         },
         {
           "@type": "Organization",
           "name": "Medes and Persians",
-          "description": "The combined forces of Elam and Media sent by God to besiege Babylon.",
-          "sameAs": "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+          "description": "The combined forces of Elam and Media sent by God to besiege Babylon."
         },
         {
           "@type": "Person",
           "name": "The Watchman",
-          "description": "A symbolic or literal figure tasked with declaring what he sees regarding the siege.",
-          "sameAs": null
+          "description": "A symbolic or literal figure tasked with declaring what he sees regarding the siege."
         },
         {
           "@type": "Place",
           "name": "Dumah",
-          "description": "Biblical name referring to Edom.",
-          "sameAs": null
+          "description": "Biblical name referring to Edom."
         },
         {
           "@type": "Place",
           "name": "Kedar",
-          "description": "A tribe of Arabians whose glory is predicted to fail within a year.",
-          "sameAs": "https://en.wikipedia.org/wiki/Qedarites"
+          "description": "A tribe of Arabians whose glory is predicted to fail within a year."
         },
         {
           "@type": "CreativeWork",

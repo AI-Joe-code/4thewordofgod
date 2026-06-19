@@ -35,26 +35,22 @@
         {
           "@type": "Place",
           "name": "Tyre",
-          "description": "An ancient Phoenician port city known for its wealth, maritime trade, and eventual destruction by Nebuchadnezzar and Alexander the Great.",
-          "sameAs": "https://en.wikipedia.org/wiki/Tyre,_Lebanon"
+          "description": "An ancient Phoenician port city known for its wealth, maritime trade, and eventual destruction by Nebuchadnezzar and Alexander the Great."
         },
         {
           "@type": "Person",
           "name": "Alexander the Great",
-          "description": "The Macedonian conqueror who built a causeway to siege and destroy the island city of Tyre.",
-          "sameAs": "https://en.wikipedia.org/wiki/Alexander_the_Great"
+          "description": "The Macedonian conqueror who built a causeway to siege and destroy the island city of Tyre."
         },
         {
           "@type": "Person",
           "name": "Nebuchadnezzar",
-          "description": "The King of Babylon who besieged Tyre for 13 years and destroyed the mainland city (Old Tyre).",
-          "sameAs": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II"
+          "description": "The King of Babylon who besieged Tyre for 13 years and destroyed the mainland city (Old Tyre)."
         },
         {
           "@type": "Place",
           "name": "Tarshish",
-          "description": "A distant trading partner of Tyre, believed to be in southern Spain, whose ships were left with no port to enter.",
-          "sameAs": "https://en.wikipedia.org/wiki/Tarshish"
+          "description": "A distant trading partner of Tyre, believed to be in southern Spain, whose ships were left with no port to enter."
         },
         {
           "@type": "CreativeWork",

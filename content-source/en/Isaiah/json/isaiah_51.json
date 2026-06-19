@@ -35,32 +35,27 @@
         {
           "@type": "Person",
           "name": "Abraham and Sarah",
-          "description": "Ancestors of Israel, cited as the 'rock' from which the people were quarried.",
-          "sameAs": "https://en.wikipedia.org/wiki/Abraham"
+          "description": "Ancestors of Israel, cited as the 'rock' from which the people were quarried."
         },
         {
           "@type": "Place",
           "name": "Zion",
-          "description": "The forsaken place God promises to restore to the beauty of Eden.",
-          "sameAs": "https://en.wikipedia.org/wiki/Zion"
+          "description": "The forsaken place God promises to restore to the beauty of Eden."
         },
         {
           "@type": "Thing",
           "name": "Cup of Fury",
-          "description": "A metaphor for the judgment and wine of astonishment God poured out on His people.",
-          "sameAs": null
+          "description": "A metaphor for the judgment and wine of astonishment God poured out on His people."
         },
         {
           "@type": "Thing",
           "name": "Arm of the Lord",
-          "description": "Symbol of God's strength and ability to judge and save.",
-          "sameAs": null
+          "description": "Symbol of God's strength and ability to judge and save."
         },
         {
           "@type": "Thing",
           "name": "Rahab",
-          "description": "A poetic name for Egypt and the 'dragon' or crocodile of the Nile.",
-          "sameAs": "https://en.wikipedia.org/wiki/Rahab_(Egypt)"
+          "description": "A poetic name for Egypt and the 'dragon' or crocodile of the Nile."
         },
         {
           "@type": "CreativeWork",

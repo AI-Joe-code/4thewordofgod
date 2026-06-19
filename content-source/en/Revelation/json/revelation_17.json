@@ -39,26 +39,22 @@
         {
           "@type": "Place",
           "name": "Rome",
-          "description": "The city identified as sitting on seven hills.",
-          "sameAs": "https://en.wikipedia.org/wiki/Rome"
+          "description": "The city identified as sitting on seven hills."
         },
         {
           "@type": "Organization",
           "name": "Roman Catholic Church",
-          "description": "Identified in the commentary as the 'Whore' and the 'Beast'.",
-          "sameAs": "https://en.wikipedia.org/wiki/Catholic_Church"
+          "description": "Identified in the commentary as the 'Whore' and the 'Beast'."
         },
         {
           "@type": "Place",
           "name": "Ten Kingdoms of Europe",
-          "description": "The political powers symbolized by the ten horns.",
-          "sameAs": "https://en.wikipedia.org/wiki/The_Beast_(Revelation)"
+          "description": "The political powers symbolized by the ten horns."
         },
         {
           "@type": "Person",
           "name": "The Pope",
-          "description": "Identified as the Eighth King and the Vicar of Christ.",
-          "sameAs": "https://en.wikipedia.org/wiki/Pope"
+          "description": "Identified as the Eighth King and the Vicar of Christ."
         },
         {
           "@type": "CreativeWork",

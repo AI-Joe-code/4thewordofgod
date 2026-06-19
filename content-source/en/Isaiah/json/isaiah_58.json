@@ -39,26 +39,22 @@
         {
           "@type": "Thing",
           "name": "True Fasting",
-          "description": "A spiritual discipline focusing on justice, charity, and breaking oppression rather than ritualistic display.",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaiah_58"
+          "description": "A spiritual discipline focusing on justice, charity, and breaking oppression rather than ritualistic display."
         },
         {
           "@type": "Person",
           "name": "Repairer of the breach",
-          "description": "A title for those who restore old foundations, rebuild righteousness, and fix broken lives.",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaiah_58"
+          "description": "A title for those who restore old foundations, rebuild righteousness, and fix broken lives."
         },
         {
           "@type": "Thing",
           "name": "The Sabbath",
-          "description": "A holy day to be celebrated as a delight to the Lord, abstaining from personal pleasure and business.",
-          "sameAs": "https://en.wikipedia.org/wiki/Sabbath"
+          "description": "A holy day to be celebrated as a delight to the Lord, abstaining from personal pleasure and business."
         },
         {
           "@type": "Person",
           "name": "Jacob",
-          "description": "Patriarch whose heritage is promised to those who delight in the Lord.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jacob"
+          "description": "Patriarch whose heritage is promised to those who delight in the Lord."
         },
         {
           "@type": "CreativeWork",

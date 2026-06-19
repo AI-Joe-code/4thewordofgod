@@ -35,26 +35,22 @@
         {
           "@type": "Person",
           "name": "Cyrus",
-          "description": "The Persian King prophesied by name to be God's shepherd and rebuild Jerusalem.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+          "description": "The Persian King prophesied by name to be God's shepherd and rebuild Jerusalem."
         },
         {
           "@type": "Thing",
           "name": "Idolatry",
-          "description": "The foolish practice of worshipping wood and carved images, satirized by the prophet.",
-          "sameAs": "https://en.wikipedia.org/wiki/Idolatry"
+          "description": "The foolish practice of worshipping wood and carved images, satirized by the prophet."
         },
         {
           "@type": "Place",
           "name": "Jerusalem",
-          "description": "The city prophesied to be inhabited and rebuilt.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jerusalem"
+          "description": "The city prophesied to be inhabited and rebuilt."
         },
         {
           "@type": "Person",
           "name": "Jesurun",
-          "description": "A poetic name for Israel, God's chosen servant.",
-          "sameAs": "https://en.wikipedia.org/wiki/Jeshurun"
+          "description": "A poetic name for Israel, God's chosen servant."
         },
         {
           "@type": "CreativeWork",

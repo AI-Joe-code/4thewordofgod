@@ -39,32 +39,27 @@
         {
           "@type": "Thing",
           "name": "Basket of Summer Fruit",
-          "description": "A symbol of the end of the season and the coming harvest of judgment upon Israel.",
-          "sameAs": null
+          "description": "A symbol of the end of the season and the coming harvest of judgment upon Israel."
         },
         {
           "@type": "Thing",
           "name": "Famine of the Word",
-          "description": "A judgment where God becomes silent and people seek His word but cannot find it, occurring after the rejection of prophets like Amos.",
-          "sameAs": null
+          "description": "A judgment where God becomes silent and people seek His word but cannot find it, occurring after the rejection of prophets like Amos."
         },
         {
           "@type": "Person",
           "name": "Hoshea",
-          "description": "The king of Israel who conspired against Pekah and reigned during the final siege by Assyria.",
-          "sameAs": "https://en.wikipedia.org/wiki/Hoshea"
+          "description": "The king of Israel who conspired against Pekah and reigned during the final siege by Assyria."
         },
         {
           "@type": "Place",
           "name": "Samaria",
-          "description": "The capital of the northern kingdom, besieged for three years and eventually captured by the Assyrians.",
-          "sameAs": "https://en.wikipedia.org/wiki/Samaria_(ancient_city)"
+          "description": "The capital of the northern kingdom, besieged for three years and eventually captured by the Assyrians."
         },
         {
           "@type": "Person",
           "name": "Pekah",
-          "description": "King of Israel whose reign ended in murder and the loss of territory to Tiglath-pileser.",
-          "sameAs": "https://en.wikipedia.org/wiki/Pekah"
+          "description": "King of Israel whose reign ended in murder and the loss of territory to Tiglath-pileser."
         },
         {
           "@type": "CreativeWork",

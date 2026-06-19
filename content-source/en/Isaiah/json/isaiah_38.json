@@ -35,20 +35,17 @@
         {
           "@type": "Person",
           "name": "Hezekiah",
-          "description": "The 12th king of Judah who was healed by God and granted 15 additional years of life.",
-          "sameAs": "https://en.wikipedia.org/wiki/Hezekiah"
+          "description": "The 12th king of Judah who was healed by God and granted 15 additional years of life."
         },
         {
           "@type": "Person",
           "name": "Isaiah",
-          "description": "The prophet, son of Amoz, who delivered God's message of death and subsequent healing to Hezekiah.",
-          "sameAs": "https://en.wikipedia.org/wiki/Isaiah"
+          "description": "The prophet, son of Amoz, who delivered God's message of death and subsequent healing to Hezekiah."
         },
         {
           "@type": "Thing",
           "name": "Sun Dial of Ahaz",
-          "description": "The device upon which the shadow returned ten degrees backward as a sign of Hezekiah's healing.",
-          "sameAs": null
+          "description": "The device upon which the shadow returned ten degrees backward as a sign of Hezekiah's healing."
         },
         {
           "@type": "CreativeWork",

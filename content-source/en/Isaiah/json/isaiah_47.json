@@ -35,26 +35,22 @@
         {
           "@type": "Place",
           "name": "Babylon",
-          "description": "The capital city of the Chaldean empire, depicted as a fallen queen.",
-          "sameAs": "https://en.wikipedia.org/wiki/Babylon"
+          "description": "The capital city of the Chaldean empire, depicted as a fallen queen."
         },
         {
           "@type": "Person",
           "name": "Cyrus",
-          "description": "The Persian leader who conquered Babylon by diverting the Euphrates river.",
-          "sameAs": "https://en.wikipedia.org/wiki/Cyrus_the_Great"
+          "description": "The Persian leader who conquered Babylon by diverting the Euphrates river."
         },
         {
           "@type": "Person",
           "name": "Nebuchadnezzar",
-          "description": "King of Babylon known for his pride and temporary madness.",
-          "sameAs": "https://en.wikipedia.org/wiki/Nebuchadnezzar_II"
+          "description": "King of Babylon known for his pride and temporary madness."
         },
         {
           "@type": "Thing",
           "name": "Astrology",
-          "description": "The practice of stargazing and prognostication which failed to save Babylon.",
-          "sameAs": "https://en.wikipedia.org/wiki/Astrology"
+          "description": "The practice of stargazing and prognostication which failed to save Babylon."
         },
         {
           "@type": "CreativeWork",
