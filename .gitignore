@@ -27,3 +27,11 @@ pnpm-debug.log*
 
 # claude code local tooling (dev-server launch config, etc.)
 .claude/
+
+# python translation pipeline
+pipeline/.venv/
+pipeline/output/
+pipeline/work/
+pipeline/*.log
+__pycache__/
+*.pyc
