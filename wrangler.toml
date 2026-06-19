@@ -1,5 +1,6 @@
 name = "bible-commentaries"
 compatibility_date = "2024-11-27"
+compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "./dist"
 
 
