@@ -1,4 +1,4 @@
-import type { APIContext } from 'astro';
+import { env } from 'cloudflare:workers';
 
 // Sitemap index: points at one sitemap per language. Rendered on-demand so a
 // newly added language appears without a rebuild. Per-language URL lists live
@@ -7,12 +7,10 @@ export const prerender = false;
 
 const SITE = 'https://4thewordofgod.com';
 
-export async function GET(context: APIContext) {
-  const env = (context.locals as any).runtime?.env;
-
+export async function GET() {
   let languages: string[] = ['en'];
   try {
-    const raw = await env?.MANIFEST?.get('manifest:languages');
+    const raw = await env.MANIFEST?.get('manifest:languages');
     if (raw) languages = JSON.parse(raw);
   } catch {
     // fall back to default

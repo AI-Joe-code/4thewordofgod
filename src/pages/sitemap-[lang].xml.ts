@@ -1,4 +1,5 @@
 import type { APIContext } from 'astro';
+import { env } from 'cloudflare:workers';
 
 // Per-language sitemap, built from that language's KV manifest: homepage,
 // every chapter URL, and articles. One file per language keeps each well
@@ -14,9 +15,8 @@ interface Manifest {
 
 export async function GET(context: APIContext) {
   const { lang } = context.params;
-  const env = (context.locals as any).runtime?.env;
 
-  const raw = await env?.MANIFEST?.get(`manifest:${lang}`);
+  const raw = await env.MANIFEST?.get(`manifest:${lang}`);
   if (!raw) {
     return new Response('Sitemap not found', { status: 404 });
   }

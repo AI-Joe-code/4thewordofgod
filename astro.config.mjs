@@ -9,11 +9,10 @@ export default defineConfig({
   // with `export const prerender = false` are rendered on-demand by the
   // Cloudflare adapter (Worker), reading content from R2.
   output: 'static',
-  adapter: cloudflare({
-    // Expose Cloudflare bindings (R2, etc.) to `astro dev` via Miniflare,
-    // reading their config from wrangler.toml.
-    platformProxy: { enabled: true },
-  }),
+  // Adapter v13 runs `astro dev` on the real workerd runtime via the Cloudflare
+  // Vite plugin, reading bindings from wrangler.toml directly — the old
+  // `platformProxy` option was removed.
+  adapter: cloudflare(),
   server: {
     allowedHosts: ['dev.4thewordofgod.com']
   }

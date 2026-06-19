@@ -1,11 +1,16 @@
-import fs from 'node:fs/promises';
-import path from 'node:path';
-
-// Build-time content source (used to prerender the homepage, articles and
-// sitemap). The canonical runtime source is R2; this directory is also what
+// Build-time content source (used to prerender articles and the sidebar nav).
+// The canonical runtime source is R2; this directory is also what
 // scripts/upload_content.js pushes to R2. It deliberately lives OUTSIDE
 // public/ so the JSON is never copied into dist/.
-const CONTENT_DIR = path.join(process.cwd(), 'content-source');
+//
+// We import the JSON via Vite's `import.meta.glob` rather than reading it with
+// `node:fs` at build time. The Cloudflare adapter (v13+) prerenders inside the
+// workerd runtime, where `fs` is not available; glob is resolved by Vite at
+// build time and inlined, so it works regardless of the prerender runtime.
+const contentModules = import.meta.glob<CommentaryData>(
+    '../../content-source/**/json/*.json',
+    { eager: true, import: 'default' }
+);
 
 export interface CommentaryData {
     book_name?: string;
@@ -35,101 +40,45 @@ export interface CommentaryEntry {
 export async function getAllCommentary(): Promise<CommentaryEntry[]> {
     const entries: CommentaryEntry[] = [];
 
-    try {
-        const languages = await fs.readdir(CONTENT_DIR);
+    for (const [filePath, raw] of Object.entries(contentModules)) {
+        // Glob keys look like:
+        //   ../../content-source/en/Daniel/json/daniel_00.json            (commentary)
+        //   ../../content-source/en/articles/Some Title/json/tyre_00.json (article)
+        const marker = 'content-source/';
+        const markerIndex = filePath.indexOf(marker);
+        if (markerIndex === -1) continue;
 
-        for (const lang of languages) {
-            const langPath = path.join(CONTENT_DIR, lang);
-            const langStat = await fs.stat(langPath);
-            if (!langStat.isDirectory()) continue;
+        const segments = filePath.slice(markerIndex + marker.length).split('/');
+        const lang = segments[0];
+        // Clone: glob modules are shared/read-only, and we augment the object below.
+        const data: CommentaryData = { ...raw };
 
-            const items = await fs.readdir(langPath);
+        if (segments[1] === 'articles') {
+            // [lang, 'articles', articleFolder, 'json', file]
+            const articleFolder = segments[2];
+            const articleSlug = articleFolder.toLowerCase().replace(/\s+/g, '-');
 
-            for (const item of items) {
-                const itemPath = path.join(langPath, item);
-                const itemStat = await fs.stat(itemPath);
-                if (!itemStat.isDirectory()) continue;
+            data.language = lang;
+            data.book = articleFolder; // Use folder name as "book" for now
+            data.chapter = "00"; // Articles are single page
+            data.type = 'article';
 
-                // Check if it's the "articles" directory
-                if (item === 'articles') {
-                    const articles = await fs.readdir(itemPath);
-                    for (const articleFolder of articles) {
-                        const articlePath = path.join(itemPath, articleFolder);
-                        const articleStat = await fs.stat(articlePath);
-                        if (!articleStat.isDirectory()) continue;
+            entries.push({ slug: `${lang}/articles/${articleSlug}`, data });
+        } else {
+            // [lang, book, 'json', file]
+            const book = segments[1];
+            const file = segments[segments.length - 1];
+            const bookSlug = book.toLowerCase();
+            // Use chapter_number from data, or derive from filename (e.g. tyre_00.json -> 00)
+            const chapterSlug = data.chapter_number || file.replace(bookSlug + '_', '').replace('.json', '');
 
-                        const jsonDir = path.join(articlePath, 'json');
-                        try {
-                            const jsonFiles = await fs.readdir(jsonDir);
-                            for (const file of jsonFiles) {
-                                if (!file.endsWith('.json')) continue;
+            data.language = lang;
+            data.book = data.book_name || book; // Fallback to directory name
+            data.chapter = data.chapter_number || chapterSlug; // Fallback to derived slug
+            data.type = 'commentary';
 
-                                const filePath = path.join(jsonDir, file);
-                                const fileContent = await fs.readFile(filePath, 'utf-8');
-                                const data = JSON.parse(fileContent) as CommentaryData;
-
-                                // Slug for articles: lang/articles/article-slug
-                                // We can use the folder name as the slug, slugified
-                                const articleSlug = articleFolder.toLowerCase().replace(/\s+/g, '-');
-                                const slug = `${lang}/articles/${articleSlug}`;
-
-                                data.language = lang;
-                                data.book = articleFolder; // Use folder name as "book" for now
-                                data.chapter = "00"; // Articles are single page
-                                data.type = 'article';
-
-                                entries.push({
-                                    slug,
-                                    data
-                                });
-                            }
-                        } catch (e) {
-                            continue;
-                        }
-                    }
-                    continue; // Skip processing "articles" as a book
-                }
-
-                // Process as a Book (Commentary)
-                const book = item;
-                const bookPath = itemPath;
-
-                const jsonDir = path.join(bookPath, 'json');
-                try {
-                    const jsonFiles = await fs.readdir(jsonDir);
-
-                    for (const file of jsonFiles) {
-                        if (!file.endsWith('.json')) continue;
-
-                        const filePath = path.join(jsonDir, file);
-                        const fileContent = await fs.readFile(filePath, 'utf-8');
-                        const data = JSON.parse(fileContent) as CommentaryData;
-
-                        // Construct slug: lang/book/chapter
-                        const bookSlug = book.toLowerCase();
-                        // Use chapter_number from data, or derive from filename (e.g. tyre_00.json -> 00)
-                        const chapterSlug = data.chapter_number || file.replace(bookSlug + '_', '').replace('.json', '');
-                        const slug = `${lang}/${bookSlug}/${chapterSlug}`;
-
-                        // Augment data with fields expected by the page
-                        data.language = lang;
-                        data.book = data.book_name || book; // Fallback to directory name
-                        data.chapter = data.chapter_number || chapterSlug; // Fallback to derived slug
-                        data.type = 'commentary';
-
-                        entries.push({
-                            slug,
-                            data
-                        });
-                    }
-                } catch (e) {
-                    // json dir might not exist or be empty
-                    continue;
-                }
-            }
+            entries.push({ slug: `${lang}/${bookSlug}/${chapterSlug}`, data });
         }
-    } catch (e) {
-        console.error("Error reading content directory:", e);
     }
 
     return entries;

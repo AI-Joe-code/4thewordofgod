@@ -10,18 +10,18 @@ const CACHE_CONTROL = 'public, max-age=0, s-maxage=86400, stale-while-revalidate
 
 export const onRequest = defineMiddleware(async (context, next) => {
   const { request, url } = context;
-  const runtime = (context.locals as any).runtime;
 
   // The root path 302-redirects based on Accept-Language, so it varies per
   // visitor and must not be edge-cached by URL alone.
   const cacheable = request.method === 'GET' && url.pathname !== '/';
   if (!cacheable) return next();
 
-  // caches.default is available at runtime on Cloudflare; may be absent in
+  // caches.default is the global Cloudflare Cache API at runtime (as of Astro
+  // v6 it is no longer exposed on Astro.locals.runtime); it may be absent in
   // some local/dev contexts. Degrade gracefully to plain rendering.
   let cache: Cache | undefined;
   try {
-    cache = runtime?.caches?.default ?? (globalThis as any).caches?.default;
+    cache = (globalThis as any).caches?.default;
   } catch {
     cache = undefined;
   }
@@ -31,7 +31,10 @@ export const onRequest = defineMiddleware(async (context, next) => {
   if (cache) {
     try {
       const hit = await cache.match(cacheKey);
-      if (hit) return hit;
+      // Cache API responses have immutable headers; Astro finalizes the
+      // response (prepareResponse) and would throw on a raw hit. Return a
+      // mutable copy so the headers can be adjusted downstream.
+      if (hit) return new Response(hit.body, hit);
     } catch {
       // ignore cache read failures
     }
@@ -44,7 +47,9 @@ export const onRequest = defineMiddleware(async (context, next) => {
     if (cache) {
       try {
         const toCache = response.clone();
-        const waitUntil = runtime?.ctx?.waitUntil?.bind(runtime.ctx);
+        // Astro v6: the execution context moved from runtime.ctx to cfContext.
+        const cfContext = (context.locals as any).cfContext;
+        const waitUntil = cfContext?.waitUntil?.bind(cfContext);
         if (waitUntil) waitUntil(cache.put(cacheKey, toCache));
         else await cache.put(cacheKey, toCache);
       } catch {

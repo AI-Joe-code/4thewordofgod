@@ -4,7 +4,7 @@ import ThemeToggle from '../components/ThemeToggle.astro';
 import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 import LanguageSuggestionBanner from '../components/LanguageSuggestionBanner.astro';
 import type { TierConfig } from '../types';
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 
 interface Props {
 	title: string;
@@ -63,7 +63,7 @@ const {
 		{structuredData.length > 0 && (
 			<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
 		)}
-        <ViewTransitions />
+        <ClientRouter />
         <script is:inline>
             // Immediate theme application to prevent flash
             const theme = localStorage.getItem('theme') || 

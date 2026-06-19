@@ -13,7 +13,10 @@ export async function getStaticPaths() {
   const articles = allCommentary.filter(e => e.data.type === 'article');
 
   // Pre-calculate global data
-  const allLanguages = [...new Set(allCommentary.map(e => e.data.language))].sort().map(code => ({
+  const languages = [...new Set(allCommentary.map(e => e.data.language))]
+    .filter((c): c is string => Boolean(c));
+
+  const allLanguages = languages.slice().sort().map(code => ({
       language_code: code,
       tier_level: 1 as 1 | 2,
       direction: getLanguageDirection(code).toUpperCase() as 'LTR' | 'RTL',
@@ -22,17 +25,17 @@ export async function getStaticPaths() {
 
   // Pre-calculate first chapters map for layout
   // (We still need this for the sidebar navigation if it's present in Layout)
-  const firstChaptersMap = {};
-  const languages = [...new Set(allCommentary.map(e => e.data.language))];
-  
+  const firstChaptersMap: Record<string, Record<string, string>> = {};
+
   for (const lang of languages) {
-      const currentLangFirstChapters = {};
+      const currentLangFirstChapters: Record<string, string> = {};
       books.forEach(b => {
           const bChapters = allCommentary
-              .filter(e => e.data.language === lang && e.data.book.toLowerCase().replace(/\s+/g, '-') === b.slug)
+              .filter(e => e.data.language === lang && e.data.book?.toLowerCase().replace(/\s+/g, '-') === b.slug)
               .map(e => e.data.chapter)
+              .filter((c): c is string => Boolean(c))
               .sort((a, b) => parseInt(a) - parseInt(b));
-          
+
           currentLangFirstChapters[b.slug] = bChapters.length > 0 ? bChapters[0] : '01';
       });
       firstChaptersMap[lang] = currentLangFirstChapters;
@@ -55,17 +58,17 @@ export async function getStaticPaths() {
 
 const { entry, allLanguages, firstChaptersMap } = Astro.props;
 
-const { 
-  title, 
-  metaDescription, 
-  keywords, 
-  structuredData, 
-  faq, 
+const {
+  title,
+  metaDescription,
+  keywords,
+  structuredData,
+  faq,
   audioPath,
-  language: lang,
   content
 } = entry.data;
 
+const lang = entry.data.language ?? 'en';
 const direction = getLanguageDirection(lang);
 
 // Audio URL
@@ -110,9 +113,7 @@ if (currentIndex !== -1) {
   structuredData={structuredData}
   languages={allLanguages}
   currentLang={lang}
-  chapters={[]} // No book chapters for articles
-  currentBook={null}
-  currentChapter={null}
+  chapters={[]}
   firstChapters={firstChaptersMap}
 >
   <main>

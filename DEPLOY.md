@@ -2,8 +2,13 @@
 
 How this site runs in production:
 
-- **Cloudflare Pages** serves the build (`dist/`). A small `_worker.js` handles
-  the on-demand (SSR) routes; everything else is static.
+- **Cloudflare Workers (Static Assets)** serves the site. The build emits
+  `dist/client/` (static assets, served free from the edge) and `dist/server/`
+  (the Worker). The Worker handles on-demand (SSR) routes; everything else is a
+  static asset. Configured by `wrangler.toml` (`main` + `[assets]`).
+  > Migrated from Cloudflare Pages → Workers when upgrading to Astro 6 /
+  > `@astrojs/cloudflare` v13, which is Workers-only. Same R2/KV/runtime, same
+  > free tier; only the packaging and deploy command changed.
 - **R2** (`bible-commentary-assets`, binding `R2`) holds the content:
   `public-content/{lang}/json/{book}_{chapter}.json` and
   `public-content/{lang}/homepage.json`.
@@ -36,7 +41,9 @@ npx wrangler r2 bucket create bible-commentary-assets
 npx wrangler kv namespace create MANIFEST
 ```
 
-Paste the printed id into `wrangler.toml`, replacing the placeholder:
+Paste the printed id into `wrangler.toml`, replacing the placeholder. For
+Workers, the id in `wrangler.toml` is authoritative at deploy time — this step
+is **mandatory** before the first deploy, not optional:
 
 ```toml
 [[kv_namespaces]]
@@ -44,25 +51,24 @@ binding = "MANIFEST"
 id = "PASTE_REAL_ID_HERE"   # was 0000000000000000000000000000manf
 ```
 
-> Optional: the Cloudflare adapter logs a `SESSION` KV warning. Sessions are
-> unused, so it's harmless. To silence it, add a second binding named `SESSION`
-> pointing at the same id.
+> The adapter auto-injects a `SESSION` KV binding (sessions are unused, so it's
+> harmless). If `wrangler deploy` rejects the id-less `SESSION` binding, add it
+> explicitly in `wrangler.toml` pointing at the same id as `MANIFEST`:
+> `[[kv_namespaces]]` / `binding = "SESSION"` / `id = "<same id>"`.
 
 ---
 
-## 2. Configure the Pages project bindings (one time)
+## 2. Bindings (one time)
 
-The **#1 cause of "works locally, 500 in production"** is missing bindings.
-In the Cloudflare dashboard → your Pages project → **Settings → Functions**:
+The **#1 cause of "works locally, 500 in production"** is missing bindings. On
+Workers these live in `wrangler.toml` and are applied automatically on
+`wrangler deploy` — R2 (`R2` → `bible-commentary-assets`), KV (`MANIFEST`), the
+`nodejs_compat` compatibility flag, and `compatibility_date = "2024-11-27"` are
+all already declared there. Just make sure the `MANIFEST` id is real (step 1).
 
-- **Bindings**: add R2 binding `R2` → bucket `bible-commentary-assets`, and KV
-  binding `MANIFEST` → the namespace from step 1. Set them for **Production**
-  (and Preview if you use it).
-- **Compatibility flags**: add `nodejs_compat` (Production + Preview).
-- **Compatibility date**: `2024-11-27` or later.
-
-(For direct `wrangler pages deploy`, the values in `wrangler.toml` are used, but
-setting them in the dashboard covers Git-connected builds too.)
+> If you instead connect the repo to Cloudflare for Git-based builds, set the
+> same R2/KV bindings and `nodejs_compat` flag in the Worker's dashboard
+> settings (Settings → Bindings / Settings → Runtime).
 
 ---
 
@@ -110,26 +116,26 @@ npx wrangler kv key get "manifest:languages" --binding=MANIFEST --remote
 ## 4. Build & deploy
 
 ```sh
-npm run build
+npm run build          # astro build -> dist/client + dist/server
+npx wrangler deploy    # uploads the Worker + static assets
 ```
 
-Then either:
+`wrangler deploy` reads `wrangler.toml` (worker name `bible-commentaries`,
+`main`, `[assets]`, and all bindings). Sanity-check the artifact first with
+`npx wrangler deploy --dry-run` — it should list the R2/MANIFEST/SESSION/IMAGES/
+ASSETS bindings and read the asset files from `dist/client`.
 
-- **Git-connected project** (recommended): push to the connected branch.
-  Build command `npm run build`, output directory `dist`. Cloudflare builds and
-  deploys automatically.
-- **Direct upload**:
-  ```sh
-  npx wrangler pages deploy dist --project-name=bible-commentaries
-  ```
+> Git-connected builds are also supported: set build command `npm run build` and
+> let Cloudflare run `wrangler deploy`. Ensure the dashboard bindings match
+> `wrangler.toml` (see step 2).
 
 ---
 
 ## 5. Custom domain
 
-In the Pages project → **Custom domains**, ensure `4thewordofgod.com` (and
-`www` if used) point at this project. Audio is served separately from
-`audio.4thewordofgod.com`.
+In the Worker → **Settings → Domains & Routes**, ensure `4thewordofgod.com`
+(and `www` if used) point at this Worker as custom domains. Audio is served
+separately from `audio.4thewordofgod.com`.
 
 ---
 
