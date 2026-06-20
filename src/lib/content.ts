@@ -12,6 +12,11 @@ const contentModules = import.meta.glob<CommentaryData>('../../content-source/**
   import: 'default',
 });
 
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
 export interface CommentaryData {
   book_name?: string;
   chapter_number?: string;
@@ -19,9 +24,11 @@ export interface CommentaryData {
   content: string;
   metaDescription?: string;
   keywords?: string[];
-  entities?: any[];
-  faq?: any[];
-  structuredData?: any[];
+  // Structured entities (Person/Place/etc.) carried in the content but not
+  // rendered yet; kept loosely typed since nothing reads their fields.
+  entities?: Record<string, unknown>[];
+  faq?: FaqItem[];
+  structuredData?: Record<string, unknown>[];
   previous_chapter?: string | null;
   next_chapter?: string | null;
   audioPath?: string;

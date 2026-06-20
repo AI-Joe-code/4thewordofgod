@@ -20,13 +20,27 @@ if (!obj) {
   return Astro.rewrite('/404');
 }
 
+interface HomepageCommentary {
+  title: string;
+  metaDescription?: string;
+  book_name: string;
+  chapter_number: string;
+  toc?: { chapter_number: string; title: string }[];
+}
+
+interface HomepageArticle {
+  title: string;
+  metaDescription?: string;
+  book_name: string;
+}
+
 const homepageData = (await obj.json()) as {
   site_title?: string;
   tagline?: string;
   commentaries_section_title?: string;
   articles_section_title?: string;
-  commentaries?: any[];
-  articles?: any[];
+  commentaries?: HomepageCommentary[];
+  articles?: HomepageArticle[];
 };
 
 const {
