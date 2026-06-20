@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "@astrojs/cloudflare": "^13.7.0",
+    "@fontsource/cinzel": "^5.2.8",
+    "@fontsource/lato": "^5.2.7",
     "astro": "^6.4.8"
   },
   "devDependencies": {
