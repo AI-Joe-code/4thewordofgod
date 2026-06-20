@@ -19,6 +19,30 @@ export function getLanguageDirection(code: string): 'ltr' | 'rtl' {
   return LANGUAGES[code]?.direction || 'ltr';
 }
 
+// og:locale wants the `language_TERRITORY` form (per the Open Graph / Facebook
+// spec), not a bare language code. Map the languages we ship; for anything
+// unmapped, fall back to the bare code rather than inventing a wrong territory.
+const OG_LOCALES: Record<string, string> = {
+  en: 'en_US',
+  es: 'es_ES',
+  fr: 'fr_FR',
+  de: 'de_DE',
+  it: 'it_IT',
+  pt: 'pt_BR',
+  ru: 'ru_RU',
+  zh: 'zh_CN',
+  ja: 'ja_JP',
+  ko: 'ko_KR',
+  ar: 'ar_AR',
+  he: 'he_IL',
+  fa: 'fa_IR',
+  ur: 'ur_PK',
+};
+
+export function getOgLocale(code: string): string {
+  return OG_LOCALES[code] ?? code;
+}
+
 // Minimal shape of the MANIFEST KV binding we need (avoids a hard dependency
 // on the Cloudflare types in modules that just read the language list).
 type ManifestKV = { get(key: string): Promise<string | null> };

@@ -1,10 +1,9 @@
 ---
 import Sidebar from '../components/Sidebar.astro';
 import ThemeToggle from '../components/ThemeToggle.astro';
-import LanguageSwitcher from '../components/LanguageSwitcher.astro';
-import LanguageSuggestionBanner from '../components/LanguageSuggestionBanner.astro';
 import { ClientRouter } from 'astro:transitions';
 import { SITE_URL, DEFAULT_LANG, DEFAULT_OG_IMAGE, HAS_OG_IMAGE } from '../lib/site';
+import { getOgLocale } from '../lib/languages';
 
 interface Props {
   title: string;
@@ -31,7 +30,6 @@ const {
   description = 'A Bible commentary platform.',
   ogTitle,
   ogDescription,
-  keywords = [],
   structuredData = [],
   dir = 'LTR',
   currentLang,
@@ -95,13 +93,11 @@ const ogImageUrl = HAS_OG_IMAGE ? ogImage : null;
       rel="stylesheet"
     />
 
-    {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
-
     <!-- Open Graph -->
     <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content="4thewordofgod" />
-    <meta property="og:locale" content={currentLang || DEFAULT_LANG} />
+    <meta property="og:locale" content={getOgLocale(currentLang || DEFAULT_LANG)} />
     <meta property="og:title" content={ogTitle || title} />
     <meta property="og:description" content={ogDescription || description} />
     {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
@@ -114,7 +110,7 @@ const ogImageUrl = HAS_OG_IMAGE ? ogImage : null;
 
     {
       structuredData.length > 0 && (
-        <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+        <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
       )
     }
     <ClientRouter />
@@ -165,14 +161,12 @@ const ogImageUrl = HAS_OG_IMAGE ? ogImage : null;
         firstChapters={firstChapters}
       />
       <div class="top-controls" transition:persist>
-        <!-- <LanguageSwitcher languages={languages} currentLang={currentLang} /> -->
         <ThemeToggle />
       </div>
       <main class="main-content" id="main-content">
         <slot />
       </main>
     </div>
-    <!-- <LanguageSuggestionBanner currentLang={currentLang} /> -->
     <script>
       // Mobile navigation drawer toggle.
       // Document/window-level listeners are registered once; element-level
