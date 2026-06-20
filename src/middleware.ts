@@ -8,6 +8,12 @@ import { defineMiddleware } from 'astro:middleware';
 // content updates.
 const CACHE_CONTROL = 'public, max-age=0, s-maxage=86400, stale-while-revalidate=604800';
 
+// Injected at build time (see astro.config.mjs). Folded into the cache key so a
+// new deploy uses a fresh cache namespace; stale HTML pointing at now-deleted
+// hashed assets is never served after a redeploy.
+declare const __BUILD_ID__: string;
+const BUILD_ID = typeof __BUILD_ID__ === 'string' ? __BUILD_ID__ : 'dev';
+
 export const onRequest = defineMiddleware(async (context, next) => {
   const { request, url } = context;
 
@@ -26,7 +32,10 @@ export const onRequest = defineMiddleware(async (context, next) => {
     cache = undefined;
   }
 
-  const cacheKey = new Request(url.toString(), { method: 'GET' });
+  // Version the cache key by build id so a redeploy never serves stale HTML.
+  const keyUrl = new URL(url.toString());
+  keyUrl.searchParams.set('__v', BUILD_ID);
+  const cacheKey = new Request(keyUrl.toString(), { method: 'GET' });
 
   if (cache) {
     try {
