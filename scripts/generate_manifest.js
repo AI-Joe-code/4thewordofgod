@@ -51,7 +51,7 @@ async function readJsonChapters(jsonDir) {
     try {
       const data = JSON.parse(await fs.readFile(path.join(jsonDir, file), 'utf-8'));
       const n = data.chapter_number || file.replace(/^.*_/, '').replace('.json', '');
-      chapters.push({ n: String(n), title: data.title || '' });
+      chapters.push({ n: String(n), title: data.title || '', date: data.date || null });
     } catch (e) {
       console.warn(`  Skipping unreadable ${file}: ${e.message}`);
     }
@@ -74,7 +74,11 @@ async function buildManifest(lang) {
         if (!(await isDir(articlePath))) continue;
         const chapters = await readJsonChapters(path.join(articlePath, 'json'));
         const first = chapters[0] || {};
-        manifest.articles.push({ slug: slugify(folder), title: first.title || folder });
+        manifest.articles.push({
+          slug: slugify(folder),
+          title: first.title || folder,
+          date: first.date || null,
+        });
       }
       continue;
     }
