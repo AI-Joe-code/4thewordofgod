@@ -5,7 +5,8 @@ import FAQ from '../../../components/FAQ.astro';
 import { getAllCommentary } from '../../../lib/content';
 import { getLanguageDirection } from '../../../lib/languages';
 import { books } from '../../../lib/books';
-import { AUDIO_BASE } from '../../../lib/site';
+import { AUDIO_BASE, SITE_URL } from '../../../lib/site';
+import { normalizeStructuredData } from '../../../lib/seo';
 
 export async function getStaticPaths() {
   const allCommentary = await getAllCommentary();
@@ -82,6 +83,15 @@ const lang = entry.data.language ?? 'en';
 const direction = getLanguageDirection(lang);
 
 const audioUrl = audioPath ? `${AUDIO_BASE}/${audioPath}` : null;
+
+// Fix the pipeline's broken BreadcrumbList + enrich the Article schema.
+const canonical = `${SITE_URL}/${entry.slug}`;
+const allStructuredData = normalizeStructuredData(structuredData, {
+  lang,
+  canonical,
+  title,
+  datePublished: entry.data.date,
+});
 ---
 
 <Layout
@@ -92,7 +102,7 @@ const audioUrl = audioPath ? `${AUDIO_BASE}/${audioPath}` : null;
   ogDescription={metaDescription}
   ogType="article"
   keywords={keywords}
-  structuredData={structuredData}
+  structuredData={allStructuredData}
   langCodes={langCodes}
   currentLang={lang}
   chapters={[]}

@@ -1,4 +1,10 @@
 import { defineMiddleware } from 'astro:middleware';
+import { SITE_URL } from './lib/site';
+
+// Only the production host should be crawlable. Every page canonicals to it, so
+// non-production hosts (*.workers.dev, previews, localhost) get X-Robots-Tag:
+// noindex to keep the test deploy out of search and avoid canonical confusion.
+const PROD_HOST = new URL(SITE_URL).hostname;
 
 // Edge caching for on-demand (SSR) pages. Content is the same for every
 // visitor of a given URL (the language lives in the path), so we cache the
@@ -16,11 +22,16 @@ const BUILD_ID = typeof __BUILD_ID__ === 'string' ? __BUILD_ID__ : 'dev';
 
 export const onRequest = defineMiddleware(async (context, next) => {
   const { request, url } = context;
+  const noindex = url.hostname !== PROD_HOST;
 
   // The root path 302-redirects based on Accept-Language, so it varies per
   // visitor and must not be edge-cached by URL alone.
   const cacheable = request.method === 'GET' && url.pathname !== '/';
-  if (!cacheable) return next();
+  if (!cacheable) {
+    const r = await next();
+    if (noindex) r.headers.set('X-Robots-Tag', 'noindex');
+    return r;
+  }
 
   // caches.default is the global Cloudflare Cache API at runtime (as of Astro
   // v6 it is no longer exposed on Astro.locals.runtime); it may be absent in
@@ -50,6 +61,9 @@ export const onRequest = defineMiddleware(async (context, next) => {
   }
 
   const response = await next();
+
+  // Set before the clone below so cached copies (keyed per-host) carry it too.
+  if (noindex) response.headers.set('X-Robots-Tag', 'noindex');
 
   if (response.status === 200) {
     response.headers.set('Cache-Control', CACHE_CONTROL);
