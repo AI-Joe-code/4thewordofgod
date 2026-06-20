@@ -25,16 +25,61 @@ args.forEach(arg => {
 });
 
 if (!options.lang || !options.type || !options.dir) {
-    console.error('Usage: node scripts/upload_content.js --lang=<code> --type=<json|audio|homepage> --dir=<path> [--remote] [--dry-run]');
+    console.error('Usage: node scripts/upload_content.js --lang=<code> --type=<json|audio|homepage|article> --dir=<path> [--remote] [--dry-run]');
     console.error('  Default target is the LOCAL R2 emulation (for dev). Pass --remote to upload to production R2.');
     process.exit(1);
 }
 
 const TARGET_DIR = process.cwd();
 
+// Articles live in nested folders: {dir}/{Article Folder}/json/{file}.json.
+// Each folder is one article; upload its JSON to the slug-keyed R2 path that
+// the SSR route reads: public-content/{lang}/articles/{slug}.json.
+async function uploadArticles() {
+    const folders = await fs.readdir(options.dir);
+    let count = 0;
+    for (const folder of folders) {
+        const jsonDir = path.join(options.dir, folder, 'json');
+        let jsonFiles;
+        try {
+            jsonFiles = (await fs.readdir(jsonDir)).filter(f => f.endsWith('.json'));
+        } catch {
+            continue; // not an article folder
+        }
+        if (jsonFiles.length === 0) continue;
+
+        const slug = folder.toLowerCase().replace(/_/g, '-').replace(/\s+/g, '-');
+        const localFilePath = path.join(jsonDir, jsonFiles[0]);
+        const r2Path = `public-content/${options.lang}/articles/${slug}.json`;
+
+        if (options.dryRun) {
+            console.log(`[DRY RUN] Would upload ${localFilePath} -> ${r2Path}`);
+            count++;
+            continue;
+        }
+        try {
+            const targetFlag = options.remote ? '--remote' : '--local';
+            console.log(`Uploading article "${folder}" -> ${r2Path} (${options.remote ? 'PRODUCTION' : 'local'})...`);
+            await execAsync(
+                `npx wrangler r2 object put bible-commentary-assets/${r2Path} ${targetFlag} --file="${localFilePath}"`,
+                { cwd: TARGET_DIR }
+            );
+            count++;
+        } catch (e) {
+            console.error(`Failed to upload article ${folder}:`, e.message);
+        }
+    }
+    console.log(`Article upload complete (${count} processed).`);
+}
+
 async function uploadContent() {
     try {
         console.log(`Starting upload for Language: ${options.lang}, Type: ${options.type}, Source: ${options.dir}`);
+
+        if (options.type === 'article') {
+            await uploadArticles();
+            return;
+        }
 
         const files = await fs.readdir(options.dir);
         const targetFiles = files.filter(file =>
