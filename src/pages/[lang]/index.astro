@@ -6,6 +6,7 @@ export const prerender = false;
 import Layout from '../../layouts/Layout.astro';
 import BookCard from '../../components/BookCard.astro';
 import { getAvailableLanguages } from '../../lib/languages';
+import { SITE_URL } from '../../lib/site';
 import { env } from 'cloudflare:workers';
 
 const { lang } = Astro.params;
@@ -47,6 +48,25 @@ commentaries.forEach((book) => {
 
 // Languages for hreflang alternates.
 const langCodes = await getAvailableLanguages(env.MANIFEST);
+
+// Structured data: WebSite + Organization (with inLanguage) for richer SERP
+// results. No SearchAction — the site has no on-site search to point it at.
+const structuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: site_title ?? '4thewordofgod',
+    url: `${SITE_URL}/${lang}`,
+    inLanguage: lang,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: '4thewordofgod',
+    url: SITE_URL,
+    logo: `${SITE_URL}/og-default.png`,
+  },
+];
 ---
 
 <Layout
@@ -54,6 +74,7 @@ const langCodes = await getAvailableLanguages(env.MANIFEST);
   description={tagline}
   currentLang={lang}
   langCodes={langCodes}
+  structuredData={structuredData}
   firstChapters={firstChapters}
 >
   <main>
