@@ -18,9 +18,13 @@ binding = "R2"
 bucket_name = "bible-commentary-assets"
 
 # Per-language navigation manifests (manifest:{lang}, manifest:languages).
-# Local dev keys storage by binding name; the id below is a placeholder.
-# For production, create the namespace and paste its id:
-#   npx wrangler kv namespace create MANIFEST
 [[kv_namespaces]]
 binding = "MANIFEST"
-id = "0000000000000000000000000000manf"
+id = "7833a2ad2d3e43cc86b31690042f1449"
+
+# Sessions are unused, but the @astrojs/cloudflare adapter auto-injects a
+# SESSION KV binding; point it at the same namespace so `wrangler deploy`
+# accepts it (an id-less KV binding is rejected on deploy).
+[[kv_namespaces]]
+binding = "SESSION"
+id = "7833a2ad2d3e43cc86b31690042f1449"
