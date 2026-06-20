@@ -5,6 +5,16 @@ import { ClientRouter } from 'astro:transitions';
 import { SITE_URL, DEFAULT_LANG, DEFAULT_OG_IMAGE, HAS_OG_IMAGE } from '../lib/site';
 import { getOgLocale } from '../lib/languages';
 
+// Self-hosted Latin display fonts: same-origin, immutable-cached, and
+// non-render-blocking (bundled by Vite), replacing the render-blocking Google
+// Fonts stylesheet. These cover Latin only; non-Latin scripts fall back to the
+// per-script system stacks defined in --font-display / --font-body below.
+import '@fontsource/cinzel/latin-400.css';
+import '@fontsource/cinzel/latin-700.css';
+import '@fontsource/lato/latin-300.css';
+import '@fontsource/lato/latin-400.css';
+import '@fontsource/lato/latin-700.css';
+
 interface Props {
   title: string;
   description?: string;
@@ -84,14 +94,6 @@ const ogImageUrl = HAS_OG_IMAGE ? ogImage : null;
     <!-- hreflang alternates for the language variants of this URL -->
     {alternates.map((a) => <link rel="alternate" hreflang={a.code} href={a.href} />)}
     {xDefaultHref && <link rel="alternate" hreflang="x-default" href={xDefaultHref} />}
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
 
     <!-- Open Graph -->
     <meta property="og:type" content={ogType} />
@@ -220,6 +222,14 @@ const ogImageUrl = HAS_OG_IMAGE ? ogImage : null;
     --font-size-base: 16px;
     --font-size-lg: 1.25rem;
     --font-size-xl: 1.5rem;
+
+    /* Font stacks. Cinzel/Lato are self-hosted Latin-only; the trailing
+       families cover the fallback while fonts load and, for non-Latin scripts
+       (ar/he/fa/ur/CJK/Indic/…), hand off to the reader's native system fonts. */
+    --font-display: 'Cinzel', Georgia, Cambria, 'Times New Roman', 'Noto Serif', serif;
+    --font-body:
+      'Lato', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+      sans-serif;
   }
 
   /* Dark Mode Override */
@@ -236,7 +246,7 @@ const ogImageUrl = HAS_OG_IMAGE ? ogImage : null;
   }
 
   html {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-body);
     background: var(--theme-bg);
     color: var(--theme-text);
     transition:
@@ -365,7 +375,7 @@ const ogImageUrl = HAS_OG_IMAGE ? ogImage : null;
     line-height: 1;
     text-align: center;
     margin-bottom: 1em;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-display);
     color: var(--theme-text);
   }
 
