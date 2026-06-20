@@ -3,6 +3,17 @@ main = "@astrojs/cloudflare/entrypoints/server"
 compatibility_date = "2024-11-27"
 compatibility_flags = ["nodejs_compat"]
 
+# Staging custom domain on the production zone. The old Pages project owns the
+# apex (4thewordofgod.com); this new hostname has no conflict, so it lets us
+# verify the live Worker before cutting the apex over from Pages. It is
+# automatically noindex (only the production host 4thewordofgod.com is
+# crawlable — see src/middleware.ts).
+routes = [{ pattern = "beta.4thewordofgod.com", custom_domain = true }]
+
+# Keep the *.workers.dev URL working alongside the custom domain (adding routes
+# disables it by default). Both are noindex except the production apex.
+workers_dev = true
+
 # Cloudflare Workers Static Assets: the prerendered/static files in dist/client
 # are served directly from the edge; only on-demand routes hit the Worker.
 [assets]
