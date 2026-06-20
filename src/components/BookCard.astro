@@ -23,16 +23,22 @@ const cardLink = link || bookHref(slug, lang, firstChapter);
       <p class="card-description">{description}</p>
       <div class="card-footer">
         <span class="read-more">View Book Online</span>
-        
+
         <div class="download-container">
           <button class="download-btn" aria-label="Download Options">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <polyline points="7 10 12 15 17 10"></polyline>
               <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
           </button>
-          
+
           <div class="download-dropdown">
             <div class="dropdown-item disabled">PDF (Coming Soon)</div>
             <div class="dropdown-item disabled">EPUB (Coming Soon)</div>
@@ -43,41 +49,53 @@ const cardLink = link || bookHref(slug, lang, firstChapter);
     </div>
   </a>
 
-  {toc.length > 0 && (
-    <div class="toc-section">
-      <button class="toc-toggle" aria-expanded="false">
-        <span class="toc-label">Table of Contents</span>
-        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polyline points="6 9 12 15 18 9"></polyline>
-        </svg>
-      </button>
-      <div class="toc-content" hidden>
-        <ul class="toc-list">
-          {toc.map((chapter) => (
-            <li>
-              <a href={`/${lang}/${slug}/${chapter.chapter_number}`} class="toc-link">
-                <span class="chapter-num">{chapter.chapter_number === '00' ? 'Intro' : `Ch ${parseInt(chapter.chapter_number)}`}</span>
-                <span class="chapter-title">{chapter.title}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
+  {
+    toc.length > 0 && (
+      <div class="toc-section">
+        <button class="toc-toggle" aria-expanded="false">
+          <span class="toc-label">Table of Contents</span>
+          <svg
+            class="toc-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </button>
+        <div class="toc-content" hidden>
+          <ul class="toc-list">
+            {toc.map((chapter) => (
+              <li>
+                <a href={`/${lang}/${slug}/${chapter.chapter_number}`} class="toc-link">
+                  <span class="chapter-num">
+                    {chapter.chapter_number === '00'
+                      ? 'Intro'
+                      : `Ch ${parseInt(chapter.chapter_number)}`}
+                  </span>
+                  <span class="chapter-title">{chapter.title}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
-  )}
+    )
+  }
 </div>
 
 <script>
   // Handle TOC toggle
   document.addEventListener('astro:page-load', () => {
-    document.querySelectorAll('.toc-toggle').forEach(button => {
+    document.querySelectorAll('.toc-toggle').forEach((button) => {
       button.addEventListener('click', (e) => {
         e.preventDefault();
         e.stopPropagation();
-        
+
         const isExpanded = button.getAttribute('aria-expanded') === 'true';
         button.setAttribute('aria-expanded', (!isExpanded).toString());
-        
+
         const content = button.nextElementSibling as HTMLElement;
         if (content) {
           content.hidden = isExpanded;
@@ -96,7 +114,10 @@ const cardLink = link || bookHref(slug, lang, firstChapter);
     border-radius: 6px;
     overflow: hidden;
     height: 100%;
-    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s,
+      border-color 0.2s;
   }
 
   .book-card-container:hover {
@@ -197,7 +218,7 @@ const cardLink = link || bookHref(slug, lang, firstChapter);
     border-radius: 4px;
     padding: 0.5rem 0;
     min-width: 160px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
@@ -266,7 +287,7 @@ const cardLink = link || bookHref(slug, lang, firstChapter);
     transition: transform 0.3s ease;
   }
 
-  .toc-toggle[aria-expanded="true"] .toc-icon {
+  .toc-toggle[aria-expanded='true'] .toc-icon {
     transform: rotate(180deg);
   }
 

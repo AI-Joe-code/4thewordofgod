@@ -9,50 +9,54 @@ import { AUDIO_BASE } from '../../../lib/site';
 
 export async function getStaticPaths() {
   const allCommentary = await getAllCommentary();
-  
+
   // Filter for articles only
-  const articles = allCommentary.filter(e => e.data.type === 'article');
+  const articles = allCommentary.filter((e) => e.data.type === 'article');
 
   // Languages present in content, for hreflang alternates.
-  const languages = [...new Set(allCommentary.map(e => e.data.language))]
-    .filter((c): c is string => Boolean(c));
+  const languages = [...new Set(allCommentary.map((e) => e.data.language))].filter(
+    (c): c is string => Boolean(c)
+  );
 
   // Pre-calculate first chapters map for the sidebar navigation.
   const firstChaptersMap: Record<string, Record<string, string>> = {};
 
   for (const lang of languages) {
-      const currentLangFirstChapters: Record<string, string> = {};
-      books.forEach(b => {
-          const bChapters = allCommentary
-              .filter(e => e.data.language === lang && e.data.book?.toLowerCase().replace(/\s+/g, '-') === b.slug)
-              .map(e => e.data.chapter)
-              .filter((c): c is string => Boolean(c))
-              .sort((a, b) => parseInt(a) - parseInt(b));
+    const currentLangFirstChapters: Record<string, string> = {};
+    books.forEach((b) => {
+      const bChapters = allCommentary
+        .filter(
+          (e) =>
+            e.data.language === lang && e.data.book?.toLowerCase().replace(/\s+/g, '-') === b.slug
+        )
+        .map((e) => e.data.chapter)
+        .filter((c): c is string => Boolean(c))
+        .sort((a, b) => parseInt(a) - parseInt(b));
 
-          currentLangFirstChapters[b.slug] = bChapters.length > 0 ? bChapters[0] : '01';
-      });
-      firstChaptersMap[lang] = currentLangFirstChapters;
+      currentLangFirstChapters[b.slug] = bChapters.length > 0 ? bChapters[0] : '01';
+    });
+    firstChaptersMap[lang] = currentLangFirstChapters;
   }
 
   // Per-language article lists sorted newest-first, so prev/next is derived
   // once here instead of re-fetching all content on every page render.
   const articlesByLang: Record<string, typeof articles> = {};
   for (const lang of languages) {
-      articlesByLang[lang] = articles
-          .filter(e => e.data.language === lang)
-          .sort((a, b) => {
-              const dateA = new Date(a.data.date || "2024-01-01");
-              const dateB = new Date(b.data.date || "2024-01-01");
-              return dateB.getTime() - dateA.getTime(); // Descending (Newest first)
-          });
+    articlesByLang[lang] = articles
+      .filter((e) => e.data.language === lang)
+      .sort((a, b) => {
+        const dateA = new Date(a.data.date || '2024-01-01');
+        const dateB = new Date(b.data.date || '2024-01-01');
+        return dateB.getTime() - dateA.getTime(); // Descending (Newest first)
+      });
   }
 
-  return articles.map(entry => {
+  return articles.map((entry) => {
     // entry.slug is like "en/articles/fall-of-the-world-trade-center"
     const [lang, _, slug] = entry.slug.split('/');
 
     const sorted = articlesByLang[lang] ?? [];
-    const i = sorted.findIndex(e => e.slug === entry.slug);
+    const i = sorted.findIndex((e) => e.slug === entry.slug);
     // List is newest-first: newer article is i-1, older is i+1.
     const nextArticleUrl = i > 0 ? `/${sorted[i - 1].slug}` : undefined;
     const prevArticleUrl = i >= 0 && i < sorted.length - 1 ? `/${sorted[i + 1].slug}` : undefined;
@@ -72,15 +76,7 @@ export async function getStaticPaths() {
 
 const { entry, langCodes, firstChaptersMap, prevArticleUrl, nextArticleUrl } = Astro.props;
 
-const {
-  title,
-  metaDescription,
-  keywords,
-  structuredData,
-  faq,
-  audioPath,
-  content
-} = entry.data;
+const { title, metaDescription, keywords, structuredData, faq, audioPath, content } = entry.data;
 
 const lang = entry.data.language ?? 'en';
 const direction = getLanguageDirection(lang);
@@ -88,8 +84,8 @@ const direction = getLanguageDirection(lang);
 const audioUrl = audioPath ? `${AUDIO_BASE}/${audioPath}` : null;
 ---
 
-<Layout 
-  title={`${title} | Bible Commentary`} 
+<Layout
+  title={`${title} | Bible Commentary`}
   dir={direction.toUpperCase() as 'LTR' | 'RTL'}
   description={metaDescription}
   ogTitle={title}
@@ -103,10 +99,9 @@ const audioUrl = audioPath ? `${AUDIO_BASE}/${audioPath}` : null;
   firstChapters={firstChaptersMap}
 >
   <main>
-    
     <h1>{title}</h1>
-    
-    <FloatingControls 
+
+    <FloatingControls
       prevChapter={null}
       nextChapter={null}
       audioSrc={audioUrl}
@@ -115,16 +110,16 @@ const audioUrl = audioPath ? `${AUDIO_BASE}/${audioPath}` : null;
       prevUrl={prevArticleUrl}
       nextUrl={nextArticleUrl}
     />
-    
-    {/* content is authored HTML from our own trusted translation pipeline
-        (build-time content source), rendered without sanitization by design. */}
+
+    {
+      /* content is authored HTML from our own trusted translation pipeline
+        (build-time content source), rendered without sanitization by design. */
+    }
     <article class="commentary-text">
       <Fragment set:html={content} />
     </article>
 
-    {faq && faq.length > 0 && (
-      <FAQ items={faq} />
-    )}
+    {faq && faq.length > 0 && <FAQ items={faq} />}
   </main>
 </Layout>
 
@@ -144,7 +139,7 @@ const audioUrl = audioPath ? `${AUDIO_BASE}/${audioPath}` : null;
     margin-top: 2rem;
     font-family: 'Lato', sans-serif;
   }
-  
+
   /* Ensure images in markdown content are responsive */
   .commentary-text :global(img) {
     max-width: 100%;

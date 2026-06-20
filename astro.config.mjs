@@ -14,6 +14,6 @@ export default defineConfig({
   // `platformProxy` option was removed.
   adapter: cloudflare(),
   server: {
-    allowedHosts: ['dev.4thewordofgod.com']
-  }
+    allowedHosts: ['dev.4thewordofgod.com'],
+  },
 });

@@ -21,10 +21,10 @@ const currentLangName = currentLang ? getLanguageName(currentLang) : 'Select Lan
 ---
 
 <div class="language-switcher" id="language-switcher">
-  <button 
-    class="switcher-trigger" 
-    id="switcher-trigger" 
-    aria-haspopup="true" 
+  <button
+    class="switcher-trigger"
+    id="switcher-trigger"
+    aria-haspopup="true"
     aria-expanded="false"
     aria-label="Select Language"
   >
@@ -36,50 +36,63 @@ const currentLangName = currentLang ? getLanguageName(currentLang) : 'Select Lan
 
   <div class="dropdown-menu" id="dropdown-menu">
     <div class="search-container">
-      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <svg
+        class="search-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
       </svg>
-      <input 
-        type="text" 
-        id="lang-search" 
-        placeholder="Search languages..." 
-        autocomplete="off"
-      />
+      <input type="text" id="lang-search" placeholder="Search languages..." autocomplete="off" />
     </div>
-    
-    <ul class="lang-list" id="lang-list" role="listbox">
-      {languages.map((lang) => {
-        const langName = getLanguageName(lang.language_code);
-        const isSelected = lang.language_code === currentLang;
-        const hasAudio = lang.language_code === 'en'; // Hardcoded for now as per request
 
-        return (
-          <li role="option" aria-selected={isSelected}>
-            <a href="#" data-lang={lang.language_code} class="lang-option">
-              <span class="lang-name">{langName}</span>
-              <div class="lang-meta">
-                {hasAudio && (
-                  <span class="audio-badge" title="Audio Available">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="audio-icon">
-                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                      <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+    <ul class="lang-list" id="lang-list" role="listbox">
+      {
+        languages.map((lang) => {
+          const langName = getLanguageName(lang.language_code);
+          const isSelected = lang.language_code === currentLang;
+          const hasAudio = lang.language_code === 'en'; // Hardcoded for now as per request
+
+          return (
+            <li role="option" aria-selected={isSelected}>
+              <a href="#" data-lang={lang.language_code} class="lang-option">
+                <span class="lang-name">{langName}</span>
+                <div class="lang-meta">
+                  {hasAudio && (
+                    <span class="audio-badge" title="Audio Available">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        class="audio-icon"
+                      >
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" />
+                      </svg>
+                    </span>
+                  )}
+                  {isSelected && (
+                    <svg
+                      class="check-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
                     </svg>
-                  </span>
-                )}
-                {isSelected && (
-                  <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                )}
-              </div>
-            </a>
-          </li>
-        );
-      })}
-      {languages.length === 0 && (
-        <li class="no-results">No languages found</li>
-      )}
+                  )}
+                </div>
+              </a>
+            </li>
+          );
+        })
+      }
+      {languages.length === 0 && <li class="no-results">No languages found</li>}
     </ul>
   </div>
 </div>
@@ -115,7 +128,7 @@ const currentLangName = currentLang ? getLanguageName(currentLang) : 'Select Lan
       options.forEach((option) => {
         const parent = option.parentElement;
         if (!parent) return;
-        
+
         const name = option.querySelector('.lang-name')?.textContent?.toLowerCase() || '';
         if (name.includes(query)) {
           parent.style.display = '';
@@ -127,7 +140,7 @@ const currentLangName = currentLang ? getLanguageName(currentLang) : 'Select Lan
     });
 
     // Language Selection
-    options.forEach(option => {
+    options.forEach((option) => {
       option.addEventListener('click', (e) => {
         e.preventDefault();
         const newLang = option.getAttribute('data-lang');
@@ -135,17 +148,17 @@ const currentLangName = currentLang ? getLanguageName(currentLang) : 'Select Lan
 
         const pathParts = window.location.pathname.split('/');
         // Expected: ["", "lang", "book", "chapter"] or ["", "lang"]
-        
+
         if (pathParts.length >= 2) {
           // If the first part is a language code (2 chars), replace it
           // Otherwise, prepend it? The original logic assumed pathParts[1] is lang.
           // Let's stick to the original logic:
           if (pathParts[1].length === 2) {
-             pathParts[1] = newLang;
-             window.location.href = pathParts.join('/');
+            pathParts[1] = newLang;
+            window.location.href = pathParts.join('/');
           } else {
-             // Fallback if we are on root or weird path
-             window.location.href = `/${newLang}/genesis/1`;
+            // Fallback if we are on root or weird path
+            window.location.href = `/${newLang}/genesis/1`;
           }
         } else {
           window.location.href = `/${newLang}/genesis/1`;
@@ -186,7 +199,8 @@ const currentLangName = currentLang ? getLanguageName(currentLang) : 'Select Lan
     transition: all 0.2s ease;
   }
 
-  .switcher-trigger:hover, .switcher-trigger[aria-expanded="true"] {
+  .switcher-trigger:hover,
+  .switcher-trigger[aria-expanded='true'] {
     border-color: var(--theme-accent);
     background: var(--theme-bg);
   }
@@ -198,7 +212,7 @@ const currentLangName = currentLang ? getLanguageName(currentLang) : 'Select Lan
     transition: transform 0.2s ease;
   }
 
-  .switcher-trigger[aria-expanded="true"] .chevron {
+  .switcher-trigger[aria-expanded='true'] .chevron {
     transform: rotate(180deg);
   }
 
@@ -211,7 +225,7 @@ const currentLangName = currentLang ? getLanguageName(currentLang) : 'Select Lan
     background: var(--theme-surface);
     border: 1px solid var(--theme-border);
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
@@ -275,11 +289,11 @@ const currentLangName = currentLang ? getLanguageName(currentLang) : 'Select Lan
   .lang-list::-webkit-scrollbar {
     width: 6px;
   }
-  
+
   .lang-list::-webkit-scrollbar-track {
     background: transparent;
   }
-  
+
   .lang-list::-webkit-scrollbar-thumb {
     background: var(--theme-border);
     border-radius: 3px;

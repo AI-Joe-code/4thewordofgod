@@ -100,7 +100,6 @@ const audioUrl = audioPath ? `${AUDIO_BASE}/${audioPath}` : null;
   firstChapters={firstChaptersMap}
 >
   <main>
-
     <h1>{title}</h1>
 
     <FloatingControls
@@ -111,15 +110,15 @@ const audioUrl = audioPath ? `${AUDIO_BASE}/${audioPath}` : null;
       lang={lang}
     />
 
-    {/* content is authored HTML from our own trusted translation pipeline
-        (stored in R2), so it is intentionally rendered without sanitization. */}
+    {
+      /* content is authored HTML from our own trusted translation pipeline
+        (stored in R2), so it is intentionally rendered without sanitization. */
+    }
     <article class="commentary-text">
       <Fragment set:html={content} />
     </article>
 
-    {faq && faq.length > 0 && (
-      <FAQ items={faq} />
-    )}
+    {faq && faq.length > 0 && <FAQ items={faq} />}
   </main>
 </Layout>
 

@@ -14,38 +14,40 @@ const { prevChapter, nextChapter, audioSrc, bookSlug, lang, prevUrl, nextUrl } =
 
 <div class="floating-wrapper">
   <div class="controls-container">
-    <a 
-      href={prevUrl || (prevChapter ? `/${lang}/${bookSlug}/${prevChapter}` : '#')} 
-      class={`nav-btn prev ${(!prevChapter && !prevUrl) ? 'disabled' : ''}`}
+    <a
+      href={prevUrl || (prevChapter ? `/${lang}/${bookSlug}/${prevChapter}` : '#')}
+      class={`nav-btn prev ${!prevChapter && !prevUrl ? 'disabled' : ''}`}
       aria-label="Previous Chapter"
     >
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M15 18l-6-6 6-6"/>
+        <path d="M15 18l-6-6 6-6"></path>
       </svg>
       <span class="nav-text">Prev</span>
     </a>
 
     <div class="audio-section">
-      {audioSrc ? (
-        <audio controls>
-          <source src={audioSrc} type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      ) : (
-        <div class="audio-placeholder">
-          <span class="coming-soon">Audio Coming Soon</span>
-        </div>
-      )}
+      {
+        audioSrc ? (
+          <audio controls>
+            <source src={audioSrc} type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        ) : (
+          <div class="audio-placeholder">
+            <span class="coming-soon">Audio Coming Soon</span>
+          </div>
+        )
+      }
     </div>
 
-    <a 
-      href={nextUrl || (nextChapter ? `/${lang}/${bookSlug}/${nextChapter}` : '#')} 
-      class={`nav-btn next ${(!nextChapter && !nextUrl) ? 'disabled' : ''}`}
+    <a
+      href={nextUrl || (nextChapter ? `/${lang}/${bookSlug}/${nextChapter}` : '#')}
+      class={`nav-btn next ${!nextChapter && !nextUrl ? 'disabled' : ''}`}
       aria-label="Next Chapter"
     >
       <span class="nav-text">Next</span>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M9 18l6-6-6-6"/>
+        <path d="M9 18l6-6-6-6"></path>
       </svg>
     </a>
   </div>
@@ -80,7 +82,9 @@ const { prevChapter, nextChapter, audioSrc, bookSlug, lang, prevUrl, nextUrl } =
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 700px;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      border-color 0.3s ease;
   }
 
   .nav-btn {
@@ -128,12 +132,12 @@ const { prevChapter, nextChapter, audioSrc, bookSlug, lang, prevUrl, nextUrl } =
     border-radius: 18px;
     filter: invert(1); /* Invert controls to be white on the dark background */
   }
-  
+
   /* Reset filter in dark mode because the container becomes light, so we want dark controls */
-  :global([data-theme="dark"]) audio {
+  :global([data-theme='dark']) audio {
     filter: none;
   }
-  
+
   /* Customizing audio player colors to match theme roughly */
   audio::-webkit-media-controls-enclosure {
     background-color: transparent;
@@ -165,11 +169,11 @@ const { prevChapter, nextChapter, audioSrc, bookSlug, lang, prevUrl, nextUrl } =
       left: 0;
       bottom: 1rem;
     }
-    
+
     .nav-text {
       display: none;
     }
-    
+
     .controls-container {
       padding: 0.75rem;
       gap: 0.75rem;
