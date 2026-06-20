@@ -10,7 +10,8 @@ How this site runs in production:
   > `@astrojs/cloudflare` v13, which is Workers-only. Same R2/KV/runtime, same
   > free tier; only the packaging and deploy command changed.
 - **R2** (`bible-commentary-assets`, binding `R2`) holds the content:
-  `public-content/{lang}/json/{book}_{chapter}.json` and
+  `public-content/{lang}/json/{book}_{chapter}.json`,
+  `public-content/{lang}/articles/{slug}.json`, and
   `public-content/{lang}/homepage.json`.
 - **KV** (binding `MANIFEST`) holds the navigation manifests:
   `manifest:{lang}` and `manifest:languages`.
@@ -90,6 +91,9 @@ Get-ChildItem content-source/en -Directory |
 # Homepage JSON -> R2
 node scripts/upload_content.js --lang=en --type=homepage --dir=content-source/en --remote
 
+# Articles -> R2 (each content-source/en/articles/<folder> -> articles/<slug>.json)
+node scripts/upload_content.js --lang=en --type=article --dir=content-source/en/articles --remote
+
 # Navigation manifest -> KV
 node scripts/generate_manifest.js --lang=en --remote
 ```
@@ -101,6 +105,7 @@ for dir in content-source/en/*/json; do
   node scripts/upload_content.js --lang=en --type=json --dir="$dir" --remote
 done
 node scripts/upload_content.js --lang=en --type=homepage --dir=content-source/en --remote
+node scripts/upload_content.js --lang=en --type=article --dir=content-source/en/articles --remote
 node scripts/generate_manifest.js --lang=en --remote
 ```
 
@@ -131,11 +136,28 @@ ASSETS bindings and read the asset files from `dist/client`.
 
 ---
 
-## 5. Custom domain
+## 5. Custom domain (Pages → Worker cutover)
 
-In the Worker → **Settings → Domains & Routes**, ensure `4thewordofgod.com`
-(and `www` if used) point at this Worker as custom domains. Audio is served
-separately from `audio.4thewordofgod.com`.
+`4thewordofgod.com` was previously served by the old **Cloudflare Pages**
+project. A hostname can only belong to one service, so going live is a cutover:
+
+1. **Detach** `4thewordofgod.com` (and `www`) from the old Pages project:
+   _Workers & Pages → (old Pages project) → Custom domains → remove_.
+2. **Attach** them to this Worker as custom domains — either in the dashboard
+   (_Worker `bible-commentaries` → Settings → Domains & Routes → Add Custom
+   Domain_) or by adding routes to `wrangler.toml` and redeploying:
+
+   ```toml
+   routes = [
+     { pattern = "4thewordofgod.com", custom_domain = true },
+     { pattern = "www.4thewordofgod.com", custom_domain = true },
+   ]
+   ```
+
+Cloudflare provisions the DNS record + edge cert automatically. Audio stays on
+`audio.4thewordofgod.com` (separate). Until the cutover, the Worker is reachable
+at `bible-commentaries.<subdomain>.workers.dev` (which is `noindex` — only the
+production host is crawlable).
 
 ---
 
@@ -181,10 +203,10 @@ No build or redeploy needed for content-only changes.
 
 ## Known limitations / follow-ups
 
-- **Articles** (`/[lang]/articles/[slug]`) are still prerendered at build from
-  `content-source/` (English only). Converting them to SSR-from-R2 (like the
-  homepage) is needed before articles scale to many languages.
-- **hreflang** alternates (sitemaps + page `<head>`) are not emitted yet; they
-  need a cross-language index of which chapters exist per language.
-- The build still reads `content-source/` for the prerendered article. Keep the
-  English `content-source/` in the repo until articles move to R2.
+- **One default OG image** (`og-default.png`) is used for every page. Per-page
+  images (dynamic OG generation) would improve social-share CTR.
+- **hreflang in sitemaps** (`xhtml:link`) is not emitted — on-page `<head>`
+  hreflang is. Only matters at many-language scale; add before the full rollout.
+- `content-source/` is the source the offline scripts push to R2; it is **no
+  longer read at build time** (chapters, articles, and the homepage all render
+  SSR-from-R2).
