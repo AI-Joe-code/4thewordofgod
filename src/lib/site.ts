@@ -14,4 +14,4 @@ export const DEFAULT_LANG = 'en';
 // og:image / twitter:image tags are omitted (see Layout.astro) so production
 // never references a missing file.
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-default.png`;
-export const HAS_OG_IMAGE = false;
+export const HAS_OG_IMAGE = true;
