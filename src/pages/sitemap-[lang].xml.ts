@@ -1,12 +1,11 @@
 import type { APIContext } from 'astro';
 import { env } from 'cloudflare:workers';
+import { SITE_URL as SITE } from '../lib/site';
 
 // Per-language sitemap, built from that language's KV manifest: homepage,
 // every chapter URL, and articles. One file per language keeps each well
 // under the 50,000-URL sitemap limit and scales to hundreds of languages.
 export const prerender = false;
-
-const SITE = 'https://4thewordofgod.com';
 
 interface Manifest {
   books: Record<string, { chapters: { n: string }[] }>;

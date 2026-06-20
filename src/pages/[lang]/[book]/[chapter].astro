@@ -8,13 +8,14 @@ export const prerender = false;
 import Layout from '../../../layouts/Layout.astro';
 import FloatingControls from '../../../components/FloatingControls.astro';
 import FAQ from '../../../components/FAQ.astro';
-import { getLanguageDirection, LANGUAGES } from '../../../lib/languages';
+import { getLanguageDirection, getAvailableLanguages } from '../../../lib/languages';
 import type { CommentaryData } from '../../../lib/content';
+import { AUDIO_BASE } from '../../../lib/site';
 import { env } from 'cloudflare:workers';
 
 const { lang, book, chapter } = Astro.params;
 if (!lang || !book || !chapter) {
-  return new Response('Not found', { status: 404 });
+  return Astro.rewrite('/404');
 }
 
 if (!env.R2) {
@@ -25,14 +26,14 @@ if (!env.R2) {
 const key = `public-content/${lang}/json/${book}_${chapter}.json`;
 const obj = await env.R2.get(key);
 if (!obj) {
-  return new Response('Chapter not found', { status: 404 });
+  return Astro.rewrite('/404');
 }
 const data = (await obj.json()) as CommentaryData;
 
 // 2. Navigation comes from the per-language manifest in KV (one small read,
 //    with real chapter titles). Falls back to an R2 listing if the manifest
 //    has not been generated yet.
-let bookChapters: { chapter_number: string; original_title: string | null }[] = [];
+let bookChapters: { chapter_number: string; original_title: string | null }[];
 const firstChaptersMap: Record<string, string> = {};
 
 const manifestRaw = await env.MANIFEST?.get(`manifest:${lang}`);
@@ -72,20 +73,14 @@ const prevChapterNum = idx > 0 ? bookChapters[idx - 1].chapter_number : null;
 const nextChapterNum =
   idx >= 0 && idx < bookChapters.length - 1 ? bookChapters[idx + 1].chapter_number : null;
 
-// Languages list (sidebar / hreflang). Phase 3 will source this from the manifest.
-const allLanguages = Object.keys(LANGUAGES)
-  .sort()
-  .map((code) => ({
-    language_code: code,
-    tier_level: 1 as 1 | 2,
-    direction: getLanguageDirection(code).toUpperCase() as 'LTR' | 'RTL',
-    region_name: LANGUAGES[code]?.name || code,
-  }));
+// Languages this URL exists in, for hreflang alternates (sourced from the
+// global manifest, falling back to the statically-known set).
+const langCodes = await getAvailableLanguages(env.MANIFEST);
 
 const { title, metaDescription, keywords, structuredData, faq, audioPath, content } = data;
 
 const direction = getLanguageDirection(lang!);
-const audioUrl = audioPath ? `https://audio.4thewordofgod.com/${audioPath}` : null;
+const audioUrl = audioPath ? `${AUDIO_BASE}/${audioPath}` : null;
 ---
 
 <Layout
@@ -94,9 +89,10 @@ const audioUrl = audioPath ? `https://audio.4thewordofgod.com/${audioPath}` : nu
   description={metaDescription}
   ogTitle={title}
   ogDescription={metaDescription}
+  ogType="article"
   keywords={keywords}
   structuredData={structuredData}
-  languages={allLanguages}
+  langCodes={langCodes}
   currentLang={lang}
   chapters={bookChapters}
   currentBook={book}
@@ -115,6 +111,8 @@ const audioUrl = audioPath ? `https://audio.4thewordofgod.com/${audioPath}` : nu
       lang={lang}
     />
 
+    {/* content is authored HTML from our own trusted translation pipeline
+        (stored in R2), so it is intentionally rendered without sanitization. */}
     <article class="commentary-text">
       <Fragment set:html={content} />
     </article>

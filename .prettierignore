@@ -1,0 +1,11 @@
+dist
+.astro
+.wrangler
+node_modules
+content-source
+pipeline
+scripts
+package-lock.json
+*.d.ts
+debug-env.js
+test-content.ts

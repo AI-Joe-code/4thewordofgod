@@ -5,6 +5,7 @@ export const prerender = false;
 
 import Layout from '../../layouts/Layout.astro';
 import BookCard from '../../components/BookCard.astro';
+import { getAvailableLanguages } from '../../lib/languages';
 import { env } from 'cloudflare:workers';
 
 const { lang } = Astro.params;
@@ -15,7 +16,7 @@ if (!env.R2) {
 
 const obj = await env.R2.get(`public-content/${lang}/homepage.json`);
 if (!obj) {
-  return new Response('Homepage not found', { status: 404 });
+  return Astro.rewrite('/404');
 }
 
 const homepageData = (await obj.json()) as {
@@ -43,12 +44,16 @@ const firstChapters: Record<string, string> = {};
 commentaries.forEach((book) => {
   firstChapters[book.book_name.toLowerCase()] = book.chapter_number;
 });
+
+// Languages for hreflang alternates.
+const langCodes = await getAvailableLanguages(env.MANIFEST);
 ---
 
 <Layout
   title={site_title ?? 'Bible Commentary'}
   description={tagline}
   currentLang={lang}
+  langCodes={langCodes}
   firstChapters={firstChapters}
 >
   <main>
@@ -96,14 +101,6 @@ commentaries.forEach((book) => {
 		text-align: center;
 		margin-bottom: 4rem;
 		padding: 4rem 0;
-	}
-
-	.hero-subtitle {
-		font-size: 1.1rem;
-		color: var(--theme-text);
-        opacity: 0.8;
-		max-width: 600px;
-		margin: 0 auto;
 	}
 
 	.section-title {

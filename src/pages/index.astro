@@ -5,8 +5,7 @@
 export const prerender = false;
 
 import { env } from 'cloudflare:workers';
-
-const DEFAULT_LANG = 'en';
+import { DEFAULT_LANG } from '../lib/site';
 
 let available: string[] = [DEFAULT_LANG];
 try {

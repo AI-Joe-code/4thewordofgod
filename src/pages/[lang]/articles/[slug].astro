@@ -3,8 +3,9 @@ import Layout from '../../../layouts/Layout.astro';
 import FloatingControls from '../../../components/FloatingControls.astro';
 import FAQ from '../../../components/FAQ.astro';
 import { getAllCommentary } from '../../../lib/content';
-import { getLanguageDirection, LANGUAGES } from '../../../lib/languages';
+import { getLanguageDirection } from '../../../lib/languages';
 import { books } from '../../../lib/books';
+import { AUDIO_BASE } from '../../../lib/site';
 
 export async function getStaticPaths() {
   const allCommentary = await getAllCommentary();
@@ -12,19 +13,11 @@ export async function getStaticPaths() {
   // Filter for articles only
   const articles = allCommentary.filter(e => e.data.type === 'article');
 
-  // Pre-calculate global data
+  // Languages present in content, for hreflang alternates.
   const languages = [...new Set(allCommentary.map(e => e.data.language))]
     .filter((c): c is string => Boolean(c));
 
-  const allLanguages = languages.slice().sort().map(code => ({
-      language_code: code,
-      tier_level: 1 as 1 | 2,
-      direction: getLanguageDirection(code).toUpperCase() as 'LTR' | 'RTL',
-      region_name: LANGUAGES[code]?.name || code
-  }));
-
-  // Pre-calculate first chapters map for layout
-  // (We still need this for the sidebar navigation if it's present in Layout)
+  // Pre-calculate first chapters map for the sidebar navigation.
   const firstChaptersMap: Record<string, Record<string, string>> = {};
 
   for (const lang of languages) {
@@ -41,22 +34,43 @@ export async function getStaticPaths() {
       firstChaptersMap[lang] = currentLangFirstChapters;
   }
 
+  // Per-language article lists sorted newest-first, so prev/next is derived
+  // once here instead of re-fetching all content on every page render.
+  const articlesByLang: Record<string, typeof articles> = {};
+  for (const lang of languages) {
+      articlesByLang[lang] = articles
+          .filter(e => e.data.language === lang)
+          .sort((a, b) => {
+              const dateA = new Date(a.data.date || "2024-01-01");
+              const dateB = new Date(b.data.date || "2024-01-01");
+              return dateB.getTime() - dateA.getTime(); // Descending (Newest first)
+          });
+  }
+
   return articles.map(entry => {
     // entry.slug is like "en/articles/fall-of-the-world-trade-center"
     const [lang, _, slug] = entry.slug.split('/');
-    
+
+    const sorted = articlesByLang[lang] ?? [];
+    const i = sorted.findIndex(e => e.slug === entry.slug);
+    // List is newest-first: newer article is i-1, older is i+1.
+    const nextArticleUrl = i > 0 ? `/${sorted[i - 1].slug}` : undefined;
+    const prevArticleUrl = i >= 0 && i < sorted.length - 1 ? `/${sorted[i + 1].slug}` : undefined;
+
     return {
       params: { lang, slug },
-      props: { 
+      props: {
         entry,
-        allLanguages,
-        firstChaptersMap: firstChaptersMap[lang]
+        langCodes: languages,
+        firstChaptersMap: firstChaptersMap[lang],
+        prevArticleUrl,
+        nextArticleUrl,
       },
     };
   });
 }
 
-const { entry, allLanguages, firstChaptersMap } = Astro.props;
+const { entry, langCodes, firstChaptersMap, prevArticleUrl, nextArticleUrl } = Astro.props;
 
 const {
   title,
@@ -71,36 +85,7 @@ const {
 const lang = entry.data.language ?? 'en';
 const direction = getLanguageDirection(lang);
 
-// Audio URL
-const audioUrl = audioPath ? `https://audio.4thewordofgod.com/${audioPath}` : null;
-
-let prevArticleUrl: string | undefined;
-let nextArticleUrl: string | undefined;
-
-// Article Navigation Logic
-const articles = (await getAllCommentary())
-    .filter(e => e.data.language === lang && e.data.type === 'article')
-    .sort((a, b) => {
-        const dateA = new Date(a.data.date || "2024-01-01");
-        const dateB = new Date(b.data.date || "2024-01-01");
-        return dateB.getTime() - dateA.getTime(); // Descending (Newest first)
-    });
-
-const currentIndex = articles.findIndex(e => e.slug === entry.slug);
-
-if (currentIndex !== -1) {
-    // Next (Newer) -> index - 1
-    if (currentIndex > 0) {
-        const nextArticle = articles[currentIndex - 1];
-        nextArticleUrl = `/${nextArticle.slug}`;
-    }
-    
-    // Previous (Older) -> index + 1
-    if (currentIndex < articles.length - 1) {
-        const prevArticle = articles[currentIndex + 1];
-        prevArticleUrl = `/${prevArticle.slug}`;
-    }
-}
+const audioUrl = audioPath ? `${AUDIO_BASE}/${audioPath}` : null;
 ---
 
 <Layout 
@@ -109,9 +94,10 @@ if (currentIndex !== -1) {
   description={metaDescription}
   ogTitle={title}
   ogDescription={metaDescription}
+  ogType="article"
   keywords={keywords}
   structuredData={structuredData}
-  languages={allLanguages}
+  langCodes={langCodes}
   currentLang={lang}
   chapters={[]}
   firstChapters={firstChaptersMap}
@@ -130,6 +116,8 @@ if (currentIndex !== -1) {
       nextUrl={nextArticleUrl}
     />
     
+    {/* content is authored HTML from our own trusted translation pipeline
+        (build-time content source), rendered without sanitization by design. */}
     <article class="commentary-text">
       <Fragment set:html={content} />
     </article>

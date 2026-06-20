@@ -3,8 +3,8 @@ import Sidebar from '../components/Sidebar.astro';
 import ThemeToggle from '../components/ThemeToggle.astro';
 import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 import LanguageSuggestionBanner from '../components/LanguageSuggestionBanner.astro';
-import type { TierConfig } from '../types';
 import { ClientRouter } from 'astro:transitions';
+import { SITE_URL, DEFAULT_LANG, DEFAULT_OG_IMAGE, HAS_OG_IMAGE } from '../lib/site';
 
 interface Props {
 	title: string;
@@ -14,31 +14,58 @@ interface Props {
 	keywords?: string[];
 	structuredData?: object[];
 	dir?: 'LTR' | 'RTL';
-    languages?: TierConfig[];
     currentLang?: string;
     chapters?: { chapter_number: string | number; original_title: string | null }[];
     currentBook?: string;
     currentChapter?: string | number;
     firstChapters?: Record<string, string>;
+    /** Available language codes for hreflang alternates (>1 to render them). */
+    langCodes?: string[];
+    ogType?: 'website' | 'article';
+    ogImage?: string;
+    robots?: string;
 }
 
-const { 
-	title, 
-	description = "A Bible commentary platform.", 
-	ogTitle, 
-	ogDescription, 
-	keywords = [], 
-	structuredData = [], 
+const {
+	title,
+	description = "A Bible commentary platform.",
+	ogTitle,
+	ogDescription,
+	keywords = [],
+	structuredData = [],
 	dir = 'LTR',
-    languages = [],
     currentLang,
     chapters = [],
     currentBook,
     currentChapter,
-    firstChapters = {}
+    firstChapters = {},
+    langCodes = [],
+    ogType = 'website',
+    ogImage = DEFAULT_OG_IMAGE,
+    robots = 'index, follow'
 } = Astro.props;
 
+// Force the production origin (the SSR request host may be a preview/workers.dev
+// domain) and drop any query string so every page self-canonicals cleanly.
+const path = Astro.url.pathname;
+const canonical = new URL(path, SITE_URL).href;
 
+// hreflang alternates: every route is /{lang}/..., so swap the leading lang
+// segment for each available language. x-default points at the default lang.
+const segs = path.split('/'); // e.g. ['', 'en', 'daniel', '00']
+const hasLangSeg = segs.length > 1 && segs[1].length > 0;
+const alternates = langCodes.length > 1 && hasLangSeg
+    ? langCodes.map((code) => {
+        const s = [...segs];
+        s[1] = code;
+        return { code, href: new URL(s.join('/'), SITE_URL).href };
+    })
+    : [];
+const xDefaultHref = alternates.length > 0
+    ? new URL([...segs.slice(0, 1), DEFAULT_LANG, ...segs.slice(2)].join('/'), SITE_URL).href
+    : null;
+
+const ogImageUrl = HAS_OG_IMAGE ? ogImage : null;
 ---
 
 <!doctype html>
@@ -50,28 +77,60 @@ const {
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-		
+
+        <link rel="canonical" href={canonical} />
+        <meta name="robots" content={robots} />
+
+        <!-- hreflang alternates for the language variants of this URL -->
+        {alternates.map((a) => (
+            <link rel="alternate" hreflang={a.code} href={a.href} />
+        ))}
+        {xDefaultHref && <link rel="alternate" hreflang="x-default" href={xDefaultHref} />}
+
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
-		{ogTitle && <meta property="og:title" content={ogTitle} />}
-		{ogDescription && <meta property="og:description" content={ogDescription} />}
 		{keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
-		
+
+		<!-- Open Graph -->
+		<meta property="og:type" content={ogType} />
+		<meta property="og:url" content={canonical} />
+		<meta property="og:site_name" content="4thewordofgod" />
+		<meta property="og:locale" content={currentLang || DEFAULT_LANG} />
+		<meta property="og:title" content={ogTitle || title} />
+		<meta property="og:description" content={ogDescription || description} />
+		{ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content={ogImageUrl ? 'summary_large_image' : 'summary'} />
+		<meta name="twitter:title" content={ogTitle || title} />
+		<meta name="twitter:description" content={ogDescription || description} />
+		{ogImageUrl && <meta name="twitter:image" content={ogImageUrl} />}
+
 		{structuredData.length > 0 && (
 			<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
 		)}
         <ClientRouter />
         <script is:inline>
-            // Immediate theme application to prevent flash
-            const theme = localStorage.getItem('theme') || 
-                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-            document.documentElement.setAttribute('data-theme', theme);
+            // Apply the saved/system theme before first paint AND before every
+            // View Transitions swap. The swap resets <html>'s attributes to the
+            // freshly-fetched (theme-less) markup, so without the after-swap
+            // re-apply the page would flash the light theme for one frame.
+            (function () {
+                const applyTheme = function () {
+                    const theme = localStorage.getItem('theme') ||
+                        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                    document.documentElement.setAttribute('data-theme', theme);
+                };
+                applyTheme();
+                document.addEventListener('astro:after-swap', applyTheme);
+            })();
         </script>
 	</head>
 	<body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
         <div class="app-container">
             <button class="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-sidebar">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -92,7 +151,7 @@ const {
                 <!-- <LanguageSwitcher languages={languages} currentLang={currentLang} /> -->
                 <ThemeToggle />
             </div>
-            <main class="main-content">
+            <main class="main-content" id="main-content">
  		        <slot />
             </main>
         </div>
@@ -174,6 +233,28 @@ const {
     body {
         margin: 0;
         padding: 0;
+    }
+
+    /* Keyboard a11y: visible focus ring + skip link to the main content. */
+    :focus-visible {
+        outline: 2px solid var(--theme-accent);
+        outline-offset: 2px;
+    }
+    .skip-link {
+        position: absolute;
+        left: 0.5rem;
+        top: -3rem;
+        z-index: 2000;
+        padding: 0.5rem 1rem;
+        background: var(--theme-surface);
+        color: var(--theme-text);
+        border: 1px solid var(--theme-border);
+        border-radius: 6px;
+        text-decoration: none;
+        transition: top 0.2s ease;
+    }
+    .skip-link:focus {
+        top: 0.5rem;
     }
     .app-container {
         display: flex;

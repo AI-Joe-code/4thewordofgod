@@ -19,3 +19,28 @@ export const LANGUAGES: Record<string, { code: string; direction: 'ltr' | 'rtl';
 export function getLanguageDirection(code: string): 'ltr' | 'rtl' {
     return LANGUAGES[code]?.direction || 'ltr';
 }
+
+// Minimal shape of the MANIFEST KV binding we need (avoids a hard dependency
+// on the Cloudflare types in modules that just read the language list).
+type ManifestKV = { get(key: string): Promise<string | null> };
+
+/**
+ * The languages the site is currently published in, sourced from the global
+ * `manifest:languages` KV key (the same source the root redirect and sitemap
+ * index use). Falls back to the statically-known languages when the manifest
+ * has not been generated yet. Used to render hreflang alternates.
+ */
+export async function getAvailableLanguages(manifest: ManifestKV | undefined): Promise<string[]> {
+    if (manifest) {
+        try {
+            const raw = await manifest.get('manifest:languages');
+            if (raw) {
+                const parsed = JSON.parse(raw);
+                if (Array.isArray(parsed) && parsed.length > 0) return parsed as string[];
+            }
+        } catch {
+            // fall through to the static default
+        }
+    }
+    return Object.keys(LANGUAGES);
+}

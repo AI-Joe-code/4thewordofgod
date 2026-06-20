@@ -1,5 +1,5 @@
 ---
-import { books } from '../lib/books';
+import { books, bookHref } from '../lib/books';
 
 interface Props {
   chapters?: { chapter_number: string | number; original_title: string | null }[];
@@ -113,9 +113,7 @@ const nextChapter = currentIndex >= 0 && currentIndex < chapters.length - 1 ? ch
       }
 
       const firstChapter = firstChapters[book.slug] || '01';
-      const link = book.slug === 'tyre' 
-        ? `/${currentLang}/articles/fall-of-the-world-trade-center`
-        : `/${currentLang}/${book.slug}/${firstChapter}`;
+      const link = bookHref(book.slug, currentLang, firstChapter);
 
       return (
         <a href={link} class="nav-item">
