@@ -16,4 +16,12 @@ export default defineConfig({
   server: {
     allowedHosts: ['dev.4thewordofgod.com'],
   },
+  vite: {
+    define: {
+      // Unique per build. The middleware folds this into its edge-cache key so
+      // every deploy uses a fresh cache namespace — old cached HTML (which
+      // references now-deleted hashed CSS/JS) is never served after a redeploy.
+      __BUILD_ID__: JSON.stringify(Date.now().toString(36)),
+    },
+  },
 });
