@@ -14,12 +14,14 @@ const { items } = Astro.props;
 <div class="faq-section">
   <h2>Frequently Asked Questions</h2>
   <div class="faq-list">
-    {items.map((item) => (
-      <details class="faq-item">
-        <summary class="faq-question">{item.question}</summary>
-        <div class="faq-answer">{item.answer}</div>
-      </details>
-    ))}
+    {
+      items.map((item) => (
+        <details class="faq-item">
+          <summary class="faq-question">{item.question}</summary>
+          <div class="faq-answer">{item.answer}</div>
+        </details>
+      ))
+    }
   </div>
 </div>
 
@@ -46,9 +48,12 @@ const { items } = Astro.props;
     border: 1px solid var(--theme-border);
     border-radius: 6px;
     overflow: hidden;
-    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s,
+      border-color 0.2s;
   }
-  
+
   .faq-item:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -71,7 +76,7 @@ const { items } = Astro.props;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .faq-question::-webkit-details-marker {
     display: none;
   }

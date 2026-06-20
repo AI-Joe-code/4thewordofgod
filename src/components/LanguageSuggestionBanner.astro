@@ -3,18 +3,40 @@ const { currentLang } = Astro.props;
 
 // Mapping of Country Codes (ISO 3166-1 alpha-2) to Language Codes
 const countryToLang: Record<string, string> = {
-  'US': 'en', 'GB': 'en', 'CA': 'en', 'AU': 'en', 'NZ': 'en',
-  'MX': 'es', 'ES': 'es', 'CO': 'es', 'AR': 'es', 'PE': 'es', 'VE': 'es', 'CL': 'es', 'EC': 'es', 'GT': 'es', 'CU': 'es',
-  'FR': 'fr', 'BE': 'fr', 'CH': 'fr', 'SN': 'fr',
-  'CN': 'zh', 'TW': 'zh', 'HK': 'zh',
-  'DE': 'de', 'AT': 'de',
-  'IT': 'it',
-  'PT': 'pt', 'BR': 'pt',
-  'RU': 'ru',
-  'JP': 'ja',
-  'KR': 'ko',
-  'IN': 'hi', // Simplified, India has many languages
-  'SA': 'ar', 'EG': 'ar', 'AE': 'ar'
+  US: 'en',
+  GB: 'en',
+  CA: 'en',
+  AU: 'en',
+  NZ: 'en',
+  MX: 'es',
+  ES: 'es',
+  CO: 'es',
+  AR: 'es',
+  PE: 'es',
+  VE: 'es',
+  CL: 'es',
+  EC: 'es',
+  GT: 'es',
+  CU: 'es',
+  FR: 'fr',
+  BE: 'fr',
+  CH: 'fr',
+  SN: 'fr',
+  CN: 'zh',
+  TW: 'zh',
+  HK: 'zh',
+  DE: 'de',
+  AT: 'de',
+  IT: 'it',
+  PT: 'pt',
+  BR: 'pt',
+  RU: 'ru',
+  JP: 'ja',
+  KR: 'ko',
+  IN: 'hi', // Simplified, India has many languages
+  SA: 'ar',
+  EG: 'ar',
+  AE: 'ar',
 };
 
 // Get country from Cloudflare header
@@ -29,36 +51,49 @@ const suggestedLang = country ? countryToLang[country] : null;
 const shouldRender = suggestedLang && suggestedLang !== currentLang;
 
 const languageNames: Record<string, string> = {
-    'en': 'English',
-    'es': 'Español',
-    'fr': 'Français',
-    'zh': '中文',
-    'de': 'Deutsch',
-    'it': 'Italiano',
-    'pt': 'Português',
-    'ru': 'Русский',
-    'ja': '日本語',
-    'ko': '한국어',
-    'hi': 'हिन्दी',
-    'ar': 'العربية'
+  en: 'English',
+  es: 'Español',
+  fr: 'Français',
+  zh: '中文',
+  de: 'Deutsch',
+  it: 'Italiano',
+  pt: 'Português',
+  ru: 'Русский',
+  ja: '日本語',
+  ko: '한국어',
+  hi: 'हिन्दी',
+  ar: 'العربية',
 };
 
-const suggestedLangName = suggestedLang ? languageNames[suggestedLang] || suggestedLang : suggestedLang;
+const suggestedLangName = suggestedLang
+  ? languageNames[suggestedLang] || suggestedLang
+  : suggestedLang;
 ---
 
-{shouldRender && (
-  <div id="lang-suggestion-banner" class="banner" data-suggested-lang={suggestedLang} style="display: none;">
-    <div class="content">
-      <p>
-        It looks like you are in {country}. Would you like to switch to {suggestedLangName}?
-      </p>
-      <div class="actions">
-        <button id="switch-lang-btn" class="switch-btn">Switch to {suggestedLangName}</button>
-        <button id="dismiss-lang-btn" class="dismiss-btn">Dismiss</button>
+{
+  shouldRender && (
+    <div
+      id="lang-suggestion-banner"
+      class="banner"
+      data-suggested-lang={suggestedLang}
+      style="display: none;"
+    >
+      <div class="content">
+        <p>
+          It looks like you are in {country}. Would you like to switch to {suggestedLangName}?
+        </p>
+        <div class="actions">
+          <button id="switch-lang-btn" class="switch-btn">
+            Switch to {suggestedLangName}
+          </button>
+          <button id="dismiss-lang-btn" class="dismiss-btn">
+            Dismiss
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-)}
+  )
+}
 
 <script>
   const banner = document.getElementById('lang-suggestion-banner');
@@ -80,15 +115,15 @@ const suggestedLangName = suggestedLang ? languageNames[suggestedLang] || sugges
         // Assuming URL structure is /[lang]/[book]/[chapter]
         // We replace the first path segment
         const currentPath = window.location.pathname;
-        const segments = currentPath.split('/').filter(p => p);
-        
+        const segments = currentPath.split('/').filter((p) => p);
+
         if (segments.length >= 1) {
-            segments[0] = suggestedLang;
-            const newPath = '/' + segments.join('/');
-            window.location.href = newPath;
+          segments[0] = suggestedLang;
+          const newPath = '/' + segments.join('/');
+          window.location.href = newPath;
         } else {
-            // Fallback for root or weird paths
-            window.location.href = `/${suggestedLang}`;
+          // Fallback for root or weird paths
+          window.location.href = `/${suggestedLang}`;
         }
       });
     }
@@ -110,7 +145,7 @@ const suggestedLangName = suggestedLang ? languageNames[suggestedLang] || sugges
     width: 100%;
     background-color: var(--theme-surface);
     border-top: 1px solid var(--theme-accent);
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
     z-index: 2000;
     padding: 1rem;
     animation: slideUp 0.3s ease-out;
@@ -178,7 +213,11 @@ const suggestedLangName = suggestedLang ? languageNames[suggestedLang] || sugges
   }
 
   @keyframes slideUp {
-    from { transform: translateY(100%); }
-    to { transform: translateY(0); }
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
   }
 </style>

@@ -65,78 +65,82 @@ const langCodes = await getAvailableLanguages(env.MANIFEST);
     <section class="book-grid-section">
       <h2 class="section-title">{commentaries_section_title}</h2>
       <div class="books-grid">
-        {commentaries.map((book) => (
-          <BookCard
-            title={book.title}
-            description={book.metaDescription}
-            link={`/${lang}/${book.book_name.toLowerCase()}/${book.chapter_number}`}
-            slug={book.book_name.toLowerCase()}
-            lang={lang}
-            toc={book.toc}
-          />
-        ))}
+        {
+          commentaries.map((book) => (
+            <BookCard
+              title={book.title}
+              description={book.metaDescription}
+              link={`/${lang}/${book.book_name.toLowerCase()}/${book.chapter_number}`}
+              slug={book.book_name.toLowerCase()}
+              lang={lang}
+              toc={book.toc}
+            />
+          ))
+        }
       </div>
     </section>
 
-    {recentArticles.length > 0 && (
-      <section class="book-grid-section">
-        <h2 class="section-title">{articles_section_title}</h2>
-        <div class="books-grid">
-          {recentArticles.map((article) => (
-            <BookCard
-              title={article.title}
-              description={article.metaDescription}
-              link={`/${lang}/articles/${article.book_name.toLowerCase().replace(/\s+/g, '-')}`}
-              lang={lang}
-            />
-          ))}
-        </div>
-      </section>
-    )}
+    {
+      recentArticles.length > 0 && (
+        <section class="book-grid-section">
+          <h2 class="section-title">{articles_section_title}</h2>
+          <div class="books-grid">
+            {recentArticles.map((article) => (
+              <BookCard
+                title={article.title}
+                description={article.metaDescription}
+                link={`/${lang}/articles/${article.book_name.toLowerCase().replace(/\s+/g, '-')}`}
+                lang={lang}
+              />
+            ))}
+          </div>
+        </section>
+      )
+    }
   </main>
 </Layout>
 
 <style>
-	.hero {
-		text-align: center;
-		margin-bottom: 4rem;
-		padding: 4rem 0;
-	}
+  .hero {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 4rem 0;
+  }
 
-	.section-title {
-		font-family: 'Cinzel', serif;
-		font-size: 1.5rem;
-		color: var(--theme-text);
-		margin-bottom: 2rem;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		border-bottom: 1px solid var(--theme-border);
-		padding-bottom: 0.5rem;
-		display: inline-block;
-	}
+  .section-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    color: var(--theme-text);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--theme-border);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
 
-	.books-grid {
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: 2rem;
-        padding: 0 1rem;
-	}
+  .books-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
 
-    @media (min-width: 640px) {
-        .books-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
+  @media (min-width: 640px) {
+    .books-grid {
+      grid-template-columns: repeat(2, 1fr);
     }
+  }
 
-    @media (min-width: 1024px) {
-        .books-grid {
-            grid-template-columns: repeat(3, 1fr);
-        }
+  @media (min-width: 1024px) {
+    .books-grid {
+      grid-template-columns: repeat(3, 1fr);
     }
+  }
 
-    @media (min-width: 1280px) {
-        .books-grid {
-            grid-template-columns: repeat(4, 1fr);
-        }
+  @media (min-width: 1280px) {
+    .books-grid {
+      grid-template-columns: repeat(4, 1fr);
     }
+  }
 </style>

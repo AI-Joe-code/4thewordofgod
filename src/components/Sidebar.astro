@@ -9,13 +9,23 @@ interface Props {
   firstChapters?: Record<string, string>;
 }
 
-const { chapters = [], currentBook, currentChapter, currentLang = 'en', firstChapters = {} } = Astro.props;
+const {
+  chapters = [],
+  currentBook,
+  currentChapter,
+  currentLang = 'en',
+  firstChapters = {},
+} = Astro.props;
 const currentPath = Astro.url.pathname;
 
 // Find current index for navigation
-const currentIndex = chapters && chapters.length > 0 ? chapters.findIndex(c => String(c.chapter_number) === String(currentChapter)) : -1;
+const currentIndex =
+  chapters && chapters.length > 0
+    ? chapters.findIndex((c) => String(c.chapter_number) === String(currentChapter))
+    : -1;
 const prevChapter = currentIndex > 0 ? chapters[currentIndex - 1] : null;
-const nextChapter = currentIndex >= 0 && currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : null;
+const nextChapter =
+  currentIndex >= 0 && currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : null;
 ---
 
 <aside class="sidebar" id="primary-sidebar">
@@ -37,96 +47,121 @@ const nextChapter = currentIndex >= 0 && currentIndex < chapters.length - 1 ? ch
       </svg>
       Home
     </a>
-    
+
     <div class="divider"></div>
 
-    {books.map((book) => {
-      const isActive = currentBook === book.slug;
-      
-      if (isActive) {
-        return (
-          <div class="book-card active">
-            <div class="book-header">
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-              </svg>
-              <span class="book-title">{book.title}</span>
-            </div>
-            
-            <div class="chapter-nav">
-              <div class="current-chapter">
-                Chapter {currentChapter}
-              </div>
-              
-              <div class="nav-controls">
-                {prevChapter ? (
-                  <a href={`/${currentLang}/${book.slug}/${prevChapter.chapter_number}`} class="nav-btn" aria-label="Previous Chapter">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <polyline points="15 18 9 12 15 6"></polyline>
-                    </svg>
-                  </a>
-                ) : (
-                  <span class="nav-btn disabled">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <polyline points="15 18 9 12 15 6"></polyline>
-                    </svg>
-                  </span>
-                )}
-                
-                {nextChapter ? (
-                  <a href={`/${currentLang}/${book.slug}/${nextChapter.chapter_number}`} class="nav-btn" aria-label="Next Chapter">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
-                  </a>
-                ) : (
-                  <span class="nav-btn disabled">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
-                  </span>
-                )}
-              </div>
-            </div>
+    {
+      books.map((book) => {
+        const isActive = currentBook === book.slug;
 
-            <details class="chapter-list-container">
-              <summary class="expand-btn">
-                <span>View All Chapters</span>
-                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="6 9 12 15 18 9"></polyline>
+        if (isActive) {
+          return (
+            <div class="book-card active">
+              <div class="book-header">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
                 </svg>
-              </summary>
-              <div class="chapter-grid">
-                {chapters.map((ch) => (
-                  <a 
-                    href={`/${currentLang}/${book.slug}/${ch.chapter_number}`}
-                    class={`chapter-link ${String(ch.chapter_number) === String(currentChapter) ? 'active' : ''}`}
-                  >
-                    {ch.chapter_number}
-                  </a>
-                ))}
+                <span class="book-title">{book.title}</span>
               </div>
-            </details>
-          </div>
+
+              <div class="chapter-nav">
+                <div class="current-chapter">Chapter {currentChapter}</div>
+
+                <div class="nav-controls">
+                  {prevChapter ? (
+                    <a
+                      href={`/${currentLang}/${book.slug}/${prevChapter.chapter_number}`}
+                      class="nav-btn"
+                      aria-label="Previous Chapter"
+                    >
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6" />
+                      </svg>
+                    </a>
+                  ) : (
+                    <span class="nav-btn disabled">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6" />
+                      </svg>
+                    </span>
+                  )}
+
+                  {nextChapter ? (
+                    <a
+                      href={`/${currentLang}/${book.slug}/${nextChapter.chapter_number}`}
+                      class="nav-btn"
+                      aria-label="Next Chapter"
+                    >
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6" />
+                      </svg>
+                    </a>
+                  ) : (
+                    <span class="nav-btn disabled">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6" />
+                      </svg>
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              <details class="chapter-list-container">
+                <summary class="expand-btn">
+                  <span>View All Chapters</span>
+                  <svg
+                    class="chevron"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </summary>
+                <div class="chapter-grid">
+                  {chapters.map((ch) => (
+                    <a
+                      href={`/${currentLang}/${book.slug}/${ch.chapter_number}`}
+                      class={`chapter-link ${String(ch.chapter_number) === String(currentChapter) ? 'active' : ''}`}
+                    >
+                      {ch.chapter_number}
+                    </a>
+                  ))}
+                </div>
+              </details>
+            </div>
+          );
+        }
+
+        const firstChapter = firstChapters[book.slug] || '01';
+        const link = bookHref(book.slug, currentLang, firstChapter);
+
+        return (
+          <a href={link} class="nav-item">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+            </svg>
+            {book.title}
+          </a>
         );
-      }
-
-      const firstChapter = firstChapters[book.slug] || '01';
-      const link = bookHref(book.slug, currentLang, firstChapter);
-
-      return (
-        <a href={link} class="nav-item">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-          </svg>
-          {book.title}
-        </a>
-      );
-    })}
+      })
+    }
   </nav>
-
 </aside>
 
 <style>
@@ -143,7 +178,9 @@ const nextChapter = currentIndex >= 0 && currentIndex < chapters.length - 1 ? ch
     left: 0;
     top: 0;
     overflow-y: auto;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      border-color 0.3s ease;
     scrollbar-width: thin;
     scrollbar-color: var(--theme-border) transparent;
   }
@@ -155,7 +192,10 @@ const nextChapter = currentIndex >= 0 && currentIndex < chapters.length - 1 ? ch
       z-index: 1100;
       transform: translateX(-100%);
       box-shadow: 2px 0 16px rgba(0, 0, 0, 0.25);
-      transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+      transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        border-color 0.3s ease;
       padding-top: 4.5rem; /* clear the fixed hamburger button */
     }
 
@@ -207,7 +247,7 @@ const nextChapter = currentIndex >= 0 && currentIndex < chapters.length - 1 ? ch
     font-family: 'Lato', sans-serif;
     opacity: 0.8;
   }
-  
+
   .nav-item:visited {
     color: var(--theme-text);
   }
@@ -232,7 +272,7 @@ const nextChapter = currentIndex >= 0 && currentIndex < chapters.length - 1 ? ch
     border-radius: 8px;
     padding: 1rem;
     margin: 0.5rem 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   }
 
   .book-header {
@@ -292,7 +332,7 @@ const nextChapter = currentIndex >= 0 && currentIndex < chapters.length - 1 ? ch
   .nav-btn.disabled {
     opacity: 0.5;
     cursor: not-allowed;
-    background: rgba(0,0,0,0.05);
+    background: rgba(0, 0, 0, 0.05);
   }
 
   .nav-btn svg {
