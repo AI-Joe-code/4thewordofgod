@@ -8,6 +8,7 @@ import { SITE_URL as SITE } from '../lib/site';
 export const prerender = false;
 
 interface Manifest {
+  generatedAt?: string;
   books: Record<string, { chapters: { n: string }[] }>;
   articles?: { slug: string }[];
 }
@@ -21,6 +22,10 @@ export async function GET(context: APIContext) {
   }
   const manifest = JSON.parse(raw) as Manifest;
 
+  // The manifest is regenerated whenever content changes, so its timestamp is a
+  // reasonable site-wide <lastmod> for every URL in this language.
+  const lastmod = manifest.generatedAt ? new Date(manifest.generatedAt).toISOString() : null;
+
   const urls: string[] = [`${SITE}/${lang}`];
   for (const bookSlug in manifest.books) {
     for (const ch of manifest.books[bookSlug].chapters) {
@@ -33,8 +38,9 @@ export async function GET(context: APIContext) {
 
   let xml = '<?xml version="1.0" encoding="UTF-8"?>';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+  const lastmodTag = lastmod ? `<lastmod>${lastmod}</lastmod>` : '';
   for (const u of urls) {
-    xml += `<url><loc>${u}</loc></url>`;
+    xml += `<url><loc>${u}</loc>${lastmodTag}</url>`;
   }
   xml += '</urlset>';
 
