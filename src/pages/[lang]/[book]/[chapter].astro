@@ -10,7 +10,8 @@ import FloatingControls from '../../../components/FloatingControls.astro';
 import FAQ from '../../../components/FAQ.astro';
 import { getLanguageDirection, getAvailableLanguages } from '../../../lib/languages';
 import type { CommentaryData } from '../../../lib/content';
-import { AUDIO_BASE } from '../../../lib/site';
+import { AUDIO_BASE, SITE_URL } from '../../../lib/site';
+import { normalizeStructuredData } from '../../../lib/seo';
 import { env } from 'cloudflare:workers';
 
 const { lang, book, chapter } = Astro.params;
@@ -81,6 +82,17 @@ const { title, metaDescription, keywords, structuredData, faq, audioPath, conten
 
 const direction = getLanguageDirection(lang!);
 const audioUrl = audioPath ? `${AUDIO_BASE}/${audioPath}` : null;
+
+// Fix the pipeline's broken BreadcrumbList + enrich the Article schema.
+const canonical = `${SITE_URL}/${lang}/${book}/${chapter}`;
+const allStructuredData = normalizeStructuredData(structuredData, {
+  lang: lang!,
+  canonical,
+  title,
+  bookSlug: book!,
+  bookName: data.book_name ?? book,
+  firstChapter: bookChapters[0]?.chapter_number ?? '01',
+});
 ---
 
 <Layout
@@ -91,7 +103,7 @@ const audioUrl = audioPath ? `${AUDIO_BASE}/${audioPath}` : null;
   ogDescription={metaDescription}
   ogType="article"
   keywords={keywords}
-  structuredData={structuredData}
+  structuredData={allStructuredData}
   langCodes={langCodes}
   currentLang={lang}
   chapters={bookChapters}

@@ -103,12 +103,17 @@ const ogImageUrl = HAS_OG_IMAGE ? ogImage : null;
     <meta property="og:title" content={ogTitle || title} />
     <meta property="og:description" content={ogDescription || description} />
     {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
+    {/* dimensions match the 1200x630 default social image */}
+    {ogImageUrl && <meta property="og:image:width" content="1200" />}
+    {ogImageUrl && <meta property="og:image:height" content="630" />}
+    {ogImageUrl && <meta property="og:image:alt" content={ogTitle || title} />}
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content={ogImageUrl ? 'summary_large_image' : 'summary'} />
     <meta name="twitter:title" content={ogTitle || title} />
     <meta name="twitter:description" content={ogDescription || description} />
     {ogImageUrl && <meta name="twitter:image" content={ogImageUrl} />}
+    {ogImageUrl && <meta name="twitter:image:alt" content={ogTitle || title} />}
 
     {
       structuredData.length > 0 && (
