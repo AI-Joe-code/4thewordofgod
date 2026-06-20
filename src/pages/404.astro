@@ -1,0 +1,73 @@
+---
+// Rendered on-demand so it can serve a real 404 status both for unmatched
+// routes and when the SSR content routes rewrite here (Astro.rewrite('/404')).
+export const prerender = false;
+
+import Layout from '../layouts/Layout.astro';
+
+Astro.response.status = 404;
+---
+
+<Layout
+  title="Page Not Found | Bible Commentary"
+  description="The page you are looking for could not be found."
+  robots="noindex, follow"
+>
+  <main class="notfound">
+    <p class="notfound-code">404</p>
+    <h1 class="notfound-title">Page Not Found</h1>
+    <p class="notfound-message">
+      We couldn't find the page you were looking for. It may have moved, or the link may be
+      incomplete.
+    </p>
+    <a class="notfound-home" href="/">Return home</a>
+  </main>
+</Layout>
+
+<style>
+  .notfound {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    text-align: center;
+    color: var(--theme-text);
+  }
+
+  .notfound-code {
+    font-family: 'Cinzel', serif;
+    font-size: 5rem;
+    line-height: 1;
+    margin: 0;
+    color: var(--theme-accent);
+  }
+
+  .notfound-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.75rem;
+    margin: 0.5rem 0 1rem;
+  }
+
+  .notfound-message {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    opacity: 0.85;
+    margin-bottom: 2rem;
+  }
+
+  .notfound-home {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid var(--theme-accent);
+    border-radius: 8px;
+    color: var(--theme-accent);
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    transition: all 0.2s ease;
+  }
+
+  .notfound-home:hover {
+    background: var(--theme-accent);
+    color: var(--theme-bg);
+  }
+</style>

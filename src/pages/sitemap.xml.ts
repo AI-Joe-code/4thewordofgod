@@ -1,11 +1,10 @@
 import { env } from 'cloudflare:workers';
+import { SITE_URL as SITE } from '../lib/site';
 
 // Sitemap index: points at one sitemap per language. Rendered on-demand so a
 // newly added language appears without a rebuild. Per-language URL lists live
 // in /sitemap-{lang}.xml.
 export const prerender = false;
-
-const SITE = 'https://4thewordofgod.com';
 
 export async function GET() {
   let languages: string[] = ['en'];

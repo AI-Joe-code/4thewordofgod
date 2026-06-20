@@ -1,4 +1,6 @@
 ---
+import { bookHref } from '../lib/books';
+
 interface Props {
   title: string;
   description: string;
@@ -11,9 +13,7 @@ interface Props {
 
 const { title, description, slug, link, lang = 'en', firstChapter = '01', toc = [] } = Astro.props;
 
-const cardLink = link || (slug === 'tyre'
-  ? `/${lang}/articles/fall-of-the-world-trade-center`
-  : (slug ? `/${lang}/${slug}/${firstChapter}` : '#'));
+const cardLink = link || bookHref(slug, lang, firstChapter);
 ---
 
 <div class="book-card-container">

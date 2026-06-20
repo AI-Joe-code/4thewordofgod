@@ -19,41 +19,23 @@
 </button>
 
 <script>
-  function setupTheme() {
-    const themeToggle = document.getElementById('theme-toggle');
-    const html = document.documentElement;
-
-    // System Theme Detection & Persistence
-    const savedTheme = localStorage.getItem('theme');
-    const systemTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-    
-    // Default to dark if no preference and no system preference (though system usually has one)
-    // If savedTheme exists, use it. Otherwise use systemTheme.
-    const initialTheme = savedTheme || systemTheme;
-    
-    html.setAttribute('data-theme', initialTheme);
-
-    // Remove any existing event listeners to prevent duplicates
-    const newToggle = themeToggle?.cloneNode(true);
-    if (themeToggle && newToggle) {
-        themeToggle.parentNode?.replaceChild(newToggle, themeToggle);
-    }
-
-    const currentToggle = document.getElementById('theme-toggle');
-    currentToggle?.addEventListener('click', () => {
-      const currentTheme = html.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      
-      html.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
+  // The active theme is applied by the inline script in Layout's <head> (on
+  // first load and on every astro:after-swap). This component only needs to
+  // flip it on click. The button lives in a transition:persist container, so
+  // it survives navigation — a single delegated listener (guarded so a script
+  // re-run can't double-bind) avoids the old cloneNode rebinding hack.
+  const w = window as Window & { __themeToggleBound?: boolean };
+  if (!w.__themeToggleBound) {
+    w.__themeToggleBound = true;
+    document.addEventListener('click', (e) => {
+      const target = e.target as Element | null;
+      if (!target?.closest?.('#theme-toggle')) return;
+      const html = document.documentElement;
+      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
     });
   }
-
-  // Run on initial load
-  setupTheme();
-
-  // Run on view transitions navigation
-  document.addEventListener('astro:page-load', setupTheme);
 </script>
 
 <style>
