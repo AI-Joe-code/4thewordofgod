@@ -61,7 +61,10 @@ const {
 
 // Force the production origin (the SSR request host may be a preview/workers.dev
 // domain) and drop any query string so every page self-canonicals cleanly.
-const path = Astro.url.pathname;
+// The root `/` serves the default-language home, so canonical it (and derive
+// hreflang) as `/{DEFAULT_LANG}` — the bare domain consolidates with the
+// language home instead of duplicating it.
+const path = Astro.url.pathname === '/' ? `/${DEFAULT_LANG}` : Astro.url.pathname;
 const canonical = new URL(path, SITE_URL).href;
 
 // hreflang alternates: every route is /{lang}/..., so swap the leading lang

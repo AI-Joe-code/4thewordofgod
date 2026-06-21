@@ -24,9 +24,10 @@ export const onRequest = defineMiddleware(async (context, next) => {
   const { request, url } = context;
   const noindex = url.hostname !== PROD_HOST;
 
-  // The root path 302-redirects based on Accept-Language, so it varies per
-  // visitor and must not be edge-cached by URL alone.
-  const cacheable = request.method === 'GET' && url.pathname !== '/';
+  // Every GET is cacheable: content is identical for every visitor of a given
+  // URL (the language lives in the path, and the root now serves the stable
+  // default-language home rather than redirecting by Accept-Language).
+  const cacheable = request.method === 'GET';
   if (!cacheable) {
     const r = await next();
     if (noindex) r.headers.set('X-Robots-Tag', 'noindex');
