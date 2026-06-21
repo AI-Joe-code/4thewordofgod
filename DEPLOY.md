@@ -96,6 +96,9 @@ node scripts/upload_content.js --lang=en --type=article --dir=content-source/en/
 
 # Navigation manifest -> KV
 node scripts/generate_manifest.js --lang=en --remote
+
+# LLM index files (llms.txt + llms-full.txt) -> R2. Run after content + manifest.
+node scripts/generate_llms.js --lang=en --remote
 ```
 
 **Bash** (Git Bash) equivalent:
@@ -107,6 +110,7 @@ done
 node scripts/upload_content.js --lang=en --type=homepage --dir=content-source/en --remote
 node scripts/upload_content.js --lang=en --type=article --dir=content-source/en/articles --remote
 node scripts/generate_manifest.js --lang=en --remote
+node scripts/generate_llms.js --lang=en --remote
 ```
 
 Sanity-check a couple of writes:

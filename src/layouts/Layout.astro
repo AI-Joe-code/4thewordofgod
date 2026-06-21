@@ -38,6 +38,8 @@ interface Props {
   ogType?: 'website' | 'article';
   ogImage?: string;
   robots?: string;
+  /** Absolute URL of this page's clean-Markdown twin, for AI answer engines. */
+  markdownHref?: string;
 }
 
 const {
@@ -56,6 +58,7 @@ const {
   ogType = 'website',
   ogImage = DEFAULT_OG_IMAGE,
   robots = 'index, follow',
+  markdownHref,
 } = Astro.props;
 
 // Force the production origin (the SSR request host may be a preview/workers.dev
@@ -100,6 +103,9 @@ const ogImageUrl = HAS_OG_IMAGE ? ogImage : null;
 
     <link rel="canonical" href={canonical} />
     <meta name="robots" content={robots} />
+
+    {/* Clean-Markdown twin of this page, for AI answer engines that prefer it. */}
+    {markdownHref && <link rel="alternate" type="text/markdown" href={markdownHref} />}
 
     <!-- hreflang alternates for the language variants of this URL -->
     {alternates.map((a) => <link rel="alternate" hreflang={a.code} href={a.href} />)}

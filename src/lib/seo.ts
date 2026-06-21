@@ -52,9 +52,12 @@ function buildBreadcrumb(ctx: SeoContext): Node {
 }
 
 /**
- * Add the fields Google needs for Article rich-result eligibility without
- * overwriting anything the content already provides. `image` is the key
- * required field that was missing across all chapters.
+ * Add the fields Google needs for Article rich-result eligibility — plus a few
+ * that help AI answer engines ground and attribute the content — without
+ * overwriting anything the content already provides. `image` is the key required
+ * field that was missing across all chapters; `isPartOf`/`speakable`/
+ * `isAccessibleForFree`/`articleSection` are additive AI-grounding signals that
+ * need no new data (the content already ships a rich `about[]` entity array).
  */
 function enrichArticle(article: Node, ctx: SeoContext): Node {
   return {
@@ -63,6 +66,15 @@ function enrichArticle(article: Node, ctx: SeoContext): Node {
     inLanguage: article.inLanguage ?? ctx.lang,
     mainEntityOfPage: article.mainEntityOfPage ?? ctx.canonical,
     publisher: article.publisher ?? PUBLISHER,
+    isAccessibleForFree: article.isAccessibleForFree ?? true,
+    isPartOf:
+      article.isPartOf ?? { '@type': 'WebSite', name: '4thewordofgod', url: SITE_URL },
+    speakable:
+      article.speakable ?? {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['h1', '.commentary-text'],
+      },
+    ...(ctx.bookName ? { articleSection: article.articleSection ?? ctx.bookName } : {}),
     ...(ctx.datePublished && !article.datePublished
       ? { datePublished: ctx.datePublished }
       : {}),
