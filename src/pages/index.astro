@@ -1,33 +1,13 @@
 ---
-// Root entry point: detect the visitor's language from the Accept-Language
-// header and redirect to the matching per-language homepage (/{lang}).
-// Falls back to English. Canonical homepages live at /[lang]/.
+// Root entry point. Serves the default-language (English / x-default) homepage
+// directly — no Accept-Language redirect. Avoiding the redirect removes a
+// round-trip (faster), and Google prefers no auto-redirect by language. The
+// content is rendered by rewriting to /{DEFAULT_LANG}; the canonical points at
+// /{DEFAULT_LANG} (Layout maps the root path) so `/` and `/en` consolidate
+// instead of competing as duplicate content.
 export const prerender = false;
 
-import { env } from 'cloudflare:workers';
 import { DEFAULT_LANG } from '../lib/site';
 
-let available: string[] = [DEFAULT_LANG];
-try {
-  const raw = await env.MANIFEST?.get('manifest:languages');
-  if (raw) available = JSON.parse(raw);
-} catch {
-  // fall back to default
-}
-
-// Parse Accept-Language into base codes in preference order (highest q first).
-const accept = Astro.request.headers.get('accept-language') || '';
-const preferred = accept
-  .split(',')
-  .map((part) => {
-    const [tag, q] = part.trim().split(';q=');
-    return { code: tag.split('-')[0].toLowerCase(), q: q ? parseFloat(q) : 1 };
-  })
-  .filter((p) => p.code)
-  .sort((a, b) => b.q - a.q)
-  .map((p) => p.code);
-
-const chosen = preferred.find((code) => available.includes(code)) || DEFAULT_LANG;
-
-return Astro.redirect(`/${chosen}`, 302);
+return Astro.rewrite(`/${DEFAULT_LANG}`);
 ---
