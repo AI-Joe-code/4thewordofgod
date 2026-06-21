@@ -13,6 +13,12 @@ export default defineConfig({
   // Vite plugin, reading bindings from wrangler.toml directly — the old
   // `platformProxy` option was removed.
   adapter: cloudflare(),
+  build: {
+    // Inline the (small) CSS into the HTML so it isn't a render-blocking
+    // request — Lighthouse flagged the two _astro/*.css files as blocking FCP.
+    // HTML is edge-cached + Brotli, so the inlined bytes are cheap.
+    inlineStylesheets: 'always',
+  },
   server: {
     allowedHosts: ['dev.4thewordofgod.com'],
   },

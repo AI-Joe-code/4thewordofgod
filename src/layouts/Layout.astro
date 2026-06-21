@@ -15,6 +15,12 @@ import '@fontsource/lato/latin-300.css';
 import '@fontsource/lato/latin-400.css';
 import '@fontsource/lato/latin-700.css';
 
+// Preload the two above-the-fold faces (Cinzel heading + Lato body). Lighthouse
+// showed fonts on the critical path; ?url resolves to the same hashed woff2 the
+// @font-face rules use (verified — no extra asset), so they just start earlier.
+import cinzel700 from '@fontsource/cinzel/files/cinzel-latin-700-normal.woff2?url';
+import lato400 from '@fontsource/lato/files/lato-latin-400-normal.woff2?url';
+
 interface Props {
   title: string;
   description?: string;
@@ -84,6 +90,8 @@ const ogImageUrl = HAS_OG_IMAGE ? ogImage : null;
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" href={cinzel700} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={lato400} as="font" type="font/woff2" crossorigin />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
